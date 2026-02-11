@@ -1,0 +1,214 @@
+/* ---------------------------------------
+   GLOBAL STYLES
+---------------------------------------- */
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #faf7f2;
+    background-image: url('paper-texture.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    text-align: center;
+}
+
+.small {
+    font-size: 14px;
+    color: #444;
+}
+
+a {
+    color: #0033cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+
+/* ---------------------------------------
+   HEADER
+---------------------------------------- */
+.site-header {
+    background: #ffffff;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.home-link {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0033cc;
+    text-decoration: none;
+}
+
+.home-link:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------
+   TABLE OF CONTENTS
+---------------------------------------- */
+.toc-list {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 2;
+    text-align: center;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.toc-list li {
+    text-align: left;
+}
+
+
+/* ---------------------------------------
+   COVER + QR ROW
+---------------------------------------- */
+.cover-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+/* Book cover styling */
+.cover-image {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    border: 2px solid #e0dcd5;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cover-image:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.22);
+}
+
+/* QR code styling */
+.qr-image {
+    width: 150px;
+    max-width: 150px;
+    height: auto;
+    display: block;
+    transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+
+.qr-image:hover {
+    box-shadow: 0 0 18px rgba(0, 102, 255, 0.55);
+    transform: scale(1.05);
+}
+
+
+/* ---------------------------------------
+   TITLES
+---------------------------------------- */
+.book-title {
+    margin-bottom: 0;
+}
+
+.chapter-title {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------------------------------
+   STORY AREA (BOOK PAGE)
+---------------------------------------- */
+#book-text {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.08);
+    border: 1px solid #e5e2dd;
+}
+
+#book-text p {
+    max-width: 700px;
+    margin: 0 auto 16px auto;
+    line-height: 1.6;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+/* Drop cap */
+#book-text p:first-of-type::first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 8px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------
+   IMAGES
+---------------------------------------- */
+.chapter-image {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+
+/* ---------------------------------------
+   NAVIGATION
+---------------------------------------- */
+.nav-links a {
+    margin: 0 10px;
+}
+
+
+/* ---------------------------------------
+   BACK TO TOP
+---------------------------------------- */
+.back-to-top a {
+    font-size: 14px;
+    color: #0033cc;
+}
+
+.back-to-top a:hover {
+    text-decoration: underline;
+}
+
+
+/* ---------------------------------------
+   FOOTER
+---------------------------------------- */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-top: 40px;
+    padding: 20px 0;
+}
+
+
+/* ---------------------------------------
+   MOBILE
+---------------------------------------- */
+@media (max-width: 600px) {
+    .cover-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
