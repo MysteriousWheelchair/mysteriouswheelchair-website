@@ -289,8 +289,8 @@ footer {
 }
 
 .spotify-logo {
-    width: 28px;
-    height: 28px;
+    width: 22px;
+    height: 22px;
     opacity: 0.9;
     transition: opacity 0.2s ease;
 }
@@ -305,6 +305,7 @@ footer {
         gap: 15px;
     }
 }
+
 
 
 
