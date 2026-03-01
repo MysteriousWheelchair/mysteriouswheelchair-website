@@ -308,6 +308,23 @@ footer {
 }
 
 
+
+.listen-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.spotify-icon {
+  width: 28px;
+  height: auto;
+}
+
+.amazon-badge {
+  width: 70px;   /* adjust smaller if needed */
+  height: auto;
+}
+
 /* ---------------------------------------
    MOBILE
 ---------------------------------------- */
@@ -317,6 +334,7 @@ footer {
         gap: 15px;
     }
 }
+
 
 
 
