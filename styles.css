@@ -296,6 +296,17 @@ footer {
 }
 
 .logo img { width: 200px; /* adjust as needed */ display: block; margin: 20px auto; }
+.listen-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amazon-badge {
+  width: 70px;   /* adjust smaller/larger */
+  height: auto;
+}
+
 
 /* ---------------------------------------
    MOBILE
@@ -306,6 +317,7 @@ footer {
         gap: 15px;
     }
 }
+
 
 
 
