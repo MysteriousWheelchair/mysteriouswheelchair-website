@@ -295,6 +295,7 @@ footer {
     transition: opacity 0.2s ease;
 }
 
+.logo img { width: 200px; /* adjust as needed */ display: block; margin: 20px auto; }
 
 /* ---------------------------------------
    MOBILE
@@ -305,6 +306,7 @@ footer {
         gap: 15px;
     }
 }
+
 
 
 
