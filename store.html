@@ -7,9 +7,13 @@
 
 <h1>Official Merchandise</h1>
 
+<div id="rb-shop"></div>
+
 <script src="https://www.redbubble.com/assets/external_portfolio.js"></script>
 <script>
-    new RBExternalPortfolio('www.redbubble.com', 'wheelchairbook', 2, 2).renderIframe();
+    new RBExternalPortfolio('www.redbubble.com', 'wheelchairbook', 2, 2, {
+        target: '#rb-shop'
+    }).renderIframe();
 </script>
 
 </body>
