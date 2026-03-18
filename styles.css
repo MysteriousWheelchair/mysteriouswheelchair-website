@@ -391,6 +391,23 @@ footer {
   height: 28px;
 }
 
+
+.language-switcher {
+    direction: ltr;
+    text-align: center;
+    unicode-bidi: isolate;
+}
+
+.language-switcher a,
+.language-switcher span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0 6px;
+    white-space: nowrap;
+}
+
+
 /* ---------------------------------------
    MOBILE
 ---------------------------------------- */
