@@ -207,11 +207,7 @@ footer {
 }
 
 /* Clean, professional MP3 links */
-.mp3 {
-  color: #3366cc;
-  text-decoration: none;
-  font-size: 0.95rem;
-}
+
 
 .mp3:hover {
   text-decoration: underline;
@@ -323,7 +319,6 @@ footer {
 
 .toc-link {
   display: flex;
-  align-items: center;
   gap: 6px;
   text-decoration: none;
   font-size: 1rem;
@@ -349,7 +344,6 @@ footer {
 
 .toc-link {
   display: flex;
-  align-items: center;
   gap: 6px;
   text-decoration: none;
   font-size: 1rem;
