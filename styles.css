@@ -245,15 +245,36 @@ footer {
   text-align: center;
 }
 
-.toc-container {
-  text-align: center;
-  margin: 0 auto;
-  max-width: 700px;
-}
+/* Updated Table of Contents Styles */
 
 .toc-container {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the H2 and the UL block */
+    text-align: center;    /* Keeps the H2 centered */
+    margin: 0 auto;
+    max-width: 700px;
 }
+
+.toc {
+    display: inline-block; /* Shrinks the list width to the text length */
+    text-align: left;      /* Aligns the list items to the left */
+    list-style: none;
+    padding-left: 0;
+    margin: 1.5rem 0;
+}
+
+.toc li {
+    margin-bottom: 1.2rem;
+    line-height: 1.4;
+}
+
+
+
+
+
+
+
 
 .spotify-link {
     margin-top: -0.5rem;
