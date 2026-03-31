@@ -32,8 +32,9 @@
 
 <!-- Title Banner -->
 <div class="title-banner center">
+	<form style="display: inline-block;">
 	<label for="lang-select" >Select Language:</label>
-	<select id="language-picker" onchange="location = this.value;">
+	<select id="language-picker" >
   <option value="" selected disabled>Choose a language...</option>
   <option value="index.html">English (English)</option>
 	<option value="index-nl.html">Nederlands (Dutch)</option>
@@ -47,6 +48,22 @@
   
 	</select>
 
+
+
+
+
+
+
+		
+
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button" 
+          onclick="location = document.getElementById('lang-select').value;" 
+          style="padding: 8px 15px; background: #333; color: white; border: none; border-radius: 5px; cursor: pointer;">
+    Go
+  </button>
+		</form>
+		
   <!-- Everything Else Menu -->
   <select onchange="if(this.value) window.open(this.value, '_self');" >
     <option value="" disabled selected>☰ Menu / Extras</option>
