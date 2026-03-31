@@ -45,6 +45,23 @@
   
   
 	</select>
+	<nav style="display: flex; justify-content: center; gap: 20px; padding: 15px; background: rgba(255,255,255,0.5); backdrop-filter: blur(5px); border-bottom: 1px solid #999;"
+
+  <!-- Everything Else Menu -->
+  <select onchange="if(this.value) window.open(this.value, '_self');" style="padding: 8px; border-radius: 5px; border: 1px solid #999;">
+    <option value="" disabled selected>☰ Menu / Extras</option>
+    <option value="index.html">🏠 Home</option>
+    <option value="characters.html">👤 Character List</option>
+    <option value="map.html">🗺️ Map of Silla-Tierra</option>
+    <option value="audiobook.html">🎧 Audio Version</option>
+    <option value="paperbacks.html">📖 All 5 Paperbacks</option>
+    <option value="merch.html">🛒 Merchandise (Sweater)</option>
+    <option value="about.html">👤 About David Binnema</option>
+    <option value="mailto:davidbinnema@example.com">✉️ Send Feedback</option>
+  </select>
+
+	</nav>
+	
    <h1 style="
   font-size: 48px;
   font-weight: bold;
