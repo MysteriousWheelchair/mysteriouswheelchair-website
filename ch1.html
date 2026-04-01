@@ -18,13 +18,70 @@
 
 <a id="top"></a>
 
-<header class="site-header center">
-<a href="index.html">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-    Back to Index 
-</a> | <a href="cl.html">
-<img src="cli.png" alt="Character List icon" class="footer-icon"> Character List</a> | 🗺️  <a href="map-en.html">
-Map of Silla-Tierra </a>
+<label for="language-picker" >Select Language:</label>
+	<select id="language-picker" >
+  
+  <option value="ch1.html" selected>English (English)</option>
+	<option value="ch1-nl.html">Nederlands (Dutch)</option>
+    <option value=" ch1-fr.html" lang="fr">Français (French)</option>
+	<option value="ch1-es.html" lang="es">Español (Spanish)</option>
+	<option value="ch1-de.html" lang="de">Deutsch (German)</option>
+	<option value="ch1-jp.html">日本語 (Japan)</option>
+	<option value="ch1-el.html" lang="el">Ελληνικά (Greek)</option>
+	<option value="ch1-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
+  
+  
+	</select>
+		
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button" 
+          onclick="location = document.getElementById('language-picker').value;" >
+    Go
+  </button>
+		</form>
+		<form style="display: inline-block; margin-left: 20px;">
+  <!-- Accessible label for the menu -->
+  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
+  
+  <select id="site-menu" name="menu">
+  
+    
+    <option value="index.html">Home</option>
+    <option value="cl.html" >Character List</option>
+    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
+    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
+    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
+    <option value="<a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair"> Merchandise (English only)</option>
+    <option value="about.html" selected>About David Binnema</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+  </select>
+
+<button type="button" 
+          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
+          aria-label="Go to selected page">
+    Go
+  </button>
+		</form>
+	
+
+    
+  <label for="chapter-select" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+  <select id="chapter-select" style="padding: 8px; border-radius: 5px; border: 1px solid #999; background: rgba(255,255,255,0.5);">
+   
+	  <option value="ch1.html">Chapter 1: Zuphixy’s Strange Day</option>
+    <option value="ch2.html" >Chapter 2: The Search for Zuphixy</option>
+    <option value="ch3.html">Chapter 3: The Adventures of Zuphixy and Purpleten</option>
+    <option value="ch4.html">Chapter 4: Zuphixy and Purpleten Get Caught</option>
+    <option value="ch5.html">Chapter 5: Zuphixyand Purpleten Escape</option>
+    <option value="ch6.html">Chapter 6: Flickers of Hope</option>
+    <option value="ch7.html">Chapter 7: Life in Silla‑Tierra</option>
+    <option value="ch8.html">Chapter 8: Zuphixy’s Reunion with his Parents</option>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+    </nav>
+    
 </header>
 
 <!-- Title Banner -->
