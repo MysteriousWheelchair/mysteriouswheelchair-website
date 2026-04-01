@@ -18,15 +18,71 @@
 
 <a id="top"></a>
 
-<header class="site-header center">
-<a href="index.html">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-    Back to Index 
-</a> | <a href="cl.html">
-<img src="cli.png" alt="Character List icon" class="footer-icon"> Character List</a> | 🗺️  <a href="map-en.html">
-Map of Silla-Tierra </a>
-</header>
+<label for="language-picker" >Select Language:</label>
+	<select id="language-picker" >
+  
+  <option value="ch1.html" selected>English (English)</option>
+	<option value="ch1-nl.html">Nederlands (Dutch)</option>
+    <option value=" ch1-fr.html" lang="fr">Français (French)</option>
+	<option value="ch1-es.html" lang="es">Español (Spanish)</option>
+	<option value="ch1-de.html" lang="de">Deutsch (German)</option>
+	<option value="ch1-jp.html">日本語 (Japan)</option>
+	<option value="ch1-el.html" lang="el">Ελληνικά (Greek)</option>
+	<option value="ch1-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
+  
+  
+	</select>
+		
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button" 
+          onclick="location = document.getElementById('language-picker').value;" >
+    Go
+  </button>
+		</form>
+		<form style="display: inline-block; margin-left: 20px;">
+  <!-- Accessible label for the menu -->
+  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
+  
+  <select id="site-menu" name="menu">
+  
+    
+    <option value="index.html" selected>Home</option>
+    <option value="cl.html" >Character List</option>
+    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
+    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
+    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
+    <option value="<a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair"> Merchandise (English only)</option>
+    <option value="about.html" >About David Binnema</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+  </select>
 
+<button type="button" 
+          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
+          aria-label="Go to selected page">
+    Go
+  </button>
+		</form>
+	
+
+    
+  <label for="chapter-select" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+  <select id="chapter-select" style="padding: 8px; border-radius: 5px; border: 1px solid #999; background: rgba(255,255,255,0.5);">
+   
+	  <option value="ch1.html">Chapter 1: Zuphixy’s Strange Day</option>
+    <option value="ch2.html" >Chapter 2: The Search for Zuphixy</option>
+    <option value="ch3.html">Chapter 3: The Adventures of Zuphixy and Purpleten</option>
+    <option value="ch4.html">Chapter 4: Zuphixy and Purpleten Get Caught</option>
+    <option value="ch5.html">Chapter 5: Zuphixyand Purpleten Escape</option>
+    <option value="ch6.html">Chapter 6: Flickers of Hope</option>
+    <option value="ch7.html">Chapter 7: Life in Silla‑Tierra</option>
+    <option value="ch8.html">Chapter 8: Zuphixy’s Reunion with his Parents</option>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+    </nav>
+    
+</header>
 <!-- Title Banner -->
 <div class="title-banner center">
     <h1 class="banner-text">The Mysterious Wheelchair</h1>
@@ -101,23 +157,42 @@ Map of Silla-Tierra </a>
 
 <hr>
 
-<nav class="center nav-links" aria-label="Chapter navigation">
-    <a href="ch4.html">Previous Chapter</a> |
-    <a href="ch6.html">Next Chapter</a> |
-    <a href="index.html">Table of Contents</a>
-</nav>
-
-<div class="back-to-top center">
-    <a href="#top">Back to Top</a>
-</div>
-
 <footer>
-    © 2013 David Binnema — All Rights Reserved.<br>
-    Prefer a physical copy?
-    <a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?page=1&pageSize=4">
-        Buy the paperback here
-    </a>.
+  <label for="chapter-select-bottom" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+  <select id="chapter-select-bottom" style="padding: 8px; border-radius: 5px; border: 1px solid #999; background: rgba(255,255,255,0.5);">
+   
+	  
+    <option value="ch2.html"selected >Chapter 2: The Search for Zuphixy</option>
+    <option value="index.html" >table of contents</option>
+    <option value="cl.html" >Character List</option>
+    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
+    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
+    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select-bottom').value;" >Go</button>
+    </nav>
+    
+
+
+ 
+<p style="text-align:center;">
+    
+
+	
+		<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"> Instagram</a>
+|  <a href="https://pin.it/3o2DLszrP" target="_blank"> <img src="P-Badge-Red-RGB.png
+" alt="" style="height:26px; vertical-align:middle; margin-right:6px;"> pintercast |
+</a> <a href ="https://www.facebook.com/share/1Dd6Zt9K9N/"> 
+		<img src="Facebook_Logo_Primary.png" style="height:24px; vertical-align:middle; margin-right:6px;" alt =""> Facebook</a> |
+	<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i"><img src="yt_icon_red_digital.png" width="24" alt ="YouTube icon" >YouTube playlist</a>
+		<p style="text-align:center;">©2013 David Binnema — All Rights Reserved.</p>
 </footer>
+ 
+<p style="text-align:center; ">
+ <a href="#top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
+	 
 
 </body>
 </html>
