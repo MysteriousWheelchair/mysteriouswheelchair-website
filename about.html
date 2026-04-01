@@ -23,8 +23,74 @@
 
     
 <body>
+<header class="site-header center">
+    <form style="display: inline-block;">
+	<label for="language-picker" >Select Language:</label>
+	<select id="language-picker" >
+  
+  <option value="audiobook.html" selected>English (English)</option>
+	<option value="audiobook-nl.html">Nederlands (Dutch)</option>
+    <option value="audiobook-fr.html" lang="fr">Français (French)</option>
+	<option value="audiobook-es.html" lang="es">Español (Spanish)</option>
+	<option value="audiobook-de.html" lang="de">Deutsch (German)</option>
+	<option value="audiobook-jp.html">日本語 (Japan)</option>
+	<option value="audiobook-el.html" lang="el">Ελληνικά (Greek)</option>
+	<option value="audiobook-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
+  
+  
+	</select>
+		
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button" 
+          onclick="location = document.getElementById('language-picker').value;" >
+    Go
+  </button>
+		</form>
+		<form style="display: inline-block; margin-left: 20px;">
+  <!-- Accessible label for the menu -->
+  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
+  
+  <select id="site-menu" name="menu">
+  
+    
+    <option value="index.html">Home</option>
+    <option value="cl.html" >Character List</option>
+    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
+    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
+    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
+    <option value="<a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair"> Merchandise (English only)</option>
+    <option value="about.html" selected>About David Binnema</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+  </select>
 
-   <main class="container">
+<button type="button" 
+          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
+          aria-label="Go to selected page">
+    Go
+  </button>
+		</form>
+	
+
+    
+  <label for="chapter-select" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+  <select id="chapter-select" style="padding: 8px; border-radius: 5px; border: 1px solid #999; background: rgba(255,255,255,0.5);">
+   <option value="#top"> about the author </option>
+	  <option value="ch1.html">Chapter 1: Zuphixy’s Strange Day</option>
+    <option value="ch2.html" >Chapter 2: The Search for Zuphixy</option>
+    <option value="ch3.html">Chapter 3: The Adventures of Zuphixy and Purpleten</option>
+    <option value="ch4.html">Chapter 4: Zuphixy and Purpleten Get Caught</option>
+    <option value="ch5.html">Chapter 5: Zuphixyand Purpleten Escape</option>
+    <option value="ch6.html">Chapter 6: Flickers of Hope</option>
+    <option value="ch7.html">Chapter 7: Life in Silla‑Tierra</option>
+    <option value="ch8.html">Chapter 8: Zuphixy’s Reunion with his Parents</option>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+    </nav>
+    
+</header>
+   <main class="toc-container" id="book-text" aria-label="padcast sites">
             <h1 >About the Author</h2>
             <p class="center">
                 David Binnema lives with a physical disability and writes books that always include disabled characters,
@@ -32,9 +98,7 @@
             </p>
 
 
-   </main>    <div class="container">
-
-            <p class="center">
+       <p>
 
 To make the story accessible to more readers, I used AI tools to translate it into several languages.
 </p>   </div>
