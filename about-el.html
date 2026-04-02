@@ -10,31 +10,101 @@
     <meta charset="UTF-8">
     <title>Σχετικά με τον Συγγραφέα</title>
 
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
+   
 
-      .container {
-        max-width: 400px;
-        margin: 40px auto;
-        background: white;
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-
-      h1, h2 {
-        text-align: center;
-      }
-    </style>
-
+    
+   
 </head>
 
 <body>
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>De Mysterieus Rolstoel — Personagelijst</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+<div class="title-banner center">
+
+<form style="display: inline-block;">
+	<label for="language-picker" >Selecteer Taal:</label>
+	<select id="language-picker" >
+  
+  <option value="index.html">English (English)</option>
+	<option value="index-nl.html" selected>Nederlands (Dutch)</option>
+    <option value="index-fr.html" lang="fr">Français (French)</option>
+	<option value="index-es.html" lang="es">Español (Spanish)</option>
+	<option value="index-de.html" lang="de">Deutsch (German)</option>
+	<option value="index-jp.html">日本語 (Japan)</option>
+	<option value="index-el.html" lang="el">Ελληνικά (Greek)</option>
+	<option value="index-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
+  
+  
+	</select>
+
+
+
+
+
+
+
+		
+
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button" 
+          onclick="location = document.getElementById('language-picker').value;" >
+    Go
+  </button>
+		</form>
+		<form style="display: inline-block; margin-left: 20px;">
+  <!-- Accessible label for the menu -->
+  <label for="site-menu">Ontdekken:</label>
+  
+  <select id="site-menu" name="menu">
+  
+    
+    <option value="index-nl.html">Startpagina</option>
+    <option value="cl-nl.html">Personagelijst</option>
+    <option value="map-nl.html"> Kaart van Silla-Tierra (Engels)</option>
+    <option value="audiobook-nl.html">Luister naar het audioboek (Engels)</option>
+    <option value="buy-paperback-nl.html">Winkels voor de paperback (Engels)</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Handelswaar ( Engels)</option>
+    <option value="about-nl.html">Over de Auteur</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Feedback ( Engels)</option>
+  </select>
+
+<button type="button" 
+          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
+          aria-label="Go to selected page">
+    Go
+  </button>
+		</form><form style="display: inline-block; margin-left: 20px;">
+<label for="chapter-select"> Ga naar hoofdstuk:</label>
+  <select id="chapter-select" style="max-width: 40%;">
+   <option value="#top"> Luister naar het audioboek </option>
+	  <option value="ch1-nl.html">Hoofdstuk 1: Zuphixy’s vreemde dag</option>
+    <option value="ch2-nl .html"> Hoofdstuk 2: De zoektocht naar Zuphixy</option>
+    <option value="ch3-nl.html">Hoofdstuk 3: De avonturen van Zuphixy en Purpleten</option>
+    <option value="ch4-nl.html">Hoofdstuk 4: Zuphixy en Purpleten worden betrapt</option>
+    <option value="ch5-nl.html">Hoofdstuk 5: Zuphixy en Purpleten ontsnappen</option>
+    <option value="ch6-nl.html">Hoofdstuk 6: Flikkeringen van hoop</option>
+    <option value="ch7-nl.html">Hoofdstuk 7: Leven in Silla‑Tierra</option>
+    <option value="ch8-nl.html">Hoofdstuk 8: Zuphixy’s hereniging met zijn ouders</option>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+		</form>
+    
+  </header>
+
+
 
    <div class="container">
         <h2>Σχετικά με τον Συγγραφέα</h2>
