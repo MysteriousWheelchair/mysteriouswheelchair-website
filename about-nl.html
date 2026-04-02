@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   
-    <!-- Favicon -->
-    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
-    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
-    <link rel="apple-touch-icon" href="favicon-180.png">
+    
+	
+	<style>
 
-  <meta charset="UTF-8">
-  <title>Buy The Mysterious Wheelchair</title>
-
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
 
     .container {
       max-width: 400px;
@@ -29,16 +17,85 @@
 
     h1 {
       text-align: center;
-    }
+	}
+</style>
+	
+	
 
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
 
+  <meta charset="UTF-8">
+ <title>About the Author</title>
 
-  </style>
-
+  <link rel="stylesheet" href="styles.css">
 
     
 <body>
+<header class="site-header center">
+    <form style="display: inline-block;">
+	<label for="language-picker" >Select Language:</label>
+	<select id="language-picker" >
+  
+  <option value="about.html" selected>English (English)</option>
+	<option value="about-nl.html">Nederlands (Dutch)</option>
+    <option value="about-fr.html" lang="fr">Français (French)</option>
+	<option value="about-es.html" lang="es">Español (Spanish)</option>
+	<option value="about-de.html" lang="de">Deutsch (German)</option>
+	<option value="about-jp.html">日本語 (Japan)</option>
+	<option value="about-el.html" lang="el">Ελληνικά (Greek)</option>
+	<option value="about-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
+	</select>
+		
+  <!-- The "Go" button satisfies WebAIM -->
+  <button type="button"onclick="location = document.getElementById('language-picker').value;" >
+    Go
+  </button> </form>
+		<form style="display: inline-block; margin-left: 20px;">
+  <!-- Accessible label for the menu -->
+  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
+  
+  <select id="site-menu" name="menu">
+  
+    
+    <option value="index.html">Home</option>
+    <option value="cl.html" >Character List</option>
+    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
+    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
+    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair"> Merchandise (English only)</option>
+    <option value="about.html" selected>About David Binnema</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+  </select>
 
+<button type="button" 
+          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
+          aria-label="Go to selected page">
+    Go
+  </button>
+		</form>
+	
+
+    
+  <label for="chapter-select" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+  <select id="chapter-select" style="padding: 8px; border-radius: 5px; border: 1px solid #999; background: rgba(255,255,255,0.5);">
+   <option value="#top"> about the author </option>
+	  <option value="ch1.html">Chapter 1: Zuphixy’s Strange Day</option>
+    <option value="ch2.html" >Chapter 2: The Search for Zuphixy</option>
+    <option value="ch3.html">Chapter 3: The Adventures of Zuphixy and Purpleten</option>
+    <option value="ch4.html">Chapter 4: Zuphixy and Purpleten Get Caught</option>
+    <option value="ch5.html">Chapter 5: Zuphixyand Purpleten Escape</option>
+    <option value="ch6.html">Chapter 6: Flickers of Hope</option>
+    <option value="ch7.html">Chapter 7: Life in Silla‑Tierra</option>
+    <option value="ch8.html">Chapter 8: Zuphixy’s Reunion with his Parents</option>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+    </nav>
+    
+</header>
    <div class="container">
             <h2> Over de auteu</h2>
             <p class="center">
