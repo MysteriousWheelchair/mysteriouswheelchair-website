@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <title>כיסא הגלגלים המסתורי</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="כיסא הגלגלים המסתורי — פרק 7 בגרסה מקוונת נגישה.">
+    <title>כיסא הגלגלים המסתורי — פרק 7</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -12,23 +13,85 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="כיסא הגלגלים המסתורי — פרק 7">
+    <meta property="og:description" content="קראו את פרק 7 של הסיפור בגרסה נגישה.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
 
-<a id="top"></a>
+<nav>
 
-<header class="site-header center">
-<a href="index-he.html">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-    Back to Index
-</a>
-</header>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">בחירת שפה:</label>
+<select id="language-picker">
+  <option value="ch7.html">English</option>
+  <option value="ch7-nl.html">Nederlands</option>
+  <option value="ch7-fr.html">Français</option>
+  <option value="ch7-es.html">Español</option>
+  <option value="ch7-de.html">Deutsch</option>
+  <option value="ch7-jp.html">日本語</option>
+  <option value="ch7-el.html">Ελληνικά</option>
+  <option value="ch7-he.html" selected>עברית</option>
+</select>
 
-<section class="chapter" dir="rtl">
-  <h1 style="text-align:center;">כיסא הגלגלים המסתורי</h1>
-  <h1 style="text-align:center;">פרק 7: החיים בסילה‑טיירה</h1>
+<button type="button"
+    onclick="location = document.getElementById('language-picker').value;">
+   בחר
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">קישורים:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html">אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('site-menu').value;">
+    עבור
+  </button>
+</form>
+
+<!-- Chapter Selector (top) -->
+<div class="jump-container">
+<label for="chapter-select">בחירת פרק</label>
+  <select id="chapter-select">
+      <option value="ch1-he.html">פרק 1</option>
+      <option value="ch2-he.html">פרק 2</option>
+      <option value="ch3-he.html">פרק 3</option>
+      <option value="ch4-he.html">פרק 4</option>
+      <option value="ch5-he.html">פרק 5</option>
+      <option value="ch6-he.html">פרק 6</option>
+      <option value="ch7-he.html" selected>פרק 7</option>
+      <option value="ch8-he.html">פרק 8</option>
+  </select>
+
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">
+    בחר
+  </button>
+</div>
+
+</nav>
+
 <main id="book-text" aria-label="Book chapter text">
+
+  <h1>כיסא הגלגלים המסתורי</h1>
+  <h2>פרק 7: החיים בסילה‑טיירה</h2>
 
   <p>ברגע שפורפלטן וזופיקסי הוכחו כבריאים, זופיקסי הלך לגור עם פורפלטן והוריה. במשך הגלגלים הראשונים, שומרי הראש הגנו על פורפלטן וזופיקסי, אבל בשנים האחרונות אנשי כיסא הגלגלים שכחו מהאוידוהומברים והפסיקו לשמור עליהם.</p>
 
@@ -64,20 +127,53 @@
 
   <p>כשהתאושש מההלם, הוא התחיל לחשוב מה קרה לפורפלטן ולזופיקסי הקטן.</p>
 
-</section>
+
 </main>
+<footer>
 
 
+<!-- Bottom selector -->
+<div class="jump-container">
+  <label for="chapter-select-bottom">ניווט מהיר</label>
+  <select id="chapter-select-bottom">
+    <option value="ch8-he.html" selected>הבא</option>
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select-bottom').value;">
+    עבור
+  </button>
+</div>
 
-<footer class="chapter-nav" dir="rtl" style="text-align:center;">
-  <a href="ch6-he.html">פרק קודם</a> |
-  <a href="ch8-he.html">פרק הבא</a>
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24"></a>
+
+<p style="text-align:center;">©2013 David Binnema — כל הזכויות שמורות.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="למעלה" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
-<footer class="site-footer" dir="rtl" style="text-align:center; margin-top:2em;">
-  <p><a href="#top">חזרה לראש הדף</a></p>
-  <p>© 2013 David Binnema — כל הזכויות שמורות.</p>
-  <p>מעדיפים עותק מודפס? <a href="https://www.amazon.com/dp/1492174230">לחצו כאן לרכישת הספר</a>.</p>
-</footer>
+
 </body>
 </html>
-

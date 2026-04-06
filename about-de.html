@@ -2,9 +2,9 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Hören Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
+    <meta name="description" content="Lesen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
         Eine barrierefreie Online-Ausgabe mit Originalillustrationen.">    
-    <title>Der Mysteriöse Rollstuhl — Hörbuch</title>
+    <title>Der Mysteriöse Rollstuhl — Über den Autor</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
@@ -17,30 +17,30 @@
 
     <!-- OpenGraph -->
     <meta property="og:title" content="Der Mysteriöse Rollstuhl — Barrierefreie Online-Ausgabe">
-    <meta property="og:description" content="Hören Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema, einschließlich aller 8 Kapitel.">
+    <meta property="og:description" content="Lesen Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema, einschließlich aller 8 Kapitel.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
 </head>
-<body>
 
+<body>
 <nav>
 <form>
     <label for="language-picker">Sprachauswahl:</label>
 <select id="language-picker">
-  <option value="audiobook.html">English</option>
-  <option value="audiobook-nl.html">Nederlands</option>
-  <option value="audiobook-fr.html">Français</option>
-  <option value="audiobook-es.html">Español</option>
-  <option value="audiobook-de.html" selected>Deutsch</option>
-  <option value="audiobook-jp.html">日本語</option>
-  <option value="audiobook-el.html">Ελληνικά</option>
-  <option value="audiobook-he.html">עברית</option>
+  <option value="about.html">English</option>
+  <option value="about-nl.html">Nederlands</option>
+  <option value="about-fr.html">Français</option>
+  <option value="about-es.html">Español</option>
+  <option value="about-de.html" selected>Deutsch</option>
+  <option value="about-jp.html">日本語</option>
+  <option value="about-el.html">Ελληνικά</option>
+  <option value="about-he.html">עברית</option>
 </select>
-  <button type="button"
+<button type="button"
     onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
    Auswählen
-  </button>
+</button>
 </form>
 
 <!-- Site Menu -->
@@ -51,11 +51,11 @@
     <option value="index-de.html">Startseite</option>
     <option value="cl-de.html">Charaktere</option>
     <option value="map-de.html">Karte</option>
-    <option value="audiobook-de.html" selected>Hörbuch</option>
+    <option value="audiobook-de.html">Hörbuch</option>
     <option value="buy-paperback-de.html">Taschenbuch kaufen</option>
     <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
-    <option value="about-de.html">Über</option>
-    <option value="mailto:261005440+MysteriousWheelchair">E-Mail</option>
+    <option value="about-de.html" selected>Über</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑Mail</option>
   </select>
 
   <button type="button"
@@ -68,7 +68,6 @@
 <label for="chapter-select">Kapitel auswählen</label>
   <select id="chapter-select">
       <option value="#top">Diese Seite</option>
-
       <option value="ch1-de.html">Kapitel 1</option>
       <option value="ch2-de.html">Kapitel 2</option>
       <option value="ch3-de.html">Kapitel 3</option>
@@ -82,46 +81,49 @@
 </div>
 </nav>
 
-<main>
-
-<h2>Hörbuch anhören</h2>
-<p style="text-align:center;"> Erzählt mit KI‑Stimmen (digitale Sprachtechnologie) </p>
-
-<table align="center" cellspacing="0" cellpadding="0">
-  <tr>
-    <td>
-      <div class="book-3d">
-        <img src="Cover.jpg" style="max-width:90%; max-height:235px;">
-      </div>
-    </td>
-
-    <td>
-      <ul class="links">
-        <li><a href="https://open.spotify.com/show/43FUVZFuNJtq92M5OoCgL9?si=ed5e00d86df84336">Spotify</a></li>
-        <li><a href="https://music.amazon.ca/podcasts/4363858e-d6eb-459d-849f-5a9388d3f164/the-mysterious-wheelchair">Amazon Music</a></li>
-        <li><a href="https://www.iheart.com/podcast/269-the-mysterious-wheelchair-325149694/">iHeartRadio</a></li>
-        <li><a href="https://castbox.fm/channel/The-mysterious-wheelchair-id7109385">CastBox FM</a></li>
-        <li><a href="https://truefans.fm/the-mysterious-wheelchair">truefans.fm</a></li>
-        <li><a href="https://www.deezer.com/us/show/1002717591">Deezer</a></li>
-        <li><a href="https://www.audible.ca/podcast/The-mysterious-wheelchair/B0GQJNJ3YF">Audible Kanada</a></li>
-      </ul>
-    </td>
-  </tr>
-</table>
-
+<main class="author-block">
+    <h2>Über den Autor</h2>
+    <div class="about-wrapper">
+        <img src="me.jpg" alt="Porträt des Autors" class="author-photo">
+        <p>
+            David Binnema lebt mit einer körperlichen Behinderung und schreibt Bücher, 
+            in denen immer behinderte Charaktere vorkommen – um Sichtbarkeit, Wärme 
+            und Menschlichkeit in jede Geschichte zu bringen.
+        </p>
+    </div>
 </main>
 
-<footer> 
+<main class="author-block">
+    <h2>Sprachhinweis:</h2>
+    <p>
+        Um die Geschichte für mehr Leser zugänglich zu machen, habe ich KI‑Werkzeuge 
+        verwendet, um sie in mehrere Sprachen zu übersetzen.
+    </p>
+</main>
+
+<main class="author-block">
+    <h2>Urheberrechtshinweis:</h2>
+    <p>
+        Kein Teil dieser Website oder irgendeines anderen Formats des Buches darf ohne 
+        vorherige schriftliche Genehmigung des Autors reproduziert, verteilt oder 
+        übertragen werden – weder durch Fotokopie, Aufnahme noch durch andere 
+        elektronische oder mechanische Methoden –, außer in Form kurzer Zitate in 
+        Rezensionen oder anderen nichtkommerziellen Nutzungen, die durch das 
+        Urheberrecht gesetzlich erlaubt sind.
+    </p>
+</main>
+
+<footer>
 <p style="text-align:center;">
 
 <a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
-<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="Instagram Logo" class="footer-icon"></a>
 
 <a href="https://pin.it/3o2DLszrP" target="_blank">
-<img src="P-Badge-Red-RGB.png" alt="" height="26"></a>
+<img src="P-Badge-Red-RGB.png" alt="Pinterest Logo" height="26"></a>
 
 <a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
-<img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+<img src="Facebook_Logo_Primary.png" height="24" alt="Facebook Logo"></a>
 
 <a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
 <img src="yt_icon_red_digital.png" width="30" alt="YouTube Logo"></a>
@@ -130,6 +132,10 @@
 <img src="X_logo_2023.svg" width="24" alt="X Logo"></a>
 
 <p style="text-align:center;">©2013 David Binnema — Alle Rechte vorbehalten.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="nach oben" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
 
 </footer>
 

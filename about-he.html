@@ -1,67 +1,149 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="description" content="קראו את הספר 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה. גרסה מקוונת נגישה.">    
+    <title>כיסא הגלגלים המסתורי — אודות המחבר</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-    <meta charset="UTF-8">
-    <title>על המחבר</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        max-width: 400px;
-        margin: 40px auto;
-        background: white;
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-
-      h1, h2 {
-        text-align: center;
-      }
-
-      p {
-        text-align: center;
-      }
-    </style>
-
+    <!-- OpenGraph -->
+    <meta property="og:title" content="כיסא הגלגלים המסתורי — גרסה מקוונת נגישה">
+    <meta property="og:description" content="קראו את כל שמונת הפרקים של הספר בגרסה נגישה.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
 
-   <div class="container">
-      <h2>על המחבר</h2>
-      <p>
-        דיוויד בינמה חי עם מוגבלות פיזית וכותב ספרים שבהם תמיד מופיעים
-        דמויות עם מוגבלויות — וכך הוא מביא נראות ואנושיות לכל סיפור.
-      </p>
-   </div>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">בחירת שפה:</label>
+<select id="language-picker">
+  <option value="about.html">English</option>
+  <option value="about-nl.html">Nederlands</option>
+  <option value="about-fr.html">Français</option>
+  <option value="about-es.html">Español</option>
+  <option value="about-de.html">Deutsch</option>
+  <option value="about-jp.html">日本語</option>
+  <option value="about-el.html">Ελληνικά</option>
+  <option value="about-he.html" selected>עברית</option>
+</select>
 
-   <div class="container">
-      <p>
-        כדי להפוך את הסיפור לנגיש ליותר קוראים, השתמשתי בכלי בינה מלאכותית
-        כדי לתרגם אותו למספר שפות.
-      </p>
-   </div>
+<button type="button"
+    onclick="location = document.getElementById('language-picker').value;">
+   בחר
+</button>
+</form>
 
-   <p style="text-align:center;">
-      <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-left:6px;">
-      <a href="index-he.html">חזרה לתוכן העניינים</a>
-      <br><br>
-      <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-left:6px;">
-      <a href="mailto:261005440+MysteriousWheelchair@users.noreply.github.com">משוב</a>
-   </p>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">קישורים:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html" selected>אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('site-menu').value;">
+    עבור
+  </button>
+</form>
+
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">בחירת פרק</label>
+  <select id="chapter-select">
+      <option value="#top">דף זה</option>
+      <option value="ch1-he.html">פרק 1</option>
+      <option value="ch2-he.html">פרק 2</option>
+      <option value="ch3-he.html">פרק 3</option>
+      <option value="ch4-he.html">פרק 4</option>
+      <option value="ch5-he.html">פרק 5</option>
+      <option value="ch6-he.html">פרק 6</option>
+      <option value="ch7-he.html">פרק 7</option>
+      <option value="ch8-he.html">פרק 8</option>
+  </select>
+
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">
+    בחר
+  </button>
+</div>
+
+</nav>
+
+<main class="author-block">
+    <h2>אודות המחבר</h2>
+    <div class="about-wrapper">
+        <img src="me.jpg" alt="תמונת המחבר" class="author-photo">
+        <p>
+            דיוויד בינמה חי עם מוגבלות, ובכל סיפור שהוא כותב  
+            הוא שואף לשלב דמויות עם מוגבלויות — כדי להעניק  
+            נראות, חום ואנושיות דרך הסיפור.
+        </p>
+    </div>
+</main>
+
+<main class="author-block">
+    <h2>הערה לגבי התרגומים</h2>
+    <p>
+        כדי שהסיפור יגיע לכמה שיותר קוראים,  
+        נעשה שימוש בכלי בינה מלאכותית לתרגום  
+        לשפות רבות.
+    </p>
+</main>
+
+<main class="author-block">
+    <h2>זכויות יוצרים</h2>
+    <p>
+        אין להעתיק, להפיץ או לשדר כל חלק מהספר  
+        או מהאתר ללא אישור כתוב מראש מהמחבר.  
+        מותר להשתמש בקטעים קצרים לצורכי סקירה  
+        או שימוש לא‑מסחרי בהתאם לחוק.
+    </p>
+</main>
+
+<footer>
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24"></a>
+
+<p style="text-align:center;">©2013 David Binnema — כל הזכויות שמורות.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="למעלה" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+</footer>
 
 </body>
 </html>

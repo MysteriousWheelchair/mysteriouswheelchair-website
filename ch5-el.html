@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="el">
 <head>
     <meta charset="UTF-8">
-    <title> Η Μυστηριώδης Αναπηρική Καρέκλα<</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Κεφάλαιο 5 του βιβλίου «Το Μυστηριώδες Αναπηρικό Καροτσάκι» του David Binnema.">    
+    <title>Το Μυστηριώδες Αναπηρικό Καροτσάκι — Κεφάλαιο 5</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -11,22 +13,83 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Το Μυστηριώδες Αναπηρικό Καροτσάκι — Κεφάλαιο 5">
+    <meta property="og:description" content="Προσβάσιμη διαδικτυακή έκδοση του βιβλίου.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">Γλώσσα:</label>
+<select id="language-picker">
+  <option value="ch5.html">English</option>
+  <option value="ch5-nl.html">Nederlands</option>
+  <option value="ch5-fr.html">Français</option>
+  <option value="ch5-es.html">Español</option>
+  <option value="ch5-de.html">Deutsch</option>
+  <option value="ch5-jp.html">日本語</option>
+  <option value="ch5-el.html" selected>Ελληνικά</option>
+  <option value="ch5-he.html">עברית</option>
+</select>
 
-<header class="site-header center">
-<a href="index-el.html">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-Πίσω στο ευρετήριο</a>
-</header>
-<div class="title-banner center">
-<h1> Η Μυστηριώδης Αναπηρική Καρέκλα</h1>
-<section class="chapter">
-  <h1>Κεφάλαιο 5 — Zuphixy και Purpleten Escape</h1>
+<button type="button"
+    onclick="location = document.getElementById('language-picker').value;">
+   Επιλογή
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Σύνδεσμοι:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-el.html">Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html">Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Κατάστημα</option>
+    <option value="about-el.html">Σχετικά</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('site-menu').value;">
+    Μετάβαση
+  </button>
+</form>
+
+<!-- Chapter Selector (top) -->
+<label for="chapter-select">Επιλογή Κεφαλαίου</label>
+  <select id="chapter-select">
+      <option value="ch1-el.html">Κεφάλαιο 1</option>
+      <option value="ch2-el.html">Κεφάλαιο 2</option>
+      <option value="ch3-el.html">Κεφάλαιο 3</option>
+      <option value="ch4-el.html">Κεφάλαιο 4</option>
+      <option value="ch5-el.html" selected>Κεφάλαιο 5</option>
+      <option value="ch6-el.html">Κεφάλαιο 6</option>
+      <option value="ch7-el.html">Κεφάλαιο 7</option>
+      <option value="ch8-el.html">Κεφάλαιο 8</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select').value;">
+    Επιλογή
+  </button>
+
+</nav>
+
 <main id="book-text" aria-label="Book chapter text">
+<h1> Η Μυστηριώδης Αναπηρική Καρέκλα</h1>
+<h2>Κεφάλαιο 5 — Zuphixy και Purpleten Escape</h2>
 
   <p>Μόλις οι άντρες έφυγαν από τον Ζουφίξι, προσπάθησε να δει αν μπορούσε να λυθεί. Στην αρχή δεν λειτούργησε. Συνέχισε να προσπαθεί και κουράστηκε τόσο πολύ που αποκοιμήθηκε. Ξύπνησε από τον ήχο των αρσενικών φωνών που φώναζαν. Θυμόμενος πού ήταν, άκουσε τη φωνή του κ. Oidohombre να ρωτάει τον Purpleten: «Προσπαθείς να μας ξεφορτωθείς, Oidohombres, για να σπάσει το ξόρκι;» Ο Ζουφίξι δεν μπορούσε να ακούσει την απάντηση του Πέρπλετεν. Σκέφτηκε: «Πρέπει να φύγω από εδώ και να βρω έναν τρόπο να ελευθερώσω και τον Πέρπλετεν.»</p>
 
@@ -69,26 +132,53 @@
   <p>Ο αστυνομικός δεν κοιμήθηκε επειδή είχε αποφασίσει ότι κάποιος πρέπει να παρακολουθεί σε περίπτωση που οι Oidohombres έρθουν και επιτεθούν. Ευτυχώς, κανένας από αυτούς δεν εμφανίστηκε εκείνη τη νύχτα.</p>
 
   <p>Το πρωί, ο Ζουφίξι, ο Purpleten και οι διασώστες τους έφτασαν σε μια πόλη που έμοιαζε με οποιαδήποτε πόλη στον Καναδά, εκτός από το ότι όλα τα σπίτια είχαν ράμπες. Ο πατέρας και ο θείος της Purpleten πήγαν την Purpleten και τον Ζουφίξι στο νοσοκομείο για να βεβαιωθούν ότι ήταν καλά στην υγεία τους.</p>
-</section>
+
 </main>
+<footer> 
 
+<!-- Bottom navigation selector -->
+<div class="jump-container">
+  <label for="chapter-select-bottom">Πλοήγηση:</label>
+  <select id="chapter-select-bottom">
+    <option value="ch4-el.html">Προηγούμενο</option>
+    <option value="ch6-el.html" selected>Επόμενο</option>
+    <option value="index-el.html">Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html">Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
 
-
-<nav class="center nav-links" aria-label="Πλοήγηση κεφαλαίων">
-    <a href="ch4-el.html">Προηγούμενο Κεφάλαιο</a> |
-    <a href="ch6-el.html">Επόμενο Κεφάλαιο</a> |
-    <a href="index-el.html">Πίνακας Περιεχομένων</a>
-</nav>
-
-<div class="back-to-top center">
-    <a href="#top">Επιστροφή στην κορυφή</a>
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select-bottom').value;">
+    Μετάβαση
+  </button>
 </div>
-<footer>
-    © 2013 David Binnema — Με την επιφύλαξη παντός δικαιώματος.<br>
-    Θέλετε έντυπο αντίγραφο;
-    <a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?page=1&pageSize=4">
-        Αγοράστε το βιβλίο εδώ
-    </a>.
+
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Με επιφύλαξη παντός δικαιώματος.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="επάνω" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
 
 </body>

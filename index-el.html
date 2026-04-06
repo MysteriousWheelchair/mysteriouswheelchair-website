@@ -2,10 +2,10 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Διαβάστε «Η Μυστηριώδης Αναπηρική Καρέκλα» του David Binnema. Μια προσβάσιμη διαδικτυακή έκδοση με και τα 8 κεφάλαια.">
-
-    <title>Η Μυστηριώδης Αναπηρική Καρέκλα — Πίνακας Περιεχομένων</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Διαβάστε «Το Μυστηριώδες Αναπηρικό Καροτσάκι» του David Binnema. 
+        Μια προσβάσιμη διαδικτυακή έκδοση με πρωτότυπες εικονογραφήσεις.">    
+    <title>Το Μυστηριώδες Αναπηρικό Καροτσάκι — Περιεχόμενα</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -16,163 +16,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="Η Μυστηριώδης Αναπηρική Καρέκλα — Προσβάσιμη Διαδικτυακή Έκδοση">
-    <meta property="og:description" content="Διαβάστε την πλήρη προσβάσιμη έκδοση του βιβλίου του David Binnema, με όλα τα 8 κεφάλαια.">
+    <meta property="og:title" content="Το Μυστηριώδες Αναπηρικό Καροτσάκι — Προσβάσιμη Έκδοση">
+    <meta property="og:description" content="Διαβάστε ολόκληρη την προσβάσιμη έκδοση του βιβλίου του David Binnema, με όλα τα 8 κεφάλαια.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
-    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/index-el.html">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">Γλώσσα:</label>
+<select id="language-picker">
+  <option value="index.html">English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html">Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html">Deutsch</option>
+  <option value="index-jp.html">日本語</option>
+  <option value="index-el.html" selected>Ελληνικά</option>
+  <option value="index-he.html">עברית</option>
+</select>
 
-<!-- Title Banner -->
-<div class="title-banner center">
-    <h1 class="banner-text">Η Μυστηριώδης Αναπηρική Καρέκλα</h1>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Επιλογή
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Σύνδεσμοι:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-el.html" selected>Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html">Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Κατάστημα</option>
+    <option value="about-el.html">Σχετικά</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Μετάβαση
+  </button>
+</form>
+</nav>
+
+<main>
+   <h1>Το Μυστηριώδες Αναπηρικό Καροτσάκι</h1>
+
+<div class="book-block">
+
+<h3>Σχετικά με την Ιστορία</h3>
+<div class="about-wrapper">
+
+<p>Ένα ανάπηρο αγόρι βρίσκεται στη χώρα Σίλα‑Τιέρα, όπου τα αναπηρικά καροτσάκια — που είναι ζωντανά — χρειάζονται τη βοήθειά του.</p>
+
+<div class="book-3d">
+<img src="Cover.jpg" alt="εξώφυλλο βιβλίου" style="height:95px; width:70px;">
 </div>
 
-<!-- Language Switcher -->
-<div class="language-switcher center">
-
-    <a href="index.html">
-        <img src="https://flagcdn.com/w40/ca.png"
-             srcset="https://flagcdn.com/w80/ca.png 2x"
-             width="40" style="padding:4px;" alt="Canada">
-        English
-    </a> |
-
-    <a href="index-nl.html">
-        <img src="https://flagcdn.com/w40/nl.png"
-             srcset="https://flagcdn.com/w80/nl.png 2x"
-             width="40" style="padding:4px;" alt="Nederlands">
-        Nederlands
-    </a> |
-
-    <a href="index-fr.html">
-        <img src="https://flagcdn.com/w40/fr.png"
-             srcset="https://flagcdn.com/w80/fr.png 2x"
-             width="40" style="padding:4px;" alt="Français">
-        Français
-    </a> |
-
-    <a href="index-es.html">
-        <img src="https://flagcdn.com/w40/es.png"
-             srcset="https://flagcdn.com/w80/es.png 2x"
-             width="40" style="padding:4px;" alt="Español">
-        Español
-    </a> |
-
-    <a href="index-de.html">
-        <img src="https://flagcdn.com/w40/de.png"
-             srcset="https://flagcdn.com/w80/de.png 2x"
-             width="40" style="padding:4px;" alt="Deutsch">
-        Deutsch
-    </a> |
-
-    <a href="index-jp.html">
-        <img src="https://flagcdn.com/w40/jp.png"
-             srcset="https://flagcdn.com/w80/jp.png 2x"
-             width="40" style="padding:4px;" alt="日本語">
-        日本語
-    </a> |
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/gr.png"
-             srcset="https://flagcdn.com/w80/gr.png 2x"
-             width="40" style="padding:4px;" alt="Ελληνικά">
-        Ελληνικά
-    </span>
-<a href="index-he.html">
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/il.png"
-             srcset="https://flagcdn.com/w80/il.png 2x"
-             width="40" style="padding:4px;" alt="עברית">
-        עברית
-    </span>
-
-
-</a>
+</div>
 </div>
 
-<p style="text-align:center; margin-top:10px;">
-  <a href="about-el.html" style="display:inline-block; margin:0 auto;">
-    <img src="aboutIcon.svg" alt="Εικονίδιο πληροφοριών" style="height:22px; vertical-align:middle; margin-right:6px;">
-    Σχετικά με τον Συγγραφέα
-  </a>
-</p>
+<h2>Περιεχόμενα</h2>
 
-<p style="text-align:center; font-size:10px !important; margin-top:10px;">
-  Καλώς ήρθατε στην προσβάσιμη διαδικτυακή έκδοση του βιβλίου μου.<br>
-  Για να ακούσετε ένα κεφάλαιο, ανοίξτε το και πατήστε Ctrl + Shift + U στο Microsoft Edge.
-</p>
+<ul class="links">
+  <li><a href="ch1-el.html"><strong>Κεφάλαιο 1: Η Παράξενη Μέρα του Ζούφιξι</strong></a></li>
+  <li><a href="ch2-el.html"><strong>Κεφάλαιο 2: Η Αναζήτηση του Ζούφιξι</strong></a></li>
+  <li><a href="ch3-el.html"><strong>Κεφάλαιο 3: Οι Περιπέτειες του Ζούφιξι και του Πέρπλτεν</strong></a></li>
+  <li><a href="ch4-el.html"><strong>Κεφάλαιο 4: Ο Ζούφιξι και ο Πέρπλτεν Πιάνονται</strong></a></li>
+  <li><a href="ch5-el.html"><strong>Κεφάλαιο 5: Η Απόδραση του Ζούφιξι και του Πέρπλτεν</strong></a></li>
+  <li><a href="ch6-el.html"><strong>Κεφάλαιο 6: Σπίθες Ελπίδας</strong></a></li>
+  <li><a href="ch7-el.html"><strong>Κεφάλαιο 7: Η Ζωή στη Σίλα‑Τιέρα</strong></a></li>
+  <li><a href="ch8-el.html"><strong>Κεφάλαιο 8: Η Επανένωση του Ζούφιξι με τους Γονείς του</strong></a></li>
+</ul>
 
-<hr>
+</main>
 
-<div class="toc-container">
-  <h2>Πίνακας Περιεχομένων</h2>
-
-  <ul class="toc">
-    <li><a href="ch1-el.html"><strong>Κεφάλαιο 1: Η παράξενη μέρα του Zuphixy</strong></a></li>
-    <li><a href="ch2-el.html"><strong>Κεφάλαιο 2: Η αναζήτηση για τον Zuphixy</strong></a></li>
-    <li><a href="ch3-el.html"><strong>Κεφάλαιο 3: Οι περιπέτειες του Zuphixy και της Purpleten</strong></a></li>
-    <li><a href="ch4-el.html"><strong>Κεφάλαιο 4: Ο Zuphixy και η Purpleten πιάνονται</strong></a></li>
-    <li><a href="ch5-el.html"><strong>Κεφάλαιο 5: Ο Zuphixy και η Purpleten δραπετεύουν</strong></a></li>
-    <li><a href="ch6-el.html"><strong>Κεφάλαιο 6: Τρεμοπαίζει της ελπίδας</strong></a></li>
-    <li><a href="ch7-el.html"><strong>Κεφάλαιο 7: Η ζωή στη Σίλα‑γη</strong></a></li>
-    <li><a href="ch8-el.html"><strong>Κεφάλαιο 8: Η επανένωση του Zuphixy με τους γονείς του</strong></a></li>
-  </ul>
-</div>
-
-<div style="text-align: center; margin-top: 20px;">
-  <img src="qr.png" alt="QR‑κώδικας για τη σελίδα Facebook" width="70">
-  <div style="font-size: 0.9em; margin-top: 5px;">Σαρώστε για να επισκεφθείτε τη σελίδα στο Facebook</div>
-</div>
-<div style="text-align: center; margin: 30px 0; font-family: sans-serif;">
-    <p style="font-weight: bold; font-size: 1.1em;">Σαρώστε για να ακολουθήσετε το μυστήριο στο Instagram:</p>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="Instagram-qr.png" alt="Instagram QR Code" width="200" style="border-radius: 15px; border: 3px solid #E1306C; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </a>
-</div>
-    
 <footer>
-  <p>© 2013 David Binnema — Με την επιφύλαξη παντός δικαιώματος.</p>
 
-  <p style="text-align:center;">
-      <img src="shop1.svg" alt="Εικονίδιο καταστήματος" style="height:22px; vertical-align:middle; margin-right:6px;">
-      <a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Αγορά Merchandise</a> |
-      <a href="buy‑paperback‑el.html">
-        <img src="Cover.jpg" alt="Εικονίδιο βιβλίου" style="height:24px; vertical-align:middle; margin-right:6px;">
-        Αγορά έντυπου βιβλίου
-      </a> |
-      <img src="aIcion.png" alt="Εικονίδιο audiobook" style="height:15px; vertical-align:middle; margin-right:6px;">
-      <a href="audiobook‑el.html">Πλατφόρμες Audiobook</a>
-  </p>
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="λογότυπο Instagram"></a>
 
-  <p style="text-align:center;">
-      <img src="TV.svg" alt="" style="height:20px; vertical-align:middle; margin-right:6px;">
-      <a href="watch‑el.html">Δείτε όλη τη λίστα αναπαραγωγής</a> |
-      <a href="https://pin.it/3o2DLszrP" target="_blank">
-        <img src="P-Badge-Red-RGB.png" alt="Pinterest Badge" style="height:15px; vertical-align:middle; margin-right:6px;">
-        Pinterest‑board
-      </a> |
-      <a href="cl‑el.html">
-        <img src="cli.png" class="footer-icon">Λίστα χαρακτήρων
-      </a> |  🗺️<a href="map-el.html">Χάρτης της Silla-Tierra</a>
-  </p>
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" width="24" alt="λογότυπο Pinterest"></a>
 
-  <p style="text-align:center;">
-      <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
-      <a href="mailto:261005440+MysteriousWheelchair">Αποστολή σχολίων</a>
-  </p>
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="λογότυπο Facebook"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="λογότυπο YouTube"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="λογότυπο X"></a>
+
+<p>©2013 David Binnema — Με επιφύλαξη παντός δικαιώματος.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="επάνω" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
-
-<p style="text-align:center;">
-  <a href="#top">
-    <img src="up.svg" alt="Πάνω" style="height:20px; vertical-align:middle; margin-right:6px;">
-  </a>
-</p>
 
 </body>
 </html>

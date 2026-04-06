@@ -2,10 +2,10 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Lesen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. Eine barrierefreie Online-Ausgabe mit Zuphixy, Illustrationen und zukünftigen DGS-Versionen.">
-    
+    <meta name="description" content="Lesen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
+        Eine barrierefreie Online-Ausgabe mit Originalillustrationen.">    
     <title>Der Mysteriöse Rollstuhl — Inhaltsverzeichnis</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -14,152 +14,116 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Der Mysteriöse Rollstuhl — Barrierefreie Online-Ausgabe">
+    <meta property="og:description" content="Lesen Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema mit allen 8 Kapiteln.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">Sprachauswahl:</label>
+<select id="language-picker">
+  <option value="index.html">English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html">Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html" selected>Deutsch</option>
+  <option value="index-jp.html">日本語</option>
+  <option value="index-el.html">Ελληνικά</option>
+  <option value="index-he.html">עברית</option>
+</select>
 
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Auswählen
+</button>
 
-<!-- TITLE BANNER -->
-<div class="title-banner center">
-    <h1 class="banner-text">
-        <a href="index-de.html" style="text-decoration:none; color:inherit;">
-            Der Mysteriöse Rollstuhl
-        </a>
-    </h1>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Links:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-de.html" selected>Startseite</option>
+    <option value="cl-de.html">Charaktere</option>
+    <option value="map-de.html">Karte</option>
+    <option value="audiobook-de.html">Hörbuch</option>
+    <option value="buy-paperback-de.html">Taschenbuch kaufen</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
+    <option value="about-de.html">Über</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E-Mail</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Gehen
+  </button>
+</form>
+</nav>
+
+<main>
+   <h1>Der Mysteriöse Rollstuhl</h1>
+
+<div class="book-block">
+
+<h3>Über die Geschichte</h3>
+<div class="about-wrapper">
+
+<p>Ein behinderter Junge findet sich in einem Land namens Silla‑Tierra wieder, wo Rollstühle — die lebendig sind — seine Hilfe brauchen.</p>
+
+<div class="book-3d">
+<img src="Cover.jpg" alt="Buchcover" style="height:95px; width:70px;">
 </div>
 
-<!-- LANGUAGE SWITCHER -->
-<div class="language-switcher center">
-    <a href="index.html">
-<img
-  src="https://flagcdn.com/w40/ca.png"
-  srcset="https://flagcdn.com/w80/ca.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Canada">
+</div>
+</div>
 
-English</a> |
-    <a href="index-nl.html">
-<img
-  src="https://flagcdn.com/w40/nl.png"
-  srcset="https://flagcdn.com/w80/nl.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Nederlands">
-Nederlands</a> |
-    <a href="index-fr.html">
- <img
-  src="https://flagcdn.com/w40/fr.png"
-  srcset="https://flagcdn.com/w80/fr.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Français<">
+<h2>Inhaltsverzeichnis</h2>
 
-Français</a> |
-    <a href="index-es.html">
+<ul class="links">
+  <li><a href="ch1-de.html"><strong>Kapitel 1: Zuphixys seltsamer Tag</strong></a></li>
+  <li><a href="ch2-de.html"><strong>Kapitel 2: Die Suche nach Zuphixy</strong></a></li>
+  <li><a href="ch3-de.html"><strong>Kapitel 3: Die Abenteuer von Zuphixy und Purpleten</strong></a></li>
+  <li><a href="ch4-de.html"><strong>Kapitel 4: Zuphixy und Purpleten werden gefangen</strong></a></li>
+  <li><a href="ch5-de.html"><strong>Kapitel 5: Zuphixy und Purpleten entkommen</strong></a></li>
+  <li><a href="ch6-de.html"><strong>Kapitel 6: Funken der Hoffnung</strong></a></li>
+  <li><a href="ch7-de.html"><strong>Kapitel 7: Leben in Silla‑Tierra</strong></a></li>
+  <li><a href="ch8-de.html"><strong>Kapitel 8: Zuphixys Wiedervereinigung mit seinen Eltern</strong></a></li>
+</ul>
 
- <img
-  src="https://flagcdn.com/w40/es.png"
-  srcset="https://flagcdn.com/w80/es.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Español">
+</main>
 
-Español</a> |
-    <span class="current-lang"> <img
-  src="https://flagcdn.com/w40/de.png"
-  srcset="https://flagcdn.com/w80/de.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Deutsch">Deutsch</span>
+<footer>
 
-<a href="index-jp.html">
-<img
-  src="https://flagcdn.com/w40/jp.png"
-  srcset="https://flagcdn.com/w80/jp.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Japan<">
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="Instagram-Logo"></a>
 
- 日本語</a>
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" width="24" alt="Pinterest-Logo"></a>
 
-<a href="index-el.html">
-        <img src="https://flagcdn.com/w40/gr.png"
-             srcset="https://flagcdn.com/w80/gr.png 2x"
-             width="40" style="padding:4px;" alt="Ελληνικά">
-        Ελληνικά
-    </a>
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="Facebook-Logo"></a>
 
-<a href="index-he.html">
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="YouTube-Logo"></a>
 
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/il.png"
-             srcset="https://flagcdn.com/w80/il.png 2x"
-             width="40" style="padding:4px;" alt="עברית">
-        עברית
-    </span>
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="X-Logo"></a>
 
+<p>©2013 David Binnema — Alle Rechte vorbehalten.</p>
 
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="nach oben" style="height:20px; vertical-align:middle; margin-right:6px;">
 </a>
 
-</div>
-<p style="text-align:center; margin-top:10px;">   <img src="aboutIcon.svg" alt="about Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
-
-  <a href="about-de.html" style="display:inline-block; margin:0 auto;">
-
-Über den Autor </a>
-</p>
-
-<p style="text-align:center; font-size:10px !important; margin-top:10px;">
-Willkommen bei der barrierefreien Online‑Ausgabe meines Buches.
-Um ein Kapitel anzuhören, öffnen Sie es und drücken Sie in Microsoft Edge die Tastenkombination Strg + Umschalt + U.
-</p>
-<hr>
-<div class="toc-container">
-<h2> Inhaltsverzeichnis</h2>
-
-    <ul class="toc">
-        <li><a href="ch1-de.html">Kapitel 1 – Zuphixys seltsamer Tag</a></li>
-        <li><a href="ch2-de.html">Kapitel 2 – Zuphixy trifft Rugger</a></li>
-        <li><a href="ch3-de.html">Kapitel 3 – Die Reise beginnt</a></li>
-        <li><a href="ch4-de.html">Kapitel 4 – Die Begegnung im Wald</a></li>
-        <li><a href="ch5-de.html">Kapitel 5 – Die große Entscheidung</a></li>
-        <li><a href="ch6-de.html">Kapitel 6 – Die Rückkehr</a></li>
-        <li><a href="ch7-de.html">Kapitel 7 – Ein neues Verständnis</a></li>
-        <li><a href="ch8-de.html">Kapitel 8 – Zuphixys Wiedervereinigung</a></li>
-    </ul>
-</div>
-        
-<div style="text-align: center; margin-top: 20px;"> <img src="qr.png" alt="QR-Code, der zur Facebook-Seite führt" width="70"> <div style="font-size: 0.9em; margin-top: 5px;"> Scannen, um die Facebook-Seite zu besuchen </div> </div>
-<div style="text-align: center; margin: 30px 0; font-family: sans-serif;">
-    <p style="font-weight: bold; font-size: 1.1em;">ScanScannen, um dem Geheimnis auf Instagram zu folgen:</p>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="Instagram-qr.png" alt="Instagram QR Code" width="200" style="border-radius: 15px; border: 3px solid #E1306C; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </a>
-</div>
-    
-<footer>
-<p>© 2013 David Binnema — Alle Rechte vorbehalten.</p>
-<p style="text-align:center;">  <img src="shop1.svg" alt="Shop Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
-<a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merchandise kaufen</a> |
-<a href="buy-paperback-de.html"> <img src="Cover.jpg" alt="buy book Icon" style="height:24px; vertical-align:middle; margin-right:6px;">
-Taschenbuch kaufen</a> | <img src="aIcion.png" alt="Audiobook Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
-
-<a href="audiobook-de.html">Audiobook-Plattformen</a>
-</p>
-
-<p style="text-align:center;"><img src="TV.svg" alt="" style="height:20px; vertical-align:middle; margin-right:6px;">
-<a href="watch-de.html">Gesamte Playlist ansehen</a> |
-<a href="https://pin.it/6gNEpyIG4"><img src="P-Badge-Red-RGB.png
-" alt="p-Badge Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
-Pinterest-Board</a> | <a href="cl-de.html"><img src="cli.png" class="footer-icon">Figurenliste</a> | 🗺️
-<a href="map-de.html"> Karte von Silla-Tierra</a>
-</p>
-
-<p style="text-align:center;"><img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
-
-<a href="mailto:261005440+MysteriousWheelchair">Feedback</a>
-</p>
-
 </footer>
-<p style="text-align:center; ">
- <a href="#top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
 
 </body>
 </html>

@@ -1,58 +1,173 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>כיסא הגלגלים המסתורי — רשימת הדמויות</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="דמויות מתוך הספר 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה.">
+    <title>כיסא הגלגלים המסתורי — דמויות</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* ⭐ Keep icons stable in ALL languages */
+      .links li {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          direction: ltr; /* icon stays left */
+      }
+      .links li span {
+          direction: rtl; /* Hebrew text stays RTL */
+      }
+      .footer-icon {
+          height: 24px;
+          flex-shrink: 0;
+      }
+    </style>
 </head>
 
 <body>
 
-  <!-- Header -->
-  <header class="site-header center">
-    <a href="index-he.html" class="home-link">
-      <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-left:6px;">
-      חזרה לתוכן העניינים
-    </a>
-  </header>
+<nav>
 
-  <!-- Book Title -->
-  <div class="center">
-    <h1 class="book-title">כיסא הגלגלים המסתורי</h1>
-  </div>
+<form>
+    <label for="language-picker">בחירת שפה:</label>
+<select id="language-picker">
+  <option value="cl.html">English</option>
+  <option value="cl-nl.html">Nederlands</option>
+  <option value="cl-fr.html">Français</option>
+  <option value="cl-es.html">Español</option>
+  <option value="cl-de.html">Deutsch</option>
+  <option value="cl-jp.html">日本語</option>
+  <option value="cl-el.html">Ελληνικά</option>
+  <option value="cl-he.html" selected>עברית</option>
+</select>
+<button type="button" onclick="location = document.getElementById('language-picker').value;">
+   בחר
+</button>
+</form>
 
-  <!-- Character List Box -->
-  <div id="book-text">
+<form>
+  <label for="site-menu">קישורים:</label>
+  <select id="site-menu" name="menu">
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html" selected>דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html">אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('site-menu').value;">
+    עבור
+  </button>
+</form>
 
-    <h2 class="chapter-title center">רשימת הדמויות</h2>
+</nav>
 
-    <h3>דמויות ראשיות</h3>
-    <ul>
-      <li><img src="cli.png" class="footer-icon"> <strong>זופיקסי</strong> — נער בן 16 עם שיער זהוב.</li>
-      <li><img src="FI.png" class="footer-icon"> <strong>אביו של זופיקסי</strong> — בן 40, עובד כטכנאי מחשבים.</li>
-      <li><img src="zm.png" class="footer-icon"><strong>אמו של זופיקסי</strong> — בת 37, עובדת כמהנדסת בית.</li>
-      <li><img src="dog.png" class="footer-icon"><strong>כלב הנחייה של זופיקסי</strong> — כלב גולדן רטריבר שעוזר לו.</li>
-      <li><img src="p10.png" class="footer-icon"><strong>פורפלטן</strong> — ילדה בת 10 שהיא כיסא גלגלים חי.</li>
-      <li><img src="pf.png" class="footer-icon"><strong>אביה של פורפלטן</strong> — כיסא גלגלים אדום בן 40.</li>
-      <li><img src="pm.png" class="footer-icon"><strong>אמה של פורפלטן</strong> — כיסא גלגלים כחול בת 38.</li>
-      <li><img src="pu.png" class="footer-icon"><strong>דודה של פורפלטן</strong> — כיסא גלגלים חי בצבע כחול‑ירוק שעובד כבלש.</li>
-      <li><img src="earman.png" class="footer-icon"> <strong>מר אוידוהומבר</strong> — אדם העשוי כולו מאוזניים; הוא חירש והוא הנבל של הסיפור.</li>
-    </ul>
+<main>
 
-    <h3>דמויות משניות</h3>
-    <ul>
-      <li><img src="wp.png" class="footer-icon"><strong>משטרת כיסאות הגלגלים החיים</strong> — כיסאות מפוספסים המשמשים ככוחות אכיפת חוק.</li>
-      <li><img src="rp.png" class="footer-icon"><strong>המשטרה הרגילה</strong> — שוטרים אנושיים שמופיעים בסיפור.</li>
-      <li><img src="zs.png" class="footer-icon"><strong>זופיקסי ג׳וניור</strong> — בנו של זופיקסי, שגילו משתנה במהלך הסיפור.</li>
-    </ul>
+<h1>דמויות</h1>
 
-  </div>
+<h2>דמויות ראשיות</h2>
 
-  <!-- Footer -->
-  <footer>
-    © 2013 David Binnema — כל הזכויות שמורות.<br>
-    רוצים עותק מודפס? <a href="https://www.amazon.com/dp/149217747X">רכשו את גרסת ה‑Paperback כאן</a>.
-  </footer>
+<ul class="links">
+
+  <li>
+    <img src="cli.png" class="footer-icon" alt="">
+    <span><strong>זופיקסי</strong> — נער בן 16 עם שיער זהוב.</span>
+  </li>
+
+  <li>
+    <img src="FI.png" class="footer-icon" alt="">
+    <span><strong>אביו של זופיקסי</strong> — בן 40, טכנאי מחשבים.</span>
+  </li>
+
+  <li>
+    <img src="zm.png" class="footer-icon" alt="">
+    <span><strong>אמו של זופיקסי</strong> — בת 37, מהנדסת ניהול ביתי.</span>
+  </li>
+
+  <li>
+    <img src="dog.png" class="footer-icon" alt="">
+    <span><strong>כלב הנחייה של זופיקסי</strong> — גולדן רטריבר המסייע לו.</span>
+  </li>
+
+  <li>
+    <img src="p10.png" class="footer-icon" alt="">
+    <span><strong>פורפלטן</strong> — ילדה בת 10 שהיא כיסא גלגלים חי.</span>
+  </li>
+
+  <li>
+    <img src="pf.png" class="footer-icon" alt="">
+    <span><strong>אביה של פורפלטן</strong> — כיסא גלגלים אדום בן 40.</span>
+  </li>
+
+  <li>
+    <img src="pm.png" class="footer-icon" alt="">
+    <span><strong>אמה של פורפלטן</strong> — כיסא גלגלים כחול בת 38.</span>
+  </li>
+
+  <li>
+    <img src="pu.png" class="footer-icon" alt="">
+    <span><strong>הדוד של פורפלטן</strong> — כיסא גלגלים חי בצבע כחול‑ירקרק, עובד כבלש.</span>
+  </li>
+
+  <li>
+    <img src="earman.png" class="footer-icon" alt="">
+    <span><strong>מר אוידוהומברה</strong> — אדם המורכב כולו מאוזניים; הוא חירש והוא הנבל.</span>
+  </li>
+
+</ul>
+
+<h2>דמויות משניות</h2>
+
+<ul class="links">
+
+  <li>
+    <img src="wp.png" class="footer-icon" alt="">
+    <span><strong>משטרת הכיסאות החיים</strong> — כיסאות גלגלים מפוספסים המשמשים ככוחות אכיפה.</span>
+  </li>
+
+  <li>
+    <img src="rp.png" class="footer-icon" alt="">
+    <span><strong>משטרת העולם האמיתי</strong> — שוטרים אנושיים המופיעים בסיפור.</span>
+  </li>
+
+  <li>
+    <img src="zs.png" class="footer-icon" alt="">
+    <span><strong>זופיקסי ג’וניור</strong> — בנו של זופיקסי, שגילו משתנה לאורך הסיפור.</span>
+  </li>
+
+</ul>
+
+</main>
+
+<footer> 
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+    <img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+    <img src="P-Badge-Red-RGB.png" alt="" width="24"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+    <img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+    <img src="yt_icon_red_digital.png" width="30" alt=""></a>
+
+<a href="https://x.com/Zuphixy">
+    <img src="X_logo_2023.svg" width="24" alt=""></a>
+
+
+<a href="#top" class="back-to-top">
+    <img src="up.svg" alt="למעלה" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+
+<p style="text-align:center;">©2013 David Binnema — כל הזכויות שמורות.</p>
+
+</footer>
 
 </body>
 </html>

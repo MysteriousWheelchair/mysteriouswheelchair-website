@@ -1,70 +1,147 @@
-DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="description" content="デイビッド・ビネマ著『不思議な車椅子』を読む。アクセシブルなオンライン版。">    
+    <title>不思議な車椅子 — 著者について</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-  <meta charset="UTF-8">
-  <title>Buy The Mysterious Wheelchair</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <!-- OpenGraph -->
+    <meta property="og:title" content="不思議な車椅子 — アクセシブルオンライン版">
+    <meta property="og:description" content="全8章を含む『不思議な車椅子』のアクセシブル版を読む。">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
+</head>
 
-    .container {
-      max-width: 400px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-
-
-  </style>
-
-
-    
 <body>
+<nav>
 
-  <div class="container">
-    <h1>著者について</h1>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">言語選択:</label>
+<select id="language-picker">
+  <option value="about.html">English</option>
+  <option value="about-nl.html">Nederlands</option>
+  <option value="about-fr.html">Français</option>
+  <option value="about-es.html">Español</option>
+  <option value="about-de.html">Deutsch</option>
+  <option value="about-jp.html" selected>日本語</option>
+  <option value="about-el.html">Ελληνικά</option>
+  <option value="about-he.html">עברית</option>
+</select>
 
-    <p class="center">
-        デイビッド・ビネマは身体障害とともに生活しており、
-        物語の中に必ず障害のあるキャラクターを登場させることで、
-        見える化と温かさを作品に込めています。
-    </p>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   選択
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">リンク:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-jp.html">ホーム</option>
+    <option value="cl-jp.html">キャラクター</option>
+    <option value="map-jp.html">地図</option>
+    <option value="audiobook-jp.html">オーディオブック</option>
+    <option value="buy-paperback-jp.html">ペーパーバック購入</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">グッズストア</option>
+    <option value="about-jp.html" selected>概要</option>
+    <option value="mailto:261005440+MysteriousWheelchair">メール</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    移動
+  </button>
+</form>
+
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">章の選択</label>
+  <select id="chapter-select">
+      <option value="#top">このページ</option>
+      <option value="ch1-jp.html">第1章</option>
+      <option value="ch2-jp.html">第2章</option>
+      <option value="ch3-jp.html">第3章</option>
+      <option value="ch4-jp.html">第4章</option>
+      <option value="ch5-jp.html">第5章</option>
+      <option value="ch6-jp.html">第6章</option>
+      <option value="ch7-jp.html">第7章</option>
+      <option value="ch8-jp.html">第8章</option>
+  </select>
+
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">
+    選択
+  </button>
 </div>
 
-  <div class="container">
-    <p class="center">
+</nav>
 
-より多くの読者に物語を届けるために、AIツールを使って複数の言語に翻訳しました。
+<main class="author-block">
+    <h2>著者について</h2>
+    <div class="about-wrapper">
+        <img src="me.jpg" alt="著者の写真" class="author-photo">
+        <p>
+            デイビッド・ビネマは身体障害を持ちながら生活しており、  
+            物語の中に必ず障害のあるキャラクターを登場させることで、  
+            視認性・温かさ・人間性を物語に込めています。
+        </p>
+    </div>
+</main>
 
+<main class="author-block">
+    <h2>言語に関する注意:</h2>
+    <p>
+        より多くの読者に物語を届けるため、AIツールを使用して  
+        複数の言語に翻訳しています。
     </p>
-</div>
+</main>
 
+<main class="author-block">
+    <h2>著作権について:</h2>
+    <p>
+        本ウェブサイトおよび書籍のいかなる形式も、著者の事前の書面による許可なく  
+        複製・配布・送信することはできません。  
+        ただし、書評などの非営利目的での短い引用は、著作権法により許可されています。
+    </p>
+</main>
+
+<footer>
 <p style="text-align:center;">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-    <a href="index-jp.html">目次に戻る</a>
-    <br>
 
-    <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
-    <a href="mailto:261005440+MysteriousWheelchair@users.noreply.github.com">フィードバック</a>
-</p>
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24"></a>
+
+<p style="text-align:center;">©2013 David Binnema — 全著作権所有。</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="上へ戻る" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+</footer>
 
 </body>
 </html>

@@ -1,67 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lea 'La Silla de Ruedas Misteriosa' de David Binnema. 
+        Una edición accesible en línea con ilustraciones originales.">    
+    <title>La Silla de Ruedas Misteriosa — Sobre el Autor</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-    <meta charset="UTF-8">
-    <title>Sobre el Autor</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            max-width: 400px;
-            margin: 40px auto;
-            background: white;
-            padding: 20px 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        h1 {
-            text-align: center;
-        }
-    </style>
-
+    <!-- OpenGraph -->
+    <meta property="og:title" content="La Silla de Ruedas Misteriosa — Edición Accesible en Línea">
+    <meta property="og:description" content="Lea la edición completa y accesible del libro de David Binnema, con 8 capítulos.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+<form>
+    <label for="language-picker">selector de idioma:</label>
+<select id="language-picker">
+  <option value="about.html">English</option>
+  <option value="about-nl.html">Nederlands</option>
+  <option value="about-fr.html">Français</option>
+  <option value="about-es.html" selected>Español</option>
+  <option value="about-de.html">Deutsch</option>
+  <option value="about-jp.html">日本語</option>
+  <option value="about-el.html">Ελληνικά</option>
+  <option value="about-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="location = document.getElementById('language-picker').value;">
+   Elegir
+</button>
 
-<div class="container">
-    <h1>Sobre el Autor</h1>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Enlaces:</label>
 
-    <p class="center">
-        David Binnema vive con una discapacidad física y escribe libros que siempre incluyen personajes con discapacidades,
-        aportando visibilidad y corazón a cada historia.
-    </p>
+  <select id="site-menu" name="menu">
+    <option value="index-es.html">Inicio</option>
+    <option value="cl-es.html">Personajes</option>
+    <option value="map-es.html">Mapa</option>
+    <option value="audiobook-es.html">Audiolibro</option>
+    <option value="buy-paperback-es.html">Comprar Libro en Papel</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Tienda</option>
+    <option value="about-es.html" selected>Acerca de</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Correo</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('site-menu').value;">
+    Ir
+  </button>
+</form>
+
+<div class="jump-container">
+<label for="chapter-select">Selector de Capítulo</label>
+  <select id="chapter-select">
+      <option value="#top">Esta Página</option>
+      <option value="ch1-es.html">Capítulo 1</option>
+      <option value="ch2-es.html">Capítulo 2</option>
+      <option value="ch3-es.html">Capítulo 3</option>
+      <option value="ch4-es.html">Capítulo 4</option>
+      <option value="ch5-es.html">Capítulo 5</option>
+      <option value="ch6-es.html">Capítulo 6</option>
+      <option value="ch7-es.html">Capítulo 7</option>
+      <option value="ch8-es.html">Capítulo 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Elegir</button>
 </div>
+</nav>
 
-<div class="container">
+<main class="author-block">
+    <h2>Sobre el Autor</h2>
+    <div class="about-wrapper">
+        <img src="me.jpg" alt="Retrato del autor" class="author-photo">    
+        <p>
+            David Binnema vive con una discapacidad física y escribe libros que siempre incluyen personajes con discapacidad, aportando visibilidad y sensibilidad a cada historia.
+        </p>
+    </div>
+</main>
 
-    <p class="center">
-
-Para que la historia sea accesible a más lectores, utilicé herramientas de IA para traducirla a varios idiomas.
-
+<main class="author-block">
+    <h2>Aviso lingüístico:</h2>
+    <p>
+        Para hacer la historia accesible a más lectores, utilicé herramientas de IA para traducirla a varios idiomas.
     </p>
-</div>
+</main>
 
-
-    <p> <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-
-        <a href="index-es.html">Volver al Índice</a>
-         <br>   <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
-
-        <a href="mailto:261005440+MysteriousWheelchair">Enviar Comentarios</a>
+<main class="author-block">
+    <h2>Aviso de derechos de autor:</h2>
+    <p>
+        Ninguna parte de este sitio web ni de ninguna otra versión del libro puede ser reproducida, distribuida o transmitida por ningún medio, incluyendo fotocopias, grabaciones u otros métodos electrónicos o mecánicos, sin el permiso previo por escrito del autor, excepto en el caso de citas breves incluidas en reseñas u otros usos no comerciales permitidos por la ley de derechos de autor.
     </p>
+</main>
+
+<footer>
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="logo Instagram"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="logo Pinterest" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="logo X"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Todos los Derechos Reservados.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="arriba" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+</footer>
 
 </body>
 </html>

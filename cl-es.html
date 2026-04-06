@@ -1,58 +1,131 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>La Silla de Ruedas Misteriosa — Lista de Personajes</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Lea 'La Silla de Ruedas Misteriosa' de David Binnema. 
+        Una edición accesible en línea con ilustraciones originales.">    
+    <title>La Silla de Ruedas Misteriosa — Lista de Personajes</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="La Silla de Ruedas Misteriosa — Edición Accesible en Línea">
+    <meta property="og:description" content="Lea la edición completa y accesible del libro de David Binnema, con 8 capítulos.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
 
-  <!-- Header -->
-  <header class="site-header center">
-    <a href="index-es.html" class="home-link">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">selector de idioma:</label>
+<select id="language-picker">
+  <option value="cl.html">English</option>
+  <option value="cl-nl.html">Nederlands</option>
+  <option value="cl-fr.html">Français</option>
+  <option value="cl-es.html" selected>Español</option>
+  <option value="cl-de.html">Deutsch</option>
+  <option value="cl-jp.html">日本語</option>
+  <option value="cl-el.html">Ελληνικά</option>
+  <option value="cl-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Elegir
+</button>
+</form>
 
-Volver al Índice</a>
-  </header>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Enlaces:</label>
+  <select id="site-menu" name="menu">
+    <option value="index-es.html">Inicio</option>
+    <option value="cl-es.html" selected>Personajes</option>
+    <option value="map-es.html">Mapa</option>
+    <option value="audiobook-es.html">Audiolibro</option>
+    <option value="buy-paperback-es.html">Comprar Libro en Papel</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Tienda</option>
+    <option value="about-es.html">Acerca de</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Correo</option>
+  </select>
 
-  <!-- Book Title + Braille -->
-  <div class="center">
-    <h1 class="book-title">La Silla de Ruedas Misteriosa</h1>
-  </div>
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Ir
+  </button>
+</form>
 
-  <!-- Character List Box -->
-  <div id="book-text">
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">Selector de Capítulo</label>
+  <select id="chapter-select">
+      <option value="cl-es.html">esta página</option>
+      <option value="ch1-es.html">Capítulo 1</option>
+      <option value="ch2-es.html">Capítulo 2</option>
+      <option value="ch3-es.html">Capítulo 3</option>
+      <option value="ch4-es.html">Capítulo 4</option>
+      <option value="ch5-es.html">Capítulo 5</option>
+      <option value="ch6-es.html">Capítulo 6</option>
+      <option value="ch7-es.html">Capítulo 7</option>
+      <option value="ch8-es.html">Capítulo 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Elegir</button>
+</div>
 
-    <h2 class="chapter-title center">Lista de Personajes</h2>
+</nav>
+
+<main>
+    <h1>La Silla de Ruedas Misteriosa</h1>
+    <h2>Lista de Personajes</h2>
 
     <h3>Personajes Principales</h3>
     <ul>
-      <li><img src="cli.png" class="footer-icon"> <strong>Zuphixy</strong> — un chico de 16 años con cabello dorado.</li>
-      <li><img src="FI.png" class="footer-icon"> <strong>Padre de Zuphixy</strong> — un hombre de 40 años que trabaja como técnico informático.</li>
-      <li><img src="zm.png" class="footer-icon"><strong>Madre de Zuphixy</strong> — una mujer de 37 años que trabaja como ingeniera doméstica.</li>
-      <li><img src="dog.png" class="footer-icon"><strong>Perro Guía de Zuphixy</strong> — un golden retriever que lo asiste.</li>
-      <li><img src="p10.png" class="footer-icon"><strong>Purpletten</strong> — una niña de 10 años que es una silla de ruedas viviente.</li>
-      <li><img src="pf.png" class="footer-icon"><strong>Padre de Purpletten</strong> — una silla de ruedas roja de 40 años.</li>
-      <li><img src="pm.png" class="footer-icon"><strong>Madre de Purpletten</strong> — una silla de ruedas azul de 38 años.</li>
-      <li><img src="pu.png" class="footer-icon"><strong>Tío de Purpletten</strong> — una silla de ruedas viviente azul y verde cuyo trabajo es detective.</li>
-      <li><img src="earman.png" class="footer-icon"> <strong>Sr. Oidohombre</strong> — un hombre hecho completamente de orejas; es sordo y es el villano.</li>
+      <li><img src="cli.png" alt="" class="footer-icon"> <strong>Zuphixy</strong> — un chico de 16 años con cabello dorado.</li>
+      <li><img src="FI.png" alt="" class="footer-icon"> <strong>Padre de Zuphixy</strong> — un hombre de 40 años, técnico informático.</li>
+      <li><img src="zm.png" alt="" class="footer-icon"><strong>Madre de Zuphixy</strong> — una mujer de 37 años, ingeniera en gestión del hogar.</li>
+      <li><img src="dog.png" alt="" class="footer-icon"><strong>Perro guía de Zuphixy</strong> — un golden retriever que lo ayuda.</li>
+      <li><img src="p10.png" alt="" class="footer-icon"><strong>Purpletten</strong> — una niña de 10 años que es una silla de ruedas viviente.</li>
+      <li><img src="pf.png" alt="" class="footer-icon"><strong>Padre de Purpletten</strong> — una silla de ruedas roja de 40 años.</li>
+      <li><img src="pm.png" alt="" class="footer-icon"><strong>Madre de Purpletten</strong> — una silla de ruedas azul de 38 años.</li>
+      <li><img src="pu.png" alt="" class="footer-icon"><strong>Tío de Purpletten</strong> — una silla de ruedas azul‑verdosa que trabaja como detective.</li>
+      <li><img src="earman.png" alt="" class="footer-icon"> <strong>Sr. Oidohombre</strong> — un hombre compuesto enteramente de orejas; es sordo y es el villano.</li>
     </ul>
 
     <h3>Personajes Secundarios</h3>
     <ul>
-      <li><img src="wp.png" class="footer-icon"><strong>Policía de Sillas de Ruedas Vivientes</strong> — sillas de ruedas a rayas que sirven como agentes del orden.</li>
-      <li><img src="rp.png" class="footer-icon"><strong>Policía del Mundo Real</strong> — policías humanos que aparecen en la historia.</li>
-      <li><img src="zs.png" class="footer-icon"><strong>Zoofixy</strong> — el hijo de Zuphixy, cuya edad cambia constantemente a lo largo de la historia.</li>
+      <li><img src="wp.png" alt="" class="footer-icon"><strong>Policía de Sillas Vivientes</strong> — sillas de ruedas rayadas que sirven como agentes de la ley.</li>
+      <li><img src="rp.png" alt="" class="footer-icon"><strong>Policía del Mundo Real</strong> — policías humanos que aparecen en la historia.</li>
+      <li><img src="zs.png" alt="" class="footer-icon"><strong>Zoofixy</strong> — el hijo de Zuphixy, cuya edad cambia constantemente en la historia.</li>
     </ul>
+</main>
 
-  </div>
+<footer> 
+    <a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+        <img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+    <a href="https://pin.it/3o2DLszrP" target="_blank">
+        <img src="P-Badge-Red-RGB.png" alt="" width="24"></a>
+    <a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+        <img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+    <a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+        <img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
+    <a href="https://x.com/Zuphixy">
+        <img src="X_logo_2023.svg" width="24" alt="logo X"></a>
 
-  <!-- Footer -->
-  <footer>
-    © 2013 David Binnema — Todos los Derechos Reservados.<br>
-    ¿Prefieres una copia física? <a href="https://www.amazon.com/dp/149217747X">Compra el libro aquí</a>.
-  </footer>
+    <p style="text-align:center;">©2013 David Binnema — Todos los Derechos Reservados.</p>
+
+    <a href="#top" class="back-to-top">
+        <img src="up.svg" alt="arriba" style="height:20px; vertical-align:middle; margin-right:6px;"></a>
+</footer>
 
 </body>
 </html>

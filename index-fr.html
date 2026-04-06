@@ -1,165 +1,127 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Lire 'Le Fauteuil Roulant Mystérieux' par David Binnema. Une édition en ligne accessible avec illustrations originales.">
+    <meta name="description" content="Lisez 'Le Fauteuil Roulant Mystérieux' de David Binnema. 
+        Une édition en ligne accessible mettant en vedette Zuphixy, avec illustrations originales.">    
+    <title>Le Fauteuil Roulant Mystérieux — Table des Matières</title>
+    <link rel="stylesheet" href="style.css">
 
-    <title>Le Fauteuil Roulant Mystérieux — Table des matières</title>
-    <link rel="stylesheet" href="styles.css">
-
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Le Fauteuil Roulant Mystérieux — Édition Accessible en Ligne">
+    <meta property="og:description" content="Lisez l’édition complète et accessible du livre de David Binnema, incluant les 8 chapitres.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
-
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">sélecteur de langue :</label>
+<select id="language-picker">
+  <option value="index.html">English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html" selected>Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html">Deutsch</option>
+  <option value="index-jp.html">日本語</option>
+  <option value="index-el.html">Ελληνικά</option>
+  <option value="index-he.html">עברית</option>
+</select>
+  <button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Choisir
+  </button>
 
-<!-- Title Banner -->
-<div class="title-banner center">
-    <h1 class="banner-text">Le Fauteuil Roulant Mystérieux</h1>
-</div>
-<div class="language-switcher center">
-    <a href="index.html">
-<img
-  src="https://flagcdn.com/w40/ca.png"
-  srcset="https://flagcdn.com/w80/ca.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Canada">    <span class="current-lang">English</a> |
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Liens :</label>
 
+  <select id="site-menu" name="menu">
+    <option value="index-fr.html" selected>Accueil</option>
+    <option value="cl-fr.html">Personnages</option>
+    <option value="map-fr.html">Carte</option>
+    <option value="audiobook-fr.html">Livre Audio</option>
+    <option value="buy-paperback-fr.html">Acheter le Livre Papier</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Boutique</option>
+    <option value="about-fr.html">À propos</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑mail</option>
+  </select>
 
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Aller
+  </button>
+</form>
+</nav>
 
+<main>
+   <h1>Le Fauteuil Roulant Mystérieux</h1>
 
-    <a href="index-nl.html">
-<img
-  src="https://flagcdn.com/w40/nl.png"
-  srcset="https://flagcdn.com/w80/nl.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Nederlands">Nederlands</a> |
-    <span class="current-lang">
-<img
-  src="https://flagcdn.com/w40/fr.png"
-  srcset="https://flagcdn.com/w80/fr.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Français">
-Français</span> |
-    <a href="index-es.html">
-<img
-  src="https://flagcdn.com/w40/es.png"
-  srcset="https://flagcdn.com/w80/es.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Español">Español</a>
+<div class="book-block">
 
+<h3>À propos de l’histoire</h3>
+<div class="about-wrapper">
 
-<a href="index-de.html"> <img
-  src="https://flagcdn.com/w40/de.png"
-  srcset="https://flagcdn.com/w80/de.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Deutsch">Deutsch</a>
+<p>Un garçon handicapé se retrouve dans un pays appelé Silla‑Tierra, où les fauteuils roulants — vivants — ont besoin de son aide.</p>
 
-<a href="index-jp.html">
-<img
-  src="https://flagcdn.com/w40/jp.png"
-  srcset="https://flagcdn.com/w80/jp.png 2x"
-  width="40" style="padding: 4px;"
-  alt="Japan<">
-
- 日本語</a>
-
-<a href="index-el.html">
-        <img src="https://flagcdn.com/w40/gr.png"
-             srcset="https://flagcdn.com/w80/gr.png 2x"
-             width="40" style="padding:4px;" alt="Ελληνικά">
-        Ελληνικά
-    </a>
-
-<a href="index-he.html">
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/il.png"
-             srcset="https://flagcdn.com/w80/il.png 2x"
-             width="40" style="padding:4px;" alt="עברית">
-        עברית
-    </span> </a>
-
-
-
-
-</div>
-<p style="text-align:center; margin-top:10px;">
-  <a href="about-fr.html" style="display:inline-block; margin:0 auto;">
-  <img src="aboutIcon.svg" alt="about Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
-
-    À propos de l’auteur
-  </a>
-</p>
-
-<p style="text-align:center; font-size:10px !important; margin-top:10px;">
-  Bienvenue dans l’édition en ligne accessible de mon livre.<br>
-  Pour écouter un chapitre, ouvrez-le et appuyez sur Ctrl + Maj + U dans Microsoft Edge.
-</p>
-
-<hr>
-
-<div class="toc-container">
-  <h2>Table des matières</h2>
-
-  <ul class="toc">
-    <li><a href="ch1-fr.html"><strong>Chapitre 1 : Le fauteuil roulant mystérieux</strong></a></li>
-    <li><a href="ch2-fr.html"><strong>Chapitre 2 : La recherche de Zuphixy</strong></a></li>
-    <li><a href="ch3-fr.html"><strong>Chapitre 3 : Les aventures de Zuphixy et Pourpre</strong></a></li>
-    <li><a href="ch4-fr.html"><strong>Chapitre 4 : Zuphixy et Purpleten se font attraper</strong></a></li>
-    <li><a href="ch5-fr.html"><strong>Chapitre 5 : Zuphixy et Purpleten s’échappent</strong></a></li>
-    <li><a href="ch6-fr.html"><strong>Chapitre 6 : Des lueurs d’espoir</strong></a></li>
-    <li><a href="ch7-fr.html"><strong>Chapitre 7 : La vie à Silla‑Tierra</strong></a></li>
-    <li><a href="ch8-fr.html"><strong>Chapitre 8 : Les retrouvailles de Zuphixy avec ses parents</strong></a></li>
-  </ul>
+<div class="book-3d">
+<img src="Cover.jpg" alt="Icône du livre" style="height:95px; width:70px;">
 </div>
 
-<div style="text-align: center; margin-top: 20px;">
-    <img src="qr.png" alt="QR code vers la page Facebook" width="70">
-    <div style="font-size: 0.9em; margin-top: 5px;"> Scannez pour visiter la page Facebook </div>
 </div>
-<div style="text-align: center; margin: 30px 0; font-family: sans-serif;">
-    <p style="font-weight: bold; font-size: 1.1em;">Scannez pour suivre le mystère sur Instagram:</p>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="Instagram-qr.png" alt="Instagram QR Code" width="200" style="border-radius: 15px; border: 3px solid #E1306C; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </a>
 </div>
-    
+
+<h2>Table des Matières</h2>
+
+<ul class="links">
+  <li><a href="ch1-fr.html"><strong>Chapitre 1 : La Journée Étrange de Zuphixy</strong></a></li>
+  <li><a href="ch2-fr.html"><strong>Chapitre 2 : À la Recherche de Zuphixy</strong></a></li>
+  <li><a href="ch3-fr.html"><strong>Chapitre 3 : Les Aventures de Zuphixy et Purpleten</strong></a></li>
+  <li><a href="ch4-fr.html"><strong>Chapitre 4 : Zuphixy et Purpleten se Font Attraper</strong></a></li>
+  <li><a href="ch5-fr.html"><strong>Chapitre 5 : Zuphixy et Purpleten s’Échappent</strong></a></li>
+  <li><a href="ch6-fr.html"><strong>Chapitre 6 : Lueurs d’Espoir</strong></a></li>
+  <li><a href="ch7-fr.html"><strong>Chapitre 7 : La Vie à Silla‑Tierra</strong></a></li>
+  <li><a href="ch8-fr.html"><strong>Chapitre 8 : Les Retrouvailles de Zuphixy avec ses Parents</strong></a></li>
+</ul>
+
+</main>
+
 <footer>
-<p>© 2013 David Binnema — Tous droits réservés.</p>
 
-<p style="text-align:center;"> <img src="shop1.svg" alt="Shop Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="logo Instagram"></a>
 
-    <a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Acheter des produits dérivés</a> |
-    <a href="buy-paperback-fr.html"><img src="Cover.jpg" alt="buy book Icon" style="height:24px; vertical-align:middle; margin-right:6px;">
-Acheter le livre</a> | <img src="aIcion.png" alt="Audiobook Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="logo Pinterest" width="24"></a>
 
-    <a href="audiobook-fr.html">Plateformes audio</a>
-</p>
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="logo Facebook"></a>
 
-<p style="text-align:center;"><img src="TV.svg" alt="" style="height:20px; vertical-align:middle; margin-right:6px;">
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
 
-    <a href="watch-fr.html">Regarder la playlist complète</a> |
-    <a href="https://pin.it/6gNEpyIG4"><img src="P-Badge-Red-RGB.png
-" alt="p-Badge Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
-Tableau Pinterest</a>   | <a href="cl-fr.html"><img src="cli.png" class="footer-icon">Liste des personnages</a>
-| 🗺️ <a href="map-fr.html"> Carte de Silla-Tierra</a>
-</p>
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="logo X"></a>
 
-<p style="text-align:center;"><img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
+<p>©2013 David Binnema — Tous Droits Réservés.</p>
 
-    <a href="mailto:261005440+MysteriousWheelchair">Commentaires</a>
-</p>
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="haut de page" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
-
-<p style="text-align:center; ">
- <a href="#top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
-
 
 </body>
 </html>

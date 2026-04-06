@@ -2,37 +2,93 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Kapitel 5 der deutschen Ausgabe von 'Der Mysteriöse Rollstuhl' von David Binnema.">
-    <title>Kapitel 5 – Der Mysteriöse Rollstuhl</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Lesen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
+        Eine barrierefreie Online‑Ausgabe mit Originalillustrationen.">    
+    <title>Der Mysteriöse Rollstuhl — Kapitel 5: [Kapitel 5 Titel hier einfügen]</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Der Mysteriöse Rollstuhl — Barrierefreie Online‑Ausgabe">
+    <meta property="og:description" content="Lesen Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema, einschließlich aller 8 Kapitel.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">Sprachauswahl:</label>
+<select id="language-picker">
+  <option value="ch5.html">English</option>
+  <option value="ch5-nl.html">Nederlands</option>
+  <option value="ch5-fr.html">Français</option>
+  <option value="ch5-es.html">Español</option>
+  <option value="ch5-de.html" selected>Deutsch</option>
+  <option value="ch5-jp.html">日本語</option>
+  <option value="ch5-el.html">Ελληνικά</option>
+  <option value="ch5-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Auswählen
+</button>
+</form>
 
-<!-- HOME HEADER -->
-<header class="site-header center">
-    <a href="index-de.html" class="home-link">
-<img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-Startseite</a>
-</header>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Links:</label>
+  <select id="site-menu" name="menu">
+    <option value="index-de.html">Startseite</option>
+    <option value="cl-de.html">Charaktere</option>
+    <option value="map-de.html">Karte</option>
+    <option value="audiobook-de.html">Hörbuch</option>
+    <option value="buy-paperback-de.html">Taschenbuch kaufen</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Shop</option>
+    <option value="about-de.html">Über</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑Mail</option>
+  </select>
 
-<!-- TITLE BANNER -->
-<div class="title-banner center">
-    <h1 class="banner-text">
-        <a href="index-de.html" style="text-decoration:none; color:inherit;">
-            Der Mysteriöse Rollstuhl
-        </a>
-    </h1>
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Gehen
+  </button>
+</form>
+
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">Kapitel auswählen</label>
+  <select id="chapter-select">
+    <option value="ch1-de.html">Kapitel 1</option>
+    <option value="ch2-de.html">Kapitel 2</option>
+    <option value="ch3-de.html">Kapitel 3</option>
+    <option value="ch4-de.html">Kapitel 4</option>
+    <option value="ch5-de.html" selected>Kapitel 5</option>
+    <option value="ch6-de.html">Kapitel 6</option>
+    <option value="ch7-de.html">Kapitel 7</option>
+    <option value="ch8-de.html">Kapitel 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Auswählen</button>
 </div>
-<h2 class="center">Kapitel 5 – Zuphixy und Purpleten entkommen</h2>
+</nav>
+
 <main id="book-text" aria-label="Book chapter text">
+
+    <h1 >
+            Der Mysteriöse Rollstuhl
+    </h1>
+<h2 class="center">Kapitel 5 – Zuphixy und Purpleten entkommen</h2>
 
 <p>
 Nachdem die Männer Zuphixy allein gelassen hatten, versuchte er, sich zu befreien. Zunächst gelang es ihm nicht. Er versuchte es immer wieder, bis er so erschöpft war, dass er einschlief. Er wurde von lauten Männerstimmen geweckt. Als er sich erinnerte, wo er war, hörte er Mr. Oidohombre rufen: „Versuchst du, uns loszuwerden, damit der Zauber gebrochen wird?“ Zuphixy konnte Purpletens Antwort nicht hören.
@@ -140,28 +196,64 @@ Am Morgen erreichten Zuphixy, Purpleten und ihre Retter eine Stadt, die wie jede
 </p>
 
 </main>
-<hr>
 
-<!-- NAVIGATION -->
-<nav class="center nav-links" aria-label="Kapitel-Navigation">
-    <a href="ch4-de.html">Vorheriges Kapitel</a> |
-    <a href="ch6-de.html">Nächstes Kapitel</a> |
-    <a href="index-de.html">Inhaltsverzeichnis</a>
-</nav>
 
-<!-- BACK TO TOP -->
-<div class="back-to-top center">
-    <a href="#top">Nach oben</a>
-</div>
 
-<!-- FOOTER -->
-<footer>
-    © 2013 David Binnema — Alle Rechte vorbehalten.<br>
-    Möchten Sie eine gedruckte Ausgabe?
-    <a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?page=1&pageSize=4">
-        Kaufen Sie das Taschenbuch hier
-    </a>.
+
+
+
+
+<footer> 
+  <p style="text-align:center;">
+
+    <!-- Social icons -->
+    <a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+      <img src="Instagram_Glyph_Black.jpg" width="24" alt="Instagram Logo" class="footer-icon"></a>
+
+    <a href="https://pin.it/3o2DLszrP" target="_blank">
+      <img src="P-Badge-Red-RGB.png" alt="Pinterest Logo" height="26"></a>
+
+    <a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+      <img src="Facebook_Logo_Primary.png" height="24" alt="Facebook Logo"></a>
+
+    <a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+      <img src="yt_icon_red_digital.png" width="30" alt="YouTube Logo"></a>
+
+    <a href="https://x.com/Zuphixy">
+      <img src="X_logo_2023.svg" width="24" alt="X Logo"></a>
+  </p>
+
+
+    <label for="chapter-select-bottom">Links:</label>
+    <select id="chapter-select-bottom">
+      <option value="ch4-de.html">Zurück zum letzten Kapitel</option>
+      <option value="ch6-de.html" selected>Weiter</option>
+
+      <option value="index-de.html">Startseite</option>
+      <option value="cl-de.html">Charaktere</option>
+      <option value="map-de.html">Karte</option>
+      <option value="audiobook-de.html">Hörbuch</option>
+      <option value="buy-paperback-de.html">Taschenbuch kaufen</option>
+      <option value="mailto:261005440+MysteriousWheelchair">E‑Mail</option>
+    </select>
+
+    <button type="button"
+      onclick="location = document.getElementById('chapter-select-bottom').value;">
+      Auswählen
+    </button>
+  </div>
+
+  <p style="text-align:center; margin-top:10px;">
+    ©2013 David Binnema — Alle Rechte vorbehalten.
+  </p>
+
+  <p style="text-align:center;">
+    <a href="#top" class="back-to-top">
+      <img src="up.svg" alt="Nach oben" style="height:20px; vertical-align:middle; margin-right:6px;">
+    </a>
+  </p>
 </footer>
+
 
 </body>
 </html>

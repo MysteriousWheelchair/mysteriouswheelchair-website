@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. An accessible online mystery novel featuring Zuphixy, including original illustrations and future ASL editions.">
-    
+    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. 
+        An accessible online novel featuring Zuphixy, including original illustrations">    
     <title>The Mysterious Wheelchair — Table of Contents</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -15,130 +15,115 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- OpenGraph (for Facebook, Discord, LinkedIn, etc.) -->
+    <!-- OpenGraph -->
     <meta property="og:title" content="The Mysterious Wheelchair — Accessible Online Edition">
     <meta property="og:description" content="Read the full accessible edition of David Binnema’s book, including all 8 chapters.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
-
-
-    
 </head>
 
-<body><header
+<body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">language-picker:</label>
+<select id="language-picker">
+  <option value="index.html" selected>English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html">Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html">Deutsch</option>
+  <option value="index-jp.html">日本語</option>
+  <option value="index-el.html">Ελληνικά</option>
+  <option value="index-he.html">עברית</option>
+</select>
 
-<!-- Title Banner -->
-<div class="title-banner center">
-	<form style="display: inline-block;">
-	<label for="language-picker" >Select Language:</label>
-	<select id="language-picker" >
-  
-  <option value="index.html">English (English)</option>
-	<option value="index-nl.html">Nederlands (Dutch)</option>
-    <option value="index-fr.html" lang="fr">Français (French)</option>
-	<option value="index-es.html" lang="es">Español (Spanish)</option>
-	<option value="index-de.html" lang="de">Deutsch (German)</option>
-	<option value="index-jp.html">日本語 (Japan)</option>
-	<option value="index-el.html" lang="el">Ελληνικά (Greek)</option>
-	<option value="index-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
-  
-  
-	</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Pick
+</button>
 
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Links:</label>
 
-
-
-
-
-
-		
-
-  <!-- The "Go" button satisfies WebAIM -->
-  <button type="button" 
-          onclick="location = document.getElementById('language-picker').value;" >
-    Go
-  </button>
-		</form>
-		<form style="display: inline-block; margin-left: 20px;">
-  <!-- Accessible label for the menu -->
-  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
-  
   <select id="site-menu" name="menu">
-  
-    
-    <option value="index.html">🏠 Home</option>
-    <option value="cl.html">👤 Character List</option>
-    <option value="map-en.html">🗺️ Map of Silla-Tierra (image is in English only)</option>
-    <option value="audiobook.html">🎧 Audiobook Platforms (English only)</option>
-    <option value="buy-paperback.html">📖 buy in as a Paperback(English only)</option>
-    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">🛒 Merchandise (English only)</option>
-    <option value="about.html">👤 About David Binnema</option>
-    <option value="mailto:261005440+MysteriousWheelchair">✉️ Send Feedback (English only)</option>
+    <option value="index.html" selected>Home</option>
+    <option value="cl.html">Characters</option>
+    <option value="map-en.html">Map</option>
+    <option value="audiobook.html">Audiobook</option>
+    <option value="buy-paperback.html">Buy Paperback</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
+    <option value="about.html">About</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
   </select>
 
-<button type="button" 
-          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
-          aria-label="Go to selected page">
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
     Go
   </button>
-		</form>
-	
-   <h1 style="
-  font-size: 48px;
-  font-weight: bold;
-  color: green;
-  text-shadow:
-    1px 1px 0 #fff,
-    -1px -1px 0 #000;
-">
-  The Mysterious Wheelchair
-</h1>
+</form>
+</nav>
 
-</div>
-
-
-</header>
 <main>
-<div class="toc-container" id="book-text" aria-label="table of contents">
-  <h2>Table of Contents</h2>
+   <h1>The Mysterious Wheelchair</h1>
 
-	<ul class="toc">
-  <li> <a href="ch1.html"><strong>Chapter 1: Zuphixy’s Strange Day</strong></a></li>
-  <li><a href="ch2.html"><strong>Chapter 2: The Search for Zuphixy</strong></a></li>
-  <li> <a href="ch3.html"><strong>Chapter 3: The Adventures of Zuphixy and Purpleten</strong></a>the</li>
-  <li> <a href="ch4.html"><strong>Chapter 4: Zuphixy and Purpleten Get Caught</strong></a></li>
-  <li> <a href="ch5.html"><strong>Chapter 5: Zuphixyand Purpleten Escape</strong></a> </li>
-  <li>  <a href="ch6.html"><strong>Chapter 6: Flickers of Hope</strong></a></li>
-  <li> <a href="ch7.html"><strong>Chapter 7: Life in Silla‑Tierra</a> </strong>  </li>
-  <li><a href="ch8.html"><strong>Chapter 8: Zuphixy’s Reunion with his Parents</strong></a>it </li>
-	</ul>
+<div class="book-block">
+
+<h3>About the Story</h3>
+<div class="about-wrapper">
+
+<p>A disabled boy finds himself in a land called Silla‑Tierra where wheelchairs — which are alive — need his help.</p>
+
+<div class="book-3d">
+<img src="Cover.jpg" alt="book cover" style="height:95px; width:70px;">
 </div>
+
+</div>
+</div>
+
+<h2>Table of Contents</h2>
+
+<ul class="links">
+  <li><a href="ch1.html"><strong>Chapter 1: Zuphixy’s Strange Day</strong></a></li>
+  <li><a href="ch2.html"><strong>Chapter 2: The Search for Zuphixy</strong></a></li>
+  <li><a href="ch3.html"><strong>Chapter 3: The Adventures of Zuphixy and Purpleten</strong></a></li>
+  <li><a href="ch4.html"><strong>Chapter 4: Zuphixy and Purpleten Get Caught</strong></a></li>
+  <li><a href="ch5.html"><strong>Chapter 5: Zuphixy and Purpleten Escape</strong></a></li>
+  <li><a href="ch6.html"><strong>Chapter 6: Flickers of Hope</strong></a></li>
+  <li><a href="ch7.html"><strong>Chapter 7: Life in Silla‑Tierra</strong></a></li>
+  <li><a href="ch8.html"><strong>Chapter 8: Zuphixy’s Reunion with his Parents</strong></a></li>
+</ul>
 
 </main>
 
+<footer>
 
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="instagram logo"></a>
 
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" width="24" alt="pinterest logo"></a>
 
-<footer> 
-<p style="text-align:center;">
-    
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="facebook logo"></a>
 
-	
-		<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
-<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"> Instagram</a>
-|  <a href="https://pin.it/3o2DLszrP" target="_blank"> <img src="P-Badge-Red-RGB.png
-" alt="" style="height:26px; vertical-align:middle; margin-right:6px;"> pintercast |
-</a> <a href ="https://www.facebook.com/share/1Dd6Zt9K9N/"> 
-		<img src="Facebook_Logo_Primary.png" style="height:24px; vertical-align:middle; margin-right:6px;" alt =""> Facebook</a> |
-	<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i"><img src="yt_icon_red_digital.png" width="24" alt ="YouTube icon" >YouTube playlist</a>
-		<p style="text-align:center;">©2013 David Binnema — All Rights Reserved.</p>
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="youtube logo"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="X logo"></a>
+
+<p>©2013 David Binnema — All Rights Reserved.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
- 
-<p style="text-align:center; ">
- <a href="#top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
 
 </body>
- </htm>
+</html>

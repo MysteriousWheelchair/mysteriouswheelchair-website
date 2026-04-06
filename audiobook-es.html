@@ -1,90 +1,135 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Escuche 'La Silla de Ruedas Misteriosa' de David Binnema. 
+        Una edición accesible en línea con ilustraciones originales.">    
+    <title>La Silla de Ruedas Misteriosa — Audiolibro</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-    <meta charset="UTF-8">
-    <title>Escuchar el Audiolibro</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
-      body {
-        background-color: #f2f2f2;
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-
-      .container {
-        max-width: 800px;
-        margin: 40px auto;
-        background: white;
-        padding: 20px 30px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      }
-
-      h1, h2, p {
-        text-align: center;
-      }
-
-      ul {
-        list-style: none;
-        padding: 0;
-        text-align: center;
-      }
-
-      li {
-        margin: 10px 0;
-      }
-
-      a {
-        color: #0066cc;
-        text-decoration: none;
-        font-size: 18px;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="La Silla de Ruedas Misteriosa — Edición Accesible en Línea">
+    <meta property="og:description" content="Escuche la edición completa y accesible del libro de David Binnema, con 8 capítulos.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Escuchar el Audiolibro</h1>
-    <p>Narrado con tecnología de voz digital por IA</p>
+<nav>
+<form>
+    <label for="language-picker">selector de idioma:</label>
+<select id="language-picker">
+  <option value="audiobook.html">English</option>
+  <option value="audiobook-nl.html">Nederlands</option>
+  <option value="audiobook-fr.html">Français</option>
+  <option value="audiobook-es.html" selected>Español</option>
+  <option value="audiobook-de.html">Deutsch</option>
+  <option value="audiobook-jp.html">日本語</option>
+  <option value="audiobook-el.html">Ελληνικά</option>
+  <option value="audiobook-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Elegir
+</button>
 
-    <div class="links">
-      <ul style="list-style:none; padding:0; text-align:center; font-size:20px;">
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Enlaces:</label>
 
+  <select id="site-menu" name="menu">
+    <option value="index-es.html">Inicio</option>
+    <option value="cl-es.html">Personajes</option>
+    <option value="map-es.html">Mapa</option>
+    <option value="audiobook-es.html" selected>Audiolibro</option>
+    <option value="buy-paperback-es.html">Comprar Libro en Papel</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Tienda</option>
+    <option value="about-es.html">Acerca de</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Correo</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Ir
+  </button>
+</form>
+
+<div class="jump-container">
+<label for="chapter-select">Selector de Capítulo</label>
+  <select id="chapter-select">
+      <option value="#top">Esta Página</option>
+      <option value="ch1-es.html">Capítulo 1</option>
+      <option value="ch2-es.html">Capítulo 2</option>
+      <option value="ch3-es.html">Capítulo 3</option>
+      <option value="ch4-es.html">Capítulo 4</option>
+      <option value="ch5-es.html">Capítulo 5</option>
+      <option value="ch6-es.html">Capítulo 6</option>
+      <option value="ch7-es.html">Capítulo 7</option>
+      <option value="ch8-es.html">Capítulo 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Elegir</button>
+</div>
+</nav>
+
+<main>
+
+<h2>Escuchar el Audiolibro</h2>
+<p style="text-align:center;">Narración realizada con una voz digital de IA</p>
+
+<table align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <div class="book-3d">
+        <img src="Cover.jpg" style="max-width:90%; max-height:235px;">
+      </div>
+    </td>
+
+    <td>
+      <ul class="links">
         <li><a href="https://open.spotify.com/show/43FUVZFuNJtq92M5OoCgL9?si=ed5e00d86df84336">Spotify</a></li>
-
         <li><a href="https://music.amazon.ca/podcasts/4363858e-d6eb-459d-849f-5a9388d3f164/the-mysterious-wheelchair">Amazon Music</a></li>
-
         <li><a href="https://www.iheart.com/podcast/269-the-mysterious-wheelchair-325149694/">iHeartRadio</a></li>
-
         <li><a href="https://castbox.fm/channel/The-mysterious-wheelchair-id7109385">CastBox FM</a></li>
-
         <li><a href="https://truefans.fm/the-mysterious-wheelchair">truefans.fm</a></li>
-
         <li><a href="https://www.deezer.com/us/show/1002717591">Deezer</a></li>
-
-        <li>
-          <a href="https://www.audible.ca/podcast/The-mysterious-wheelchair/B0GQJNJ3YF">
-            Audible
-          </a>
-        </li>
-
+        <li><a href="https://www.audible.ca/podcast/The-mysterious-wheelchair/B0GQJNJ3YF">Audible Canadá</a></li>
       </ul>
-    </div>
+    </td>
+  </tr>
+</table>
 
-    <p style="text-align:center; margin-top:30px;"> <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
+</main>
 
-      <a href="index-es.html">Volver al Índice</a>
-    </p>
-  </div>
+<footer> 
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="logo X"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Todos los Derechos Reservados.</p>
+
+</footer>
+
 </body>
 </html>

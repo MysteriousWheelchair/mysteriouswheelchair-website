@@ -2,106 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. 
+		An accessible online novel featuring Zuphixy, including original illustrations ">    
     <title>The Mysterious Wheelchair — Chapter 8: Zuphixy’s Reunion with his Parents</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
-
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- OpenGraph (for Facebook, Discord, LinkedIn, etc.) -->
+    <meta property="og:title" content="The Mysterious Wheelchair — Accessible Online Edition">
+    <meta property="og:description" content="Read the full accessible edition of David Binnema’s book, including all 8 chapters.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
-
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
-
-	<select id="language-picker" >
-  
-  <option value="ch8.html" selected>English (English)</option>
-	<option value="ch8-nl.html">Nederlands (Dutch)</option>
-    <option value=" ch8-fr.html" lang="fr">Français (French)</option>
-	<option value="ch8-es.html" lang="es">Español (Spanish)</option>
-	<option value="ch8-de.html" lang="de">Deutsch (German)</option>
-	<option value="ch8-jp.html">日本語 (Japan)</option>
-	<option value="ch8-el.html" lang="el">Ελληνικά (Greek)</option>
-	<option value="ch8-he.html" lang="he" dir="rtl">עברית (Hebrew)</option>
-  
-  
-	</select>
-		
-  <!-- The "Go" button satisfies WebAIM -->
-  <button type="button" 
-          onclick="location = document.getElementById('language-picker').value;" >
-    Go
+    <!-- Language Picker -->
+<form>
+    <label for="language-picker">language-picker:</label>
+<select id="language-picker">
+  <option value="ch8.html">English</option>
+  <option value="ch8-nl.html">Nederlands</option>
+  <option value="ch8-fr.html">Français</option>
+  <option value="ch8-es.html">Español</option>
+  <option value="ch8-de.html">Deutsch</option>
+  <option value="ch8-jp.html">日本語</option>
+  <option value="ch8-el.html">Ελληνικά</option>
+  <option value="ch8-he.html">עברית</option>
+</select>
+  <button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Pick
   </button>
-		</form>
-		<form style="display: inline-block; margin-left: 20px;">
-  <!-- Accessible label for the menu -->
-  <label for="site-menu" style="font-weight: bold; color: #333;">Explore:</label>
-  
+
+
+  <!-- Site Menu -->
+<form>
+  <label for="site-menu" >
+Links:</label>
+
   <select id="site-menu" name="menu">
-  
-    
-    <option value="index.html" selected>Table of contents</option>
-    <option value="cl.html" >Character List</option>
-    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
-    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
-    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
-    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair"> Merchandise (English only)</option>
-    <option value="about.html" >About David Binnema</option>
-    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+    <option value="index.html" selected>Home</option>
+    <option value="cl.html">Characters</option>
+    <option value="map-en.html" >Map</option>
+    <option value="audiobook.html" >Audiobook</option>
+    <option value="buy-paperback.html" >Buy Paperback</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
+    <option value="about.html">About</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
   </select>
 
-<button type="button" 
-          onclick="var val = document.getElementById('site-menu').value; if(val) location = val;" 
-          aria-label="Go to selected page">
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
     Go
   </button>
-		</form>
-	
+</form>
 
-    
-  <label for="chapter-select" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
+<div class="jump-container">
+<label for="chapter-select">Chapter Selector</label>
   <select id="chapter-select">
-   
-	  <option value="ch1.html">Chapter 1: Zuphixy’s Strange Day</option>
-    <option value="ch2.html">Chapter 2: The Search for Zuphixy</option>
-    <option value="ch3.html">Chapter 3: The Adventures of Zuphixy and Purpleten</option>
-    <option value="ch4.html">Chapter 4: Zuphixy and Purpleten Get Caught</option>
-    <option value="ch5.html">Chapter 5: Zuphixyand Purpleten Escape</option>
-    <option value="ch6.html">Chapter 6: Flickers of Hope</option>
-    <option value="ch7.html" >Chapter 7: Life in Silla‑Tierra</option>
-    <option value="ch8.html" selected>Chapter 8: Zuphixy’s Reunion with his Parents</option>
+
+	  <option value="ch1.html"  > Chapter 1</option>
+    <option value="ch2.html"  >Chapter 2</option>
+    <option value="ch3.html" > Chapter 3</option>
+    <option value="ch4.html">Chapter 4</option>
+    <option value="ch5.html"> Chapter 5</option>
+    <option value="ch6.html">Chapter 6</option>
+    <option value="ch7.html" selected > Chapter 7</option>
+    <option value="ch8.html" >Chapter 8</option>
     
     <!-- Add all chapters here -->
   </select>
-  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Go</button>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Pick </button>
+</div>
     </nav>
+
     
-
-
-</header>
-
-
-<!-- Chapter Title -->
-<h1 class="center chapter-title">Chapter 8: Zuphixy’s Reunion with his Parents</h1>
-
-<!-- Main Book Content -->
 <main id="book-text" aria-label="Book chapter text">
+    <h1>The Mysterious Wheelchair</h1>
+
+<h2>Chapter 8: Zuphixy’s Reunion with his Parents</h2>
+
 
     <p>Back at home Zuphixy opened the door to his bedroom and wheeled himself out in the hall with Rugger at his side wagging his tail. Suddenly Zuphixy stopped and listened. He could hear a whole bunch of people crying.</p>
 
     <p>Zuphixy went into his living room and saw all his friends and family crying. “Why is everyone so sad?” he asked. One woman who did not recognize him said, “Don’t you know that Zuphixy has died?”</p>
 
-    <!-- Image placed immediately after the paragraph that mentions the mourning -->
-    <div class="center">
-        <img src="c8.jpg"
-             alt="People mourning, believing Zuphixy has died."
-             class="chapter-image">
-    </div>
 
     <p>With a shocked look on his face, Zuphixy replied, “No, he is not dead. I am Zuphixy.” When they heard Zuphixy’s voice, his parents ran into the living room from the kitchen and said, “Is that you Zuphixy?”</p>
 
@@ -127,46 +120,39 @@
 
 </main>
 <footer>
-<hr>
-
-<label for="chapter-select-bottom" style="font-weight: bold; color: #333;">Jump to Chapter:</label>
-  <select id="chapter-select-bottom">
+<nav>
+ <label for="chapter-select-bottom">Links</label>
+  <select id="chapter-select-bottom" >
    
-	<option value="ch7.html" selected >Chapter 7: Life in Silla‑Tierra</option>
-    <option value="index.html">Table of contents</option>
-    <option value="cl.html" >Character List</option>
-    <option value="map-en.html" >Map of Silla-Tierra (image is in English only)</option>
-    <option value="audiobook.html" >Audiobook Platforms (English only)</option>
-    <option value="buy-paperback.html"> buy in as a Paperback(English only)</option>
-    <option value="mailto:261005440+MysteriousWheelchair">Send Feedback (English only)</option>
+    <option value="ch7.html">Back to last chapter</option>
+    <option value="index.html" >Home</option>
+     <option value="cl.html">Characters</option>
+    <option value="map-en.html" >Map</option>
+    <option value="audiobook.html" >Audiobook</option>
+    <option value="buy-paperback.html" >Buy Paperback</option>
+     <option value="mailto:261005440+MysteriousWheelchair">Email</option>
   </select>
-  <button type="button" onclick="location = document.getElementById('chapter-select-bottom').value;" >Go</button>
+  <button type="button" onclick="location = document.getElementById('chapter-select-bottom').value;" >Pick</button>
     </nav>
     
 
 
- 
 <p style="text-align:center;">
     
 
 	
 		<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
-<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"> Instagram</a>
-|  <a href="https://pin.it/3o2DLszrP" target="_blank"> <img src="P-Badge-Red-RGB.png
-" alt="" style="height:26px; vertical-align:middle; margin-right:6px;"> pintercast |
-</a> <a href ="https://www.facebook.com/share/1Dd6Zt9K9N/"> 
-		<img src="Facebook_Logo_Primary.png" style="height:24px; vertical-align:middle; margin-right:6px;" alt =""> Facebook</a> |
-	<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i"><img src="yt_icon_red_digital.png" width="24" alt ="YouTube icon" >YouTube playlist</a>
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>  <a href="https://pin.it/3o2DLszrP" target="_blank"> <img src="P-Badge-Red-RGB.png
+" alt="" height ="26"></a> <a href ="https://www.facebook.com/share/1Dd6Zt9K9N/"> 
+		<img src="Facebook_Logo_Primary.png" height="24"  alt =""></a>
+	<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i"><img src="yt_icon_red_digital.png" width="30" alt =" youTube logo" ></a>
+
+	<a href="https://x.com/Zuphixy"><img src="X_logo_2023.svg" width="24" alt ="X logo" ></a>
 		<p style="text-align:center;">©2013 David Binnema — All Rights Reserved.</p>
-</footer>
- 
-<p style="text-align:center; ">
- <a href="#top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
-
-	 
+ <a href="#top" class="back-to-top"><img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
 
 </footer>
- 
+
 
 
 </body>

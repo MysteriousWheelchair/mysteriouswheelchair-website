@@ -2,10 +2,9 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="קרא את 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה. מהדורה מקוונת נגישה עם כל 8 הפרקים.">
-
+    <meta name="description" content="קראו את 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה — גרסה מקוונת נגישה הכוללת את כל האיורים המקוריים.">    
     <title>כיסא הגלגלים המסתורי — תוכן העניינים</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -16,158 +15,115 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="כיסא הגלגלים המסתורי — מהדורה מקוונת נגישה">
-    <meta property="og:description" content="קרא את המהדורה המקוונת המלאה והנגישה של ספרו של דיוויד בינמה, כולל כל 8 הפרקים.">
+    <meta property="og:title" content="כיסא הגלגלים המסתורי — גרסה מקוונת נגישה">
+    <meta property="og:description" content="קראו את כל שמונת הפרקים של הספר בגרסה נגישה.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
-    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/index-he.html">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">בחירת שפה:</label>
+<select id="language-picker">
+  <option value="index.html">English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html">Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html">Deutsch</option>
+  <option value="index-jp.html">日本語</option>
+  <option value="index-el.html">Ελληνικά</option>
+  <option value="index-he.html" selected>עברית</option>
+</select>
 
-<!-- Title Banner -->
-<div class="title-banner center">
-    <h1 class="banner-text">כיסא הגלגלים המסתורי</h1>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   בחר
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">קישורים:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-he.html" selected>דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html">אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    עבור
+  </button>
+</form>
+</nav>
+
+<main>
+   <h1>כיסא הגלגלים המסתורי</h1>
+
+<div class="book-block">
+
+<h3>על הסיפור</h3>
+<div class="about-wrapper">
+
+<p>ילד עם מוגבלות מוצא את עצמו בארץ בשם סילה‑טיירה, שם כיסאות הגלגלים — שהם יצורים חיים — זקוקים לעזרתו.</p>
+
+<div class="book-3d">
+<img src="Cover.jpg" alt="עטיפת הספר" style="height:95px; width:70px;">
 </div>
 
-<div class="language-switcher center">
-
-    <a href="index.html">
-        <img src="https://flagcdn.com/w40/ca.png"
-             srcset="https://flagcdn.com/w80/ca.png 2x"
-             width="40" style="padding:4px;" alt="English">
-        English
-    </a> |
-
-    <a href="index-nl.html">
-        <img src="https://flagcdn.com/w40/nl.png"
-             srcset="https://flagcdn.com/w80/nl.png 2x"
-             width="40" style="padding:4px;" alt="Nederlands">
-        Nederlands
-    </a> |
-
-    <a href="index-fr.html">
-        <img src="https://flagcdn.com/w40/fr.png"
-             srcset="https://flagcdn.com/w80/fr.png 2x"
-             width="40" style="padding:4px;" alt="Français">
-        Français
-    </a> |
-
-    <a href="index-es.html">
-        <img src="https://flagcdn.com/w40/es.png"
-             srcset="https://flagcdn.com/w80/es.png 2x"
-             width="40" style="padding:4px;" alt="Español">
-        Español
-    </a> |
-
-    <a href="index-de.html">
-        <img src="https://flagcdn.com/w40/de.png"
-             srcset="https://flagcdn.com/w80/de.png 2x"
-             width="40" style="padding:4px;" alt="Deutsch">
-        Deutsch
-    </a> |
-
-    <a href="index-jp.html">
-        <img src="https://flagcdn.com/w40/jp.png"
-             srcset="https://flagcdn.com/w80/jp.png 2x"
-             width="40" style="padding:4px;" alt="日本語">
-        日本語
-    </a> |<a href="index-el.html">
-        <img src="https://flagcdn.com/w40/gr.png"
-             srcset="https://flagcdn.com/w80/gr.png 2x"
-             width="40" style="padding:4px;" alt="Ελληνικά">
-        Ελληνικά
-    </a>
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/il.png"
-             srcset="https://flagcdn.com/w80/il.png 2x"
-             width="40" style="padding:4px;" alt="עברית">
-        עברית
-    </span>
-
+</div>
 </div>
 
-<p style="text-align:center; margin-top:10px;">
-  <a href="about-he.html" style="display:inline-block; margin:0 auto;">
-    <img src="aboutIcon.svg" alt="about Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
-    על המחבר
-  </a>
-</p>
+<h2>תוכן העניינים</h2>
 
-<p style="text-align:center; font-size:10px !important; margin-top:10px;">
-  ברוכים הבאים למהדורה המקוונת והנגישה של ספרי.<br>
-  כדי להאזין לפרק, פתחו אותו ולחצו על Ctrl + Shift + U בדפדפן Microsoft Edge.
-</p>
+<ul class="links">
+  <li><a href="ch1-he.html"><strong>פרק 1: יומו המוזר של זופיקסי</strong></a></li>
+  <li><a href="ch2-he.html"><strong>פרק 2: החיפוש אחר זופיקסי</strong></a></li>
+  <li><a href="ch3-he.html"><strong>פרק 3: ההרפתקאות של זופיקסי ופורפלטן</strong></a></li>
+  <li><a href="ch4-he.html"><strong>פרק 4: זופיקסי ופורפלטן נתפסים</strong></a></li>
+  <li><a href="ch5-he.html"><strong>פרק 5: זופיקסי ופורפלטן בורחים</strong></a></li>
+  <li><a href="ch6-he.html"><strong>פרק 6: ניצוצות של תקווה</strong></a></li>
+  <li><a href="ch7-he.html"><strong>פרק 7: החיים בסילה‑טיירה</strong></a></li>
+  <li><a href="ch8-he.html"><strong>פרק 8: איחודו של זופיקסי עם הוריו</strong></a></li>
+</ul>
 
-<hr>
+</main>
 
-<div class="toc-container">
-  <h2>תוכן העניינים</h2>
-
-  <ul class="toc">
-    <li><a href="ch1-he.html"><strong>פרק 1: יומו המוזר של זופיקסי</strong></a></li>
-    <li><a href="ch2-he.html"><strong>פרק 2: החיפוש אחר זופיקסי</strong></a></li>
-    <li><a href="ch3-he.html"><strong>פרק 3: הרפתקאותיהם של זופיקסי ופורפלטן</strong></a></li>
-    <li><a href="ch4-he.html"><strong>פרק 4: זופיקסי ופורפלטן נתפסים</strong></a></li>
-    <li><a href="ch5-he.html"><strong>פרק 5: זופיקסי ופורפלטן בורחים</strong></a></li>
-    <li><a href="ch6-he.html"><strong>פרק 6: הבזקי תקווה</strong></a></li>
-    <li><a href="ch7-he.html"><strong>פרק 7: חיים בסילה‑טיירה</strong></a></li>
-    <li><a href="ch8-he.html"><strong>פרק 8: איחודו של זופיקסי עם הוריו</strong></a></li>
-  </ul>
-</div>
-
-<div style="text-align:center; margin-top:20px;">
-  <img src="qr.png" alt="QR-code" width="70">
-  <div style="font-size:0.9em; margin-top:5px;">סרקו כדי לבקר בדף הפייסבוק</div>
-</div>
-<div style="direction: rtl; text-align: center; margin: 30px 0; font-family: sans-serif;">
-    <p style="font-weight: bold; font-size: 1.1em;">סרקו כדי לעקוב אחר המסתורין באינסטגרם:</p>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="Instagram-qr.png" alt="קוד QR אינסטגרם" width="200" style="border-radius: 15px; border: 3px solid #E1306C; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </a>
-</div>
-    
 <footer>
-  <p>© 2013 דיוויד בינמה — כל הזכויות שמורות.</p>
 
-  <p style="text-align:center;">
-    <img src="shop1.svg" alt="Shop Icon" style="height:22px; vertical-align:middle; margin-right:6px;">
-    <a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">רכשו מרצ'נדייז</a> |
-    <a href="buy-paperback-he.html">
-      <img src="Cover.jpg" alt="buy book Icon" style="height:24px; vertical-align:middle; margin-right:6px;">
-      קנו את הספר
-    </a> |
-    <img src="aIcion.png" alt="Audiobook Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
-    <a href="audiobook-he.html">פלטפורמות האודיובוק</a>
-  </p>
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="לוגו אינסטגרם"></a>
 
-  <p style="text-align:center;">
-    <img src="TV.svg" alt="" style="height:20px; vertical-align:middle; margin-right:6px;">
-    <a href="watch-he.html">צפו ברשימת ההשמעה המלאה</a> |
-    <a href="https://pin.it/3o2DLszrP" target="_blank">
-      <img src="P-Badge-Red-RGB.png" alt="Pinterest Icon" style="height:15px; vertical-align:middle; margin-right:6px;">
-      לוח פינטרסט
-    </a> |
-    <a href="cl-he.html">
-      <img src="cli.png" class="footer-icon">רשימת הדמויות
-    </a>| 🗺️    <a href="map-he.html">מפת סילה-טיירה</a>
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" width="24" alt="לוגו פינטרסט"></a>
 
-  </p>
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="לוגו פייסבוק"></a>
 
-  <p style="text-align:center;">
-    <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
-    <a href="mailto:261005440+MysteriousWheelchair">משוב</a>
-  </p>
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="לוגו יוטיוב"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="לוגו X"></a>
+
+<p>©2013 David Binnema — כל הזכויות שמורות.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="למעלה" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
-
-<p style="text-align:center;">
-  <a href="#top">
-    <img src="up.svg" alt="up" style="height:20px; vertical-align:middle; margin-right:6px;">
-  </a>
-</p>
 
 </body>
 </html>

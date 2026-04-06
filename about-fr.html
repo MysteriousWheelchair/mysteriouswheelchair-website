@@ -1,64 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="description" content="Lisez 'Le Fauteuil Roulant Mystérieux' de David Binnema. 
+        Une édition en ligne accessible mettant en vedette Zuphixy, avec illustrations originales.">    
+    <title>Le Fauteuil Roulant Mystérieux — À propos de l’Auteur</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-  <meta charset="UTF-8">
-  <title>Buy The Mysterious Wheelchair</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Le Fauteuil Roulant Mystérieux — Édition Accessible en Ligne">
+    <meta property="og:description" content="Lisez l’édition complète et accessible du livre de David Binnema, incluant les 8 chapitres.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
+</head>
 
-    .container {
-      max-width: 400px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-
-
-  </style>
-
-
-    
 <body>
+<nav>
+<form>
+    <label for="language-picker">sélecteur de langue :</label>
+<select id="language-picker">
+  <option value="about.html">English</option>
+  <option value="about-nl.html">Nederlands</option>
+  <option value="about-fr.html" selected>Français</option>
+  <option value="about-es.html">Español</option>
+  <option value="about-de.html">Deutsch</option>
+  <option value="about-jp.html">日本語</option>
+  <option value="about-el.html">Ελληνικά</option>
+  <option value="about-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Choisir
+</button>
 
-   <div class="container">
-            <h1> À propos de l’auteur</h1>
-            <p class="center">
- David Binnema vit avec un handicap physique et écrit des livres qui mettent toujours en scène des personnages handicapés, apportant visibilité et sensibilité à chaque histoire.            </p>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Liens :</label>
 
- 
-   </div>
-   <div class="container">
-            <p class="center">
+  <select id="site-menu" name="menu">
+    <option value="index-fr.html">Accueil</option>
+    <option value="cl-fr.html">Personnages</option>
+    <option value="map-fr.html">Carte</option>
+    <option value="audiobook-fr.html">Livre Audio</option>
+    <option value="buy-paperback-fr.html">Acheter le Livre Papier</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Boutique</option>
+    <option value="about-fr.html" selected>À propos</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑mail</option>
+  </select>
 
- Pour rendre l’histoire accessible à un plus grand nombre de lecteurs, j’ai utilisé des outils d’IA pour la traduire dans plusieurs langues. 
-</p></div>
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Aller
+  </button>
+</form>
 
-   <p style="text-align:center; ">
- <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
+<div class="jump-container">
+<label for="chapter-select">Sélecteur de Chapitre</label>
+  <select id="chapter-select">
+      <option value="#top">Cette Page</option>
+      <option value="ch1-fr.html">Chapitre 1</option>
+      <option value="ch2-fr.html">Chapitre 2</option>
+      <option value="ch3-fr.html">Chapitre 3</option>
+      <option value="ch4-fr.html">Chapitre 4</option>
+      <option value="ch5-fr.html">Chapitre 5</option>
+      <option value="ch6-fr.html">Chapitre 6</option>
+      <option value="ch7-fr.html">Chapitre 7</option>
+      <option value="ch8-fr.html">Chapitre 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Choisir</button>
+</div>
+</nav>
 
-<a href ="index-fr.html"> Retour à l’index</a>
- <br>   <img src="Email.svg" alt="email" style="height:20px; vertical-align:middle; margin-right:6px;">
+<main class="author-block">
+    <h2>À propos de l’Auteur</h2>
+    <div class="about-wrapper">
+        <img src="me.jpg" alt="Portrait de l’auteur" class="author-photo">    
+        <p>
+            David Binnema vit avec un handicap physique et écrit des livres qui mettent toujours en scène des personnages handicapés, apportant visibilité et sensibilité à chaque histoire.
+        </p>
+    </div>
+</main>
 
-<a href ="mailto:261005440+MysteriousWheelchair@users.noreply.github.com"> Commentaires </a>
-   </p>
+<main class="author-block">
+    <h2>Avertissement linguistique :</h2>
+    <p>
+        Pour rendre l’histoire accessible à un plus grand nombre de lecteurs, j’ai utilisé des outils d’IA pour la traduire dans plusieurs langues.
+    </p>
+</main>
+
+<main class="author-block">
+    <h2>Avis de droit d’auteur :</h2>
+    <p>
+        Aucune partie de ce site web ou de toute autre version du livre ne peut être reproduite, distribuée ou transmise sous quelque forme ou par quelque moyen que ce soit, y compris la photocopie, l’enregistrement ou d’autres méthodes électroniques ou mécaniques, sans l’autorisation écrite préalable de l’auteur, sauf dans le cas de courtes citations incluses dans des critiques ou d’autres usages non commerciaux permis par la loi sur le droit d’auteur.
+    </p>
+</main>
+
+<footer>
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="logo Instagram"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="logo Pinterest" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="logo X"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Tous Droits Réservés.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="haut de page" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+</footer>
+
 </body>
 </html>

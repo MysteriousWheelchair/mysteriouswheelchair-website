@@ -1,70 +1,104 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  
+    <meta charset="UTF-8">
+    <meta name="description" content="Kaufen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
+        Eine barrierefreie Online-Ausgabe mit Originalillustrationen.">    
+    <title>Der Mysteriöse Rollstuhl — Buchhandlungen (Taschenbuch)</title>
+    <link rel="stylesheet" href="style.css">
+
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
-  <meta charset="UTF-8">
-  <title>Buy The Mysterious Wheelchair</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
-    h1, h2 {
-      text-align: center;
-    }
-
-    ul {
-      list-style: none;
-      padding: 0;
-      text-align: center;
-    }
-
-    li {
-      margin: 10px 0;
-    }
-
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      font-size: 18px;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Der Mysteriöse Rollstuhl — Barrierefreie Online-Ausgabe">
+    <meta property="og:description" content="Lesen Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema, mit 8 Kapiteln.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+<form>
+    <label for="language-picker">Sprachauswahl:</label>
+<select id="language-picker">
+  <option value="buy-paperback.html">English</option>
+  <option value="buy-paperback-nl.html">Nederlands</option>
+  <option value="buy-paperback-fr.html">Français</option>
+  <option value="buy-paperback-es.html">Español</option>
+  <option value="buy-paperback-de.html" selected>Deutsch</option>
+  <option value="buy-paperback-jp.html">日本語</option>
+  <option value="buy-paperback-el.html">Ελληνικά</option>
+  <option value="buy-paperback-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Auswählen
+</button>
 
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Menü:</label>
 
- <div class="container">    <h2>Taschenbuch kaufen</h2>
+  <select id="site-menu" name="menu">
+    <option value="index-de.html">Startseite</option>
+    <option value="cl-de.html">Charaktere</option>
+    <option value="map-de.html">Karte</option>
+    <option value="audiobook-de.html">Hörbuch</option>
+    <option value="buy-paperback-de.html" selected>Taschenbuch kaufen</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Shop</option>
+    <option value="about-de.html">Über</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E-Mail</option>
+  </select>
 
-     <p style="text-align:center; margin-top:30px;">Hier können Sie <strong>Das geheimnisvolle Rollstuhl</strong> als Taschenbuch erwerben:</p>
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Gehen
+  </button>
+</form>
 
-      <ul>
+<div class="jump-container">
+<label for="chapter-select">Kapitel auswählen</label>
+  <select id="chapter-select">
+      <option value="#top">Diese Seite</option>
+      <option value="ch1-de.html">Kapitel 1</option>
+      <option value="ch2-de.html">Kapitel 2</option>
+      <option value="ch3-de.html">Kapitel 3</option>
+      <option value="ch4-de.html">Kapitel 4</option>
+      <option value="ch5-de.html">Kapitel 5</option>
+      <option value="ch6-de.html">Kapitel 6</option>
+      <option value="ch7-de.html">Kapitel 7</option>
+      <option value="ch8-de.html">Kapitel 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Auswählen</button>
+</div>
+</nav>
+
+<main>
+
+<h2>Buchhandlungen (Taschenbuch)</h2>
+
+<div class="container">
+
+<table align="center" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <div class="book-3d">
+        <img src="Cover.jpg" style="max-width:90%; max-height:260px;">
+      </div>
+    </td>
+
+    <td>
+    <ul class="links">
       <li><a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?q=David+Binnema&page=1&pageSize=4">Lulu</a></li>
 
-      <li><a href="https://relinks.me/1304351173">Amazon woldwide</a></li>
-
+      <li><a href="https://relinks.me/1304351173">Bei Amazon kaufen (International)</a></li>
 
       <li><a href="https://www.betterworldbooks.com/product/detail/the-mysterious-wheelchair-9781304351173/new">Better World Books</a></li>
 
@@ -72,23 +106,43 @@
 
       <li><a href="https://www.abebooks.com/mysterious-wheelchair-Binnema-David-Lulu.com/32046684889/bd">AbeBooks</a></li>
 
-      <li><a href="https://scifier.com/the-mysterious-wheelchair-david-binnema-9781304351173">SciFier (Worldwide)</a></li>
+      <li><a href="https://scifier.com/the-mysterious-wheelchair-david-binnema-9781304351173">SciFier (International)</a></li>
 
       <li><a href="https://www.goodreads.com/book/show/20294080-the-mysterious-wheelchair?from_search=true&from_srp=true&qid=R8FD1819b5&rank=2">Goodreads</a></li>
 
       <li>
-  <a href="https://www.booksamillion.com/p/mysterious-wheelchair/David-Binnema/9781304351173">
-    Books‑A‑Million (Paperback)
-  </a>
-</li>
-
+        <a href="https://www.booksamillion.com/p/mysterious-wheelchair/David-Binnema/9781304351173">
+          Books‑A‑Million (Taschenbuch)
+        </a>
+      </li>
     </ul>
+    </td>
+  </tr>
+</table>
 
+</main>
 
-    <p style="text-align:center; margin-top:30px;"><a href="index-de.html">
-<img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-Zurück zum Index</a></p>
-</div>
+<footer> 
+<p style="text-align:center;">
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="YouTube-Logo"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="X-Logo"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Alle Rechte vorbehalten.</p>
+
+</footer>
 
 </body>
 </html>

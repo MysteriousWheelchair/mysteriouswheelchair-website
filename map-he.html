@@ -1,50 +1,126 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>מפת סילה-טיירה</title>
-  <style>
-    body {
-      background-color: #f0f0f0;
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      direction: rtl;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 20px 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 6px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      font-size: 18px;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="description" content="קראו את 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה — גרסה מקוונת נגישה עם איורים מקוריים.">    
+    <title>כיסא הגלגלים המסתורי — מפת סילה‑טיירה</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="כיסא הגלגלים המסתורי — גרסה מקוונת נגישה">
+    <meta property="og:description" content="קראו את כל שמונת הפרקים של הספר בגרסה נגישה.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
+
 <body>
 
-  <div class="container">
-    <h1>מפת סילה-טיירה</h1>
-    <img src="map.png" alt="מפת סילה-טיירה">
-    <p style="margin-top:20px;">
-      <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-left:6px;">
-      <a href="index-he.html">חזרה לתוכן העניינים</a>
-    </p>
-  </div>
+<nav>
+
+<form>
+    <label for="language-picker">בחירת שפה:</label>
+<select id="language-picker">
+  <option value="map-en.html">English</option>
+  <option value="map-nl.html">Nederlands</option>
+  <option value="map-fr.html">Français</option>
+  <option value="map-es.html">Español</option>
+  <option value="map-de.html">Deutsch</option>
+  <option value="map-jp.html">日本語</option>
+  <option value="map-el.html">Ελληνικά</option>
+  <option value="map-he.html" selected>עברית</option>
+</select>
+
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   בחר
+</button>
+</form>
+
+<form>
+  <label for="site-menu">קישורים:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html" selected>מפה</option>
+    <option value="audiobook-he.html">ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html">אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    עבור
+  </button>
+</form>
+
+<div class="jump-container">
+<label for="chapter-select">בחירת פרק</label>
+  <select id="chapter-select">
+      <option value="#top">דף זה</option>
+
+      <option value="ch1-he.html">פרק 1</option>
+      <option value="ch2-he.html">פרק 2</option>
+      <option value="ch3-he.html">פרק 3</option>
+      <option value="ch4-he.html">פרק 4</option>
+      <option value="ch5-he.html">פרק 5</option>
+      <option value="ch6-he.html">פרק 6</option>
+      <option value="ch7-he.html">פרק 7</option>
+      <option value="ch8-he.html">פרק 8</option>
+  </select>
+
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">
+    בחר
+  </button>
+</div>
+
+</nav>
+
+<main>
+
+<h2>מפת סילה‑טיירה</h2>
+
+<div class="center-image">
+    <img src="map.png" alt="מפת סילה‑טיירה" style="max-width: 545px; height: auto;">
+</div>
+
+</main>
+
+<footer> 
+
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+    <img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+    <img src="P-Badge-Red-RGB.png" alt="" width="24"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+    <img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+    <img src="yt_icon_red_digital.png" width="30" alt=""></a>
+
+<a href="https://x.com/Zuphixy">
+    <img src="X_logo_2023.svg" width="24" alt=""></a>
+
+<p style="text-align:center;">©2013 David Binnema — כל הזכויות שמורות.</p>
+
+<a href="#top" class="back-to-top">
+    <img src="up.svg" alt="למעלה" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
+</footer>
 
 </body>
 </html>

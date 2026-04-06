@@ -2,37 +2,101 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Le Fauteuil Roulant Mystérieux — Chapitre 3 : Les aventures de Zuphixy et Pourpre</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Lisez 'Le Fauteuil Roulant Mystérieux' de David Binnema. 
+        Une édition en ligne accessible mettant en vedette Zuphixy, avec illustrations originales.">    
+    <title>Le Fauteuil Roulant Mystérieux — Chapitre 3</title>
+    <link rel="stylesheet" href="style.css">
 
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
     <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
     <link rel="apple-touch-icon" href="favicon-180.png">
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Le Fauteuil Roulant Mystérieux — Édition Accessible en Ligne">
+    <meta property="og:description" content="Lisez l’édition complète et accessible du livre de David Binnema, incluant les 8 chapitres.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">sélecteur de langue :</label>
+<select id="language-picker">
+  <option value="ch3.html">English</option>
+  <option value="ch3-nl.html">Nederlands</option>
+  <option value="ch3-fr.html" selected>Français</option>
+  <option value="ch3-es.html">Español</option>
+  <option value="ch3-de.html">Deutsch</option>
+  <option value="ch3-jp.html">日本語</option>
+  <option value="ch3-el.html">Ελληνικά</option>
+  <option value="ch3-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Choisir
+</button>
 
-<header class="site-header center">
-    <a href="index-fr.html" class="home-link"> <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-Accueil</a>
-</header>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Liens :</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-fr.html">Accueil</option>
+    <option value="cl-fr.html">Personnages</option>
+    <option value="map-fr.html">Carte</option>
+    <option value="audiobook-fr.html">Livre Audio</option>
+    <option value="buy-paperback-fr.html">Acheter le Livre Papier</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Boutique</option>
+    <option value="about-fr.html">À propos</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑mail</option>
+  </select>
+
+<button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Aller
+</button>
+</form>
+
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">Sélecteur de Chapitre</label>
+  <select id="chapter-select">
+      <option value="ch1-fr.html">Chapitre 1</option>
+      <option value="ch2-fr.html">Chapitre 2</option>
+      <option value="ch3-fr.html" selected>Chapitre 3</option>
+      <option value="ch4-fr.html">Chapitre 4</option>
+      <option value="ch5-fr.html">Chapitre 5</option>
+      <option value="ch6-fr.html">Chapitre 6</option>
+      <option value="ch7-fr.html">Chapitre 7</option>
+      <option value="ch8-fr.html">Chapitre 8</option>
+  </select>
+
+<button type="button"
+    onclick="location = document.getElementById('chapter-select').value;">
+    Choisir
+</button>
+</div>
+</nav>
+
+<main id="book-text" aria-label="Book chapter text">
 
 <!-- Title Banner -->
-<div class="title-banner center">
-    <h1 class="banner-text">Le Fauteuil Roulant Mystérieux</h1>
-</div>
+    <h1 >Le Fauteuil Roulant Mystérieux</h1>
 
 <!-- Chapter Title -->
-<h1 class="center chapter-title">
+<h2 >
     Chapitre 3 : Les aventures de Zuphixy et Pourpre
-</h1>
+</h2>
 
-<!-- YOUR STORY TEXT GOES HERE -->
-<main id="book-text" aria-label="Book chapter text">
 
     <p>Au pays de Silla-Tierra, Zuphixy et Purpleten erraient dans les bois, que Purpleten appelait les Bois du Désespoir, essayant de toutes leurs forces de trouver leur chemin.</p>
 
@@ -65,30 +129,50 @@ Accueil</a>
     <p>Zuphixy dit à Purpleten, qui tremblait de peur : « C'était un coup manqué. Nous aurions pu être attaqués par cet ours, mais peut-être que comme tu es un fauteuil roulant, il pensait que tu n'étais pas comestible ! »</p>
 
 </main>
+<footer> 
+<nav>
+ <label for="chapter-select-bottom">Liens</label>
+  <select id="chapter-select-bottom">
 
-<div class="center">
-    <img src="c3.jpg" alt="Illustration du chapitre 3" class="chapter-image">
-</div>
+    <option value="ch2-fr.html">Retour au chapitre précédent</option>
+    <option value="ch4-fr.html" selected>Suivant</option>
+    <option value="index-fr.html">Accueil</option>
+    <option value="cl-fr.html">Personnages</option>
+    <option value="map-fr.html">Carte</option>
+    <option value="audiobook-fr.html">Livre Audio</option>
+    <option value="buy-paperback-fr.html">Acheter le Livre Papier</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E‑mail</option>
 
-<hr>
+  </select>
 
-<nav class="center nav-links" aria-label="Navigation du chapitre">
-    <a href="ch2-fr.html">Chapitre précédent</a> |
-    <a href="ch4-fr.html">Chapitre suivant</a> |
-    <a href="index-fr.html">Table des matières</a>
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select-bottom').value;">
+    Choisir
+  </button>
 </nav>
 
-<div class="back-to-top center">
-    <a href="#top">Retour en haut</a>
-</div>
+<p style="text-align:center;">
 
-<footer>
-    © 2013 David Binnema — Tous droits réservés.<br>
-    Vous préférez une copie papier ?
-    <a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?page=1&pageSize=4">
-        Achetez le livre ici
-    </a>.
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="logo Instagram" class="footer-icon"></a>
+
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" alt="logo Pinterest" height="26"></a>
+
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24" alt="logo Facebook"></a>
+
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="logo YouTube"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="logo X"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Tous Droits Réservés.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="haut de page" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
-
-</body>
-</html>
+</body></html>

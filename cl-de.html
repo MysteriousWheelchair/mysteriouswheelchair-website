@@ -1,59 +1,131 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Der Mysteriöse Rollstuhl — Figurenliste</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Lesen Sie 'Der Mysteriöse Rollstuhl' von David Binnema. 
+        Eine barrierefreie Online-Ausgabe mit Originalillustrationen.">    
+    <title>Der Mysteriöse Rollstuhl — Charakterliste</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Der Mysteriöse Rollstuhl — Barrierefreie Online-Ausgabe">
+    <meta property="og:description" content="Lesen Sie die vollständige barrierefreie Ausgabe des Buches von David Binnema, mit 8 Kapiteln.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
 
-  <!-- Header -->
-  <header class="site-header center">
-    <a href="index-de.html" class="home-link">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">Sprachauswahl:</label>
+<select id="language-picker">
+  <option value="cl.html">English</option>
+  <option value="cl-nl.html">Nederlands</option>
+  <option value="cl-fr.html">Français</option>
+  <option value="cl-es.html">Español</option>
+  <option value="cl-de.html" selected>Deutsch</option>
+  <option value="cl-jp.html">日本語</option>
+  <option value="cl-el.html">Ελληνικά</option>
+  <option value="cl-he.html">עברית</option>
+</select>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Auswählen
+</button>
+</form>
 
-Zurück zum Index</a>
-  </header>
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Menü:</label>
+  <select id="site-menu" name="menu">
+    <option value="index-de.html">Startseite</option>
+    <option value="cl-de.html" selected>Charaktere</option>
+    <option value="map-de.html">Karte</option>
+    <option value="audiobook-de.html">Hörbuch</option>
+    <option value="buy-paperback-de.html">Taschenbuch kaufen</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Shop</option>
+    <option value="about-de.html">Über</option>
+    <option value="mailto:261005440+MysteriousWheelchair">E-Mail</option>
+  </select>
 
-  <!-- Book Title + Braille -->
-  <div class="center">
-    <h1 class="book-title">Der Mysteriöse Rollstuhl</h1>
- 
-  </div>
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Gehen
+  </button>
+</form>
 
-  <!-- Character List Box -->
-  <div id="book-text">
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">Kapitel auswählen</label>
+  <select id="chapter-select">
+      <option value="cl-de.html">diese Seite</option>
+      <option value="ch1-de.html">Kapitel 1</option>
+      <option value="ch2-de.html">Kapitel 2</option>
+      <option value="ch3-de.html">Kapitel 3</option>
+      <option value="ch4-de.html">Kapitel 4</option>
+      <option value="ch5-de.html">Kapitel 5</option>
+      <option value="ch6-de.html">Kapitel 6</option>
+      <option value="ch7-de.html">Kapitel 7</option>
+      <option value="ch8-de.html">Kapitel 8</option>
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">Auswählen</button>
+</div>
 
-    <h2 class="chapter-title center">Figurenliste</h2>
+</nav>
 
-    <h3>Hauptfiguren</h3>
+<main>
+    <h1>Der Mysteriöse Rollstuhl</h1>
+    <h2>Charakterliste</h2>
+
+    <h3>Hauptcharaktere</h3>
     <ul>
-      <li><img src="cli.png" class="footer-icon"> <strong>Zuphixy</strong> — ein 16‑jähriger Junge mit goldenem Haar.</li>
-      <li><img src="FI.png" class="footer-icon"> <strong>Zuphixys Vater</strong> — ein 40‑jähriger Mann, der als Computertechniker arbeitet.</li>
-      <li><img src="zm.png" class="footer-icon"><strong>Zuphixys Mutter</strong> — eine 37‑jährige Frau, die als Haushaltsingenieurin arbeitet.</li>
-      <li><img src="dog.png" class="footer-icon"><strong>Zuphixys Blindenhund</strong> — ein Golden Retriever, der ihm hilft.</li>
-      <li><img src="p10.png" class="footer-icon"><strong>Purpletten</strong> — ein 10‑jähriges Mädchen, das ein lebender Rollstuhl ist.</li>
-      <li><img src="pf.png" class="footer-icon"><strong>Purplettens Vater</strong> — ein 40‑jähriger roter Rollstuhl.</li>
-      <li><img src="pm.png" class="footer-icon"><strong>Purplettens Mutter</strong> — ein 38‑jähriger blauer Rollstuhl.</li>
-      <li><img src="pu.png" class="footer-icon"><strong>Purplettens Onkel</strong> — ein lebender blau‑grüner Rollstuhl, der als Detektiv arbeitet.</li>
-      <li><img src="earman.png" class="footer-icon"> <strong>Herr Oidohombre</strong> — ein Mann, der vollständig aus Ohren besteht; er ist taub und der Bösewicht.</li>
+      <li><img src="cli.png" alt="" class="footer-icon"> <strong>Zuphixy</strong> — ein 16‑jähriger Junge mit goldenem Haar.</li>
+      <li><img src="FI.png" alt="" class="footer-icon"> <strong>Zuphixys Vater</strong> — ein 40‑jähriger Mann, Computertechniker.</li>
+      <li><img src="zm.png" alt="" class="footer-icon"><strong>Zuphixys Mutter</strong> — eine 37‑jährige Frau, Haushaltsingenieurin.</li>
+      <li><img src="dog.png" alt="" class="footer-icon"><strong>Zuphixys Blindenhund</strong> — ein Golden Retriever, der ihm hilft.</li>
+      <li><img src="p10.png" alt="" class="footer-icon"><strong>Purpletten</strong> — ein 10‑jähriges Mädchen, das ein lebendiger Rollstuhl ist.</li>
+      <li><img src="pf.png" alt="" class="footer-icon"><strong>Purplettens Vater</strong> — ein roter Rollstuhl, 40 Jahre alt.</li>
+      <li><img src="pm.png" alt="" class="footer-icon"><strong>Purplettens Mutter</strong> — ein blauer Rollstuhl, 38 Jahre alt.</li>
+      <li><img src="pu.png" alt="" class="footer-icon"><strong>Purplettens Onkel</strong> — ein blau‑grüner Rollstuhl, der als Detektiv arbeitet.</li>
+      <li><img src="earman.png" alt="" class="footer-icon"> <strong>Herr Ohrmann</strong> — ein Mann, der vollständig aus Ohren besteht; er ist taub und der Bösewicht.</li>
     </ul>
 
-    <h3>Nebenfiguren</h3>
+    <h3>Nebencharaktere</h3>
     <ul>
-      <li><img src="wp.png" class="footer-icon"><strong>Lebende Rollstuhlpolizei</strong> — gestreifte Rollstühle, die als Ordnungskräfte dienen.</li>
-      <li><img src="rp.png" class="footer-icon"><strong>Polizei der echten Welt</strong> — menschliche Polizisten, die in der Geschichte vorkommen.</li>
-      <li><img src="zs.png" class="footer-icon"><strong>Zoofixy</strong> — Zuphixys Sohn, dessen Alter sich im Verlauf der Geschichte ständig verändert.</li>
+      <li><img src="wp.png" alt="" class="footer-icon"><strong>Lebende‑Rollstuhl‑Polizei</strong> — gestreifte Rollstühle, die als Gesetzeshüter dienen.</li>
+      <li><img src="rp.png" alt="" class="footer-icon"><strong>Polizei der echten Welt</strong> — menschliche Polizisten, die in der Geschichte vorkommen.</li>
+      <li><img src="zs.png" alt="" class="footer-icon"><strong>Zoofixy</strong> — Zuphixys Sohn, dessen Alter sich ständig ändert.</li>
     </ul>
+</main>
 
-  </div>
+<footer> 
+    <a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+        <img src="Instagram_Glyph_Black.jpg" width="24" alt="" class="footer-icon"></a>
+    <a href="https://pin.it/3o2DLszrP" target="_blank">
+        <img src="P-Badge-Red-RGB.png" alt="" width="24"></a>
+    <a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+        <img src="Facebook_Logo_Primary.png" height="24" alt=""></a>
+    <a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+        <img src="yt_icon_red_digital.png" width="30" alt="YouTube-Logo"></a>
+    <a href="https://x.com/Zuphixy">
+        <img src="X_logo_2023.svg" width="24" alt="X-Logo"></a>
 
-  <!-- Footer -->
-  <footer>
-    © 2013 David Binnema — Alle Rechte vorbehalten.<br>
-    Bevorzugen Sie eine gedruckte Ausgabe? <a href="https://www.amazon.com/dp/149217747X">Hier das Taschenbuch kaufen</a>.
-  </footer>
+    <p style="text-align:center;">©2013 David Binnema — Alle Rechte vorbehalten.</p>
+
+    <a href="#top" class="back-to-top">
+        <img src="up.svg" alt="nach oben" style="height:20px; vertical-align:middle; margin-right:6px;"></a>
+</footer>
 
 </body>
 </html>

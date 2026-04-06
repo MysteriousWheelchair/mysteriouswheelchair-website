@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="el">
 <head>
     <meta charset="UTF-8">
-    <title>The Mysterious Wheelchair</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Κεφάλαιο 7 του βιβλίου «Το Μυστηριώδες Αναπηρικό Καροτσάκι» του David Binnema.">    
+    <title>Το Μυστηριώδες Αναπηρικό Καροτσάκι — Κεφάλαιο 7</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -11,23 +13,87 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Το Μυστηριώδες Αναπηρικό Καροτσάκι — Κεφάλαιο 7">
+    <meta property="og:description" content="Προσβάσιμη διαδικτυακή έκδοση του βιβλίου.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">Γλώσσα:</label>
+<select id="language-picker">
+  <option value="ch7.html">English</option>
+  <option value="ch7-nl.html">Nederlands</option>
+  <option value="ch7-fr.html">Français</option>
+  <option value="ch7-es.html">Español</option>
+  <option value="ch7-de.html">Deutsch</option>
+  <option value="ch7-jp.html">日本語</option>
+  <option value="ch7-el.html" selected>Ελληνικά</option>
+  <option value="ch7-he.html">עברית</option>
+</select>
 
-<header class="site-header center">
-<a href="index-el.html">
-    <img src="home.png" alt="" style="height:22px; vertical-align:middle; margin-right:6px;">
-Πίσω στο ευρετήριο</a>
-</header>
-<div class="title-banner center">
+<button type="button"
+    onclick="location = document.getElementById('language-picker').value;">
+   Επιλογή
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Σύνδεσμοι:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-el.html">Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html">Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Κατάστημα</option>
+    <option value="about-el.html">Σχετικά</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('site-menu').value;">
+    Μετάβαση
+  </button>
+</form>
+
+<!-- Chapter Selector (top) -->
+<div class="jump-container">
+<label for="chapter-select">Επιλογή Κεφαλαίου</label>
+  <select id="chapter-select">
+      <option value="ch1-el.html">Κεφάλαιο 1</option>
+      <option value="ch2-el.html">Κεφάλαιο 2</option>
+      <option value="ch3-el.html">Κεφάλαιο 3</option>
+      <option value="ch4-el.html">Κεφάλαιο 4</option>
+      <option value="ch5-el.html">Κεφάλαιο 5</option>
+      <option value="ch6-el.html">Κεφάλαιο 6</option>
+      <option value="ch7-el.html" selected>Κεφάλαιο 7</option>
+      <option value="ch8-el.html">Κεφάλαιο 8</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select').value;">
+    Επιλογή
+  </button>
+</div>
+
+</nav>
+
+<main id="book-text" aria-label="Book chapter text">
+  <div class="title-banner center">
 <h1> Η Μυστηριώδης Αναπηρική Καρέκλα</h1>
 
-<section class="chapter">
-  <h1>Κεφάλαιο 7 — Η ζωή στη Σίλα-γη</h1>
-<main id="book-text" aria-label="Book chapter text">
+  <h2>Κεφάλαιο 7 — Η ζωή στη Σίλα-γη</h2>
   <p>Μόλις η Περπλέτεν και η Ζουφίξι αποδείχθηκαν υγιείς, η Ζουφίξι πήγε να ζήσει με την Περπλέτεν και τους γονείς της. Για τους πρώτους τροχούς οι σωματοφύλακες προστάτευαν το Purpleten και το Zuphixy, αλλά καθώς περνούσαν τα χρόνια οι άνθρωποι με αναπηρικές καρέκλες ξέχασαν τις Oidohombres και σταμάτησαν να φυλάνε το Zuphixy και το Purpleten.</p>
 
   <p>Τότε μια μέρα ο Ζουφίξι ήταν σε ένα χωράφι προσποιούμενος ότι ήταν ντετέκτιβ όπως ο θείος του Πέρπλετεν, όταν ξαφνικά μύρισε καπνό και κοίταξε γύρω και είδε μερικές Οϊντοχόμπρες να τρέχουν μακριά από μια φωτιά στο επόμενο χωράφι.</p>
@@ -63,38 +129,55 @@
   <p>Μόλις τελείωσε να λέει «σπίτι», βρέθηκε πίσω στην κρεβατοκάμαρά του στον δικό του κόσμο. Όταν είδε τον εαυτό του στον καθρέφτη, παρατήρησε ότι ήταν ξανά 16χρονο αγόρι αντί για άντρα.</p>
 
   <p>Καθώς ο Zuphixy συνήλθε, άρχισε να σκέφτεται τι μπορεί να συνέβη στον Purpleten και τον Zoofixy.</p>
-</section>
 </main>
 
-<div class="center">
-    <img src="c7.jpg" 
-         alt="Ο Ζουφίξι και η Πέρπλετεν συνεχίζουν την αναζήτηση μέσα στο δάσος." 
-         class="chapter-image">
+
+<footer> 
+
+<!-- Bottom navigation selector -->
+<div class="jump-container">
+  <label for="chapter-select-bottom">Πλοήγηση:</label>
+  <select id="chapter-select-bottom">
+    <option value="ch6-el.html">Προηγούμενο</option>
+    <option value="ch8-el.html" selected>Επόμενο</option>
+    <option value="index-el.html">Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html">Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
+
+  <button type="button"
+    onclick="location = document.getElementById('chapter-select-bottom').value;">
+    Μετάβαση
+  </button>
 </div>
 
-<hr>
+<p style="text-align:center;">
 
-<hr>
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" class="footer-icon"></a>
 
-<hr>
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" height="26"></a>
 
-<nav class="center nav-links" aria-label="Πλοήγηση κεφαλαίων">
-    <a href="ch6-el.html">Προηγούμενο Κεφάλαιο</a> |
-    <a href="ch8-el.html">Επόμενο Κεφάλαιο</a> |
-    <a href="index-el.html">Πίνακας Περιεχομένων</a>
-</nav>
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" height="24"></a>
 
-<div class="back-to-top center">
-    <a href="#top">Επιστροφή στην κορυφή</a>
-</div>
-<footer>
-    © 2013 David Binnema — Με την επιφύλαξη παντός δικαιώματος.<br>
-    Θέλετε έντυπο αντίγραφο;
-    <a href="https://www.lulu.com/shop/david-binnema/the-mysterious-wheelchair/paperback/product-1e8j5kgm.html?page=1&pageSize=4">
-        Αγοράστε το βιβλίο εδώ
-    </a>.
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30"></a>
+
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24"></a>
+
+<p style="text-align:center;">©2013 David Binnema — Με επιφύλαξη παντός δικαιώματος.</p>
+
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="επάνω" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
+
 </footer>
 
 </body>
 </html>
-

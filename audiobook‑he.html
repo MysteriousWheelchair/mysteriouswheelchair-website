@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. 
-        An accessible online novel featuring Zuphixy, including original illustrations ">    
-    <title>The Mysterious Wheelchair — Audiobook(s)</title>
+    <meta name="description" content="האזינו לספר השמע 'כיסא הגלגלים המסתורי' מאת דיוויד בינמה. 
+        קריינות באמצעות טכנולוגיית קול דיגיטלי מבוסס AI.">    
+    <title>כיסא הגלגלים המסתורי — ספר שמע</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
@@ -16,74 +16,75 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="The Mysterious Wheelchair — Accessible Online Edition">
-    <meta property="og:description" content="Read the full accessible edition of David Binnema’s book, including all 8 chapters.">
+    <meta property="og:title" content="כיסא הגלגלים המסתורי — ספר שמע">
+    <meta property="og:description" content="האזינו לגרסה המלאה והנגישה של הספר, זמינה במגוון פלטפורמות.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
 </head>
 
 <body>
+
 <nav>
 
 <!-- Language Picker -->
 <form>
-    <label for="language-picker">language-picker:</label>
+    <label for="language-picker">בחירת שפה:</label>
 <select id="language-picker">
-  <option value="audiobook.html" selected>English</option>
+  <option value="audiobook.html">English</option>
   <option value="audiobook-nl.html">Nederlands</option>
   <option value="audiobook-fr.html">Français</option>
   <option value="audiobook-es.html">Español</option>
   <option value="audiobook-de.html">Deutsch</option>
   <option value="audiobook-jp.html">日本語</option>
   <option value="audiobook-el.html">Ελληνικά</option>
-  <option value="audiobook-he.html">עברית</option>
+  <option value="audiobook-he.html" selected>עברית</option>
 </select>
 
 <button type="button"
     onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
-   Pick
+   בחר
 </button>
 </form>
 
 <!-- Site Menu -->
 <form>
-  <label for="site-menu">Links:</label>
+  <label for="site-menu">קישורים:</label>
 
   <select id="site-menu" name="menu">
-    <option value="index.html">Home</option>
-    <option value="cl.html">Characters</option>
-    <option value="map-en.html">Map</option>
-    <option value="audiobook.html" selected>Audiobook</option>
-    <option value="buy-paperback.html">Buy Paperback</option>
-    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
-    <option value="about.html">About</option>
-    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+    <option value="index-he.html">דף הבית</option>
+    <option value="cl-he.html">דמויות</option>
+    <option value="map-he.html">מפה</option>
+    <option value="audiobook-he.html" selected>ספר שמע</option>
+    <option value="buy-paperback-he.html">רכישת ספר מודפס</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">חנות מרצ'נדייז</option>
+    <option value="about-he.html">אודות</option>
+    <option value="mailto:261005440+MysteriousWheelchair">אימייל</option>
   </select>
 
   <button type="button"
     onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
-    Go
+    עבור
   </button>
 </form>
 
 <!-- Chapter Selector -->
 <div class="jump-container">
-<label for="chapter-select">Chapter Selector</label>
+<label for="chapter-select">בחירת פרק</label>
   <select id="chapter-select">
-      <option value="#top">This Page</option>
-      <option value="ch1.html">Chapter 1</option>
-      <option value="ch2.html">Chapter 2</option>
-      <option value="ch3.html">Chapter 3</option>
-      <option value="ch4.html">Chapter 4</option>
-      <option value="ch5.html">Chapter 5</option>
-      <option value="ch6.html">Chapter 6</option>
-      <option value="ch7.html">Chapter 7</option>
-      <option value="ch8.html">Chapter 8</option>
+      <option value="#top">דף זה</option>
+      <option value="ch1-he.html">פרק 1</option>
+      <option value="ch2-he.html">פרק 2</option>
+      <option value="ch3-he.html">פרק 3</option>
+      <option value="ch4-he.html">פרק 4</option>
+      <option value="ch5-he.html">פרק 5</option>
+      <option value="ch6-he.html">פרק 6</option>
+      <option value="ch7-he.html">פרק 7</option>
+      <option value="ch8-he.html">פרק 8</option>
   </select>
 
   <button type="button" onclick="location = document.getElementById('chapter-select').value;">
-    Pick
+    בחר
   </button>
 </div>
 
@@ -91,10 +92,10 @@
 
 <main>
 
-<h2>Listen to the Audiobook</h2>
-<p style="text-align:center;">Narrated using AI digital voice technology</p>
+<h2>האזינו לספר השמע</h2>
+<p style="text-align:center;">קריינות באמצעות טכנולוגיית קול דיגיטלי מבוסס AI</p>
 
-<table align="center" cellspacing="0" cellpadding="0">
+<table align="center" cellspacing="0" cellpadding="0" dir="ltr">
   <tr>
     <td>
       <div class="book-3d">
@@ -135,7 +136,7 @@
 <a href="https://x.com/Zuphixy">
 <img src="X_logo_2023.svg" width="24"></a>
 
-<p style="text-align:center;">©2013 David Binnema — All Rights Reserved.</p>
+<p style="text-align:center;">©2013 David Binnema — כל הזכויות שמורות.</p>
 
 </footer>
 

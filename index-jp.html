@@ -2,10 +2,10 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="『不思議な車椅子』デイビッド・ビネマ著。全8章のアクセシブルなオンライン版。">
-
+    <meta name="description" content="デイビッド・ビネマによる『不思議な車椅子』を読む。 
+        ズフィクシーが登場する、オリジナル挿絵付きのアクセシブルなオンライン小説。">    
     <title>不思議な車椅子 — 目次</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
@@ -17,178 +17,114 @@
 
     <!-- OpenGraph -->
     <meta property="og:title" content="不思議な車椅子 — アクセシブルオンライン版">
-    <meta property="og:description" content="デイビッド・ビネマ著『不思議な車椅子』全8章のアクセシブル版を読む。">
+    <meta property="og:description" content="デイビッド・ビネマの本、全8章を含むアクセシブル版を読む。">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
-    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/index-jp.html">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
 </head>
 
 <body>
+<nav>
+  <a id="top"></a>
 
-<a id="top"></a>
+  <!-- Language Picker -->
+<form>
+    <label for="language-picker">言語選択:</label>
+<select id="language-picker">
+  <option value="index.html">English</option>
+  <option value="index-nl.html">Nederlands</option>
+  <option value="index-fr.html">Français</option>
+  <option value="index-es.html">Español</option>
+  <option value="index-de.html">Deutsch</option>
+  <option value="index-jp.html" selected>日本語</option>
+  <option value="index-el.html">Ελληνικά</option>
+  <option value="index-he.html">עברית</option>
+</select>
 
-<!-- Title Banner -->
-<div class="title-banner center">
-    <h1 class="banner-text">不思議な車椅子</h1>
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   選択
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">リンク:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="index-jp.html" selected>ホーム</option>
+    <option value="cl-jp.html">キャラクター</option>
+    <option value="map-jp.html">地図</option>
+    <option value="audiobook-jp.html">オーディオブック</option>
+    <option value="buy-paperback-jp.html">ペーパーバックを購入</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">グッズストア</option>
+    <option value="about-jp.html">概要</option>
+    <option value="mailto:261005440+MysteriousWheelchair">メール</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    移動
+  </button>
+</form>
+</nav>
+
+<main>
+   <h1>不思議な車椅子</h1>
+
+<div class="book-block">
+
+<h3>物語について</h3>
+<div class="about-wrapper">
+
+<p>障害のある少年は「シラティエラ」と呼ばれる世界に迷い込み、そこで“生きている車椅子”たちから助けを求められる。</p>
+
+<div class="book-3d">
+<img src="Cover.jpg" alt="本の表紙" style="height:95px; width:70px;">
 </div>
 
-<!-- Language Switcher -->
-<div class="language-switcher center">
-
-    <a href="index.html">
-        <img src="https://flagcdn.com/w40/ca.png"
-             srcset="https://flagcdn.com/w80/ca.png 2x"
-             width="40" style="padding: 4px;" alt="English">
-        English
-    </a> |
-
-    <a href="index-nl.html">
-        <img src="https://flagcdn.com/w40/nl.png"
-             srcset="https://flagcdn.com/w80/nl.png 2x"
-             width="40" style="padding: 4px;" alt="Nederlands">
-        Nederlands
-    </a> |
-
-    <a href="index-fr.html">
-        <img src="https://flagcdn.com/w40/fr.png"
-             srcset="https://flagcdn.com/w80/fr.png 2x"
-             width="40" style="padding: 4px;" alt="Français">
-        Français
-    </a> |
-
-    <a href="index-es.html">
-        <img src="https://flagcdn.com/w40/es.png"
-             srcset="https://flagcdn.com/w80/es.png 2x"
-             width="40" style="padding: 4px;" alt="Español">
-        Español
-    </a> |
-
-    <a href="index-de.html">
-        <img src="https://flagcdn.com/w40/de.png"
-             srcset="https://flagcdn.com/w80/de.png 2x"
-             width="40" style="padding: 4px;" alt="Deutsch">
-        Deutsch
-    </a> |
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/jp.png"
-             srcset="https://flagcdn.com/w80/jp.png 2x"
-             width="40" style="padding: 4px;" alt="日本語">
-        日本語
-    </span>
-
-<a href="index-el.html">
-        <img src="https://flagcdn.com/w40/gr.png"
-             srcset="https://flagcdn.com/w80/gr.png 2x"
-             width="40" style="padding:4px;" alt="Ελληνικά">
-        Ελληνικά
-    </a>
-
-<a href="index-he.html">
-
-    <span class="current-lang">
-        <img src="https://flagcdn.com/w40/il.png"
-             srcset="https://flagcdn.com/w80/il.png 2x"
-             width="40" style="padding:4px;" alt="עברית">
-        עברית
-    </span>
-
-
-</a>
+</div>
 </div>
 
-<!-- About the Author -->
-<p style="text-align:center; margin-top:10px;">
-    <a href="about-jp.html" style="display:inline-block; margin:0 auto;">
-        <img src="aboutIcon.svg" alt="about Icon"
-             style="height:22px; vertical-align:middle; margin-right:6px;">
-        著者について
-    </a>
-</p>
+<h2>目次</h2>
 
-<!-- Accessibility Message -->
-<p style="text-align:center; font-size:10px !important; margin-top:10px;">
-    このアクセシブルなオンライン版へようこそ。<br>
-    章を開き、Microsoft Edge で <strong>Ctrl + Shift + U</strong> を押すと読み上げを聞くことができます。
-</p>
-
-<hr>
-
-<!-- Table of Contents -->
-<div class="toc-container">
-    <h2>目次</h2>
-
-<ul class="toc">
-    <li><a href="ch1-jp.html"><strong>第1章：神秘的な車椅子</strong></a></li>
-    <li><a href="ch2-jp.html"><strong>第2章：Zuphixyの検索</strong></a></li>
-    <li><a href="ch3-jp.html"><strong>第3章：Zuphixyと紫の冒険</strong></a></li>
-    <li><a href="ch4-jp.html"><strong>第4章：ZuphixyとPurpletenが巻き込まれる</strong></a></li>
-    <li><a href="ch5-jp.html"><strong>第5章：ZuphixyとPurpletenエスケープ</strong></a></li>
-    <li><a href="ch6-jp.html"><strong>第6章：希望のきらめき</strong></a></li>
-    <li><a href="ch7-jp.html"><strong>第7章：新羅ティエラでの生活</strong></a></li>
-    <li><a href="ch8-jp.html"><strong>第8章：彼の両親とZuphixyの再会</strong></a></li>
+<ul class="links">
+  <li><a href="ch1-jp.html"><strong>第1章：ズフィクシーの不思議な一日</strong></a></li>
+  <li><a href="ch2-jp.html"><strong>第2章：ズフィクシーを探して</strong></a></li>
+  <li><a href="ch3-jp.html"><strong>第3章：ズフィクシーとパープルテンの冒険</strong></a></li>
+  <li><a href="ch4-jp.html"><strong>第4章：ズフィクシーとパープルテン、捕まる</strong></a></li>
+  <li><a href="ch5-jp.html"><strong>第5章：ズフィクシーとパープルテンの脱出</strong></a></li>
+  <li><a href="ch6-jp.html"><strong>第6章：希望のきらめき</strong></a></li>
+  <li><a href="ch7-jp.html"><strong>第7章：シラティエラでの生活</strong></a></li>
+  <li><a href="ch8-jp.html"><strong>第8章：ズフィクシー、両親との再会</strong></a></li>
 </ul>
-</div>
 
-<!-- QR Code -->
-<div style="text-align: center; margin-top: 20px;">
-    <img src="qr.png" alt="QRコード（Facebookページ）" width="70">
-    <div style="font-size: 0.9em; margin-top: 5px;">スキャンしてFacebookページをご覧ください</div>
-</div>
-<div style="text-align: center; margin: 30px 0; font-family: sans-serif;">
-    <p style="font-weight: bold; font-size: 1.1em;">スキャンしてInstagramでミステリーをフォローしよう：</p>
-    <a href="https://www.instagram.com" target="_blank">
-        <img src="Instagram-qr.png" alt="Instagram QRコード" width="200" style="border-radius: 15px; border: 3px solid #E1306C; box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
-    </a>
-</div>
-	
-<!-- Footer -->
+</main>
+
 <footer>
-    <p>© 2013 David Binnema — 全著作権所有。</p>
-    <p style="text-align:center;">
-        <img src="shop1.svg" alt="Shop Icon"
-             style="height:22px; vertical-align:middle; margin-right:6px;">
-        <a href="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">商品を購入する</a> |
 
-        <a href="buy-paperback-jp.html">
-            <img src="Cover.jpg" alt="buy book Icon"
-                 style="height:24px; vertical-align:middle; margin-right:6px;">
-            文庫本を買う
-        </a> |
+<a href="https://www.instagram.com/themysteriouswheelchair?igsh=MXNuaHNjdjk2ZjA3eQ==">
+<img src="Instagram_Glyph_Black.jpg" width="24" alt="Instagram ロゴ"></a>
 
-        <img src="aIcion.png" alt="Audiobook Icon"
-             style="height:15px; vertical-align:middle; margin-right:6px;">
-        <a href="audiobook-jp.html">オーディオブックプラットフォーム</a>
-    </p>
+<a href="https://pin.it/3o2DLszrP" target="_blank">
+<img src="P-Badge-Red-RGB.png" width="24" alt="Pinterest ロゴ"></a>
 
-    <p style="text-align:center;">
-        <img src="TV.svg" alt="" style="height:20px; vertical-align:middle; margin-right:6px;">
-        <a href="watch-jp.html">プレイリストをすべて見る</a> |
+<a href="https://www.facebook.com/share/1Dd6Zt9K9N/">
+<img src="Facebook_Logo_Primary.png" width="26" alt="Facebook ロゴ"></a>
 
-        <a href="https://pin.it/3o2DLszrP" target="_blank">
-            <img src="P-Badge-Red-RGB.png" alt="Pinterest Icon"
-                 style="height:15px; vertical-align:middle; margin-right:6px;">
-            Pinterestボード
-        </a>  | <a href="cl-jp.html"><img src="cli.png" class="footer-icon">登場人物一覧</a> | 🗺️
+<a href="https://youtube.com/playlist?list=PL48t68P79GhBmimK1XGI53DPB2AO7sRc5&si=BjiVkRZLWHwPts7i">
+<img src="yt_icon_red_digital.png" width="30" alt="YouTube ロゴ"></a>
 
+<a href="https://x.com/Zuphixy">
+<img src="X_logo_2023.svg" width="24" alt="X ロゴ"></a>
 
-	<a href="map-jp.html">シーラ＝ティエラの地図</a>
+<p>©2013 David Binnema — 全著作権所有。</p>
 
-    </p>
+<a href="#top" class="back-to-top">
+<img src="up.svg" alt="上へ戻る" style="height:20px; vertical-align:middle; margin-right:6px;">
+</a>
 
-    <p style="text-align:center;">
-        <img src="Email.svg" alt="email"
-             style="height:20px; vertical-align:middle; margin-right:6px;">
-        <a href="mailto:261005440+MysteriousWheelchair">フィードバック</a>
-    </p>
 </footer>
-
-<p style="text-align:center;">
-    <a href="#top">
-        <img src="up.svg" alt="up"
-             style="height:20px; vertical-align:middle; margin-right:6px;">
-    </a>
-</p>
 
 </body>
 </html>

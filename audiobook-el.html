@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. 
-        An accessible online novel featuring Zuphixy, including original illustrations ">    
-    <title>The Mysterious Wheelchair — Audiobook(s)</title>
+    <meta name="description" content="Ακούστε το ηχητικό βιβλίο «Το Μυστηριώδες Αναπηρικό Καροτσάκι» του David Binnema. 
+        Αφήγηση με τεχνολογία ψηφιακής φωνής AI.">    
+    <title>Το Μυστηριώδες Αναπηρικό Καροτσάκι — Ηχητικό Βιβλίο</title>
     <link rel="stylesheet" href="style.css">
 
     <!-- Favicon -->
@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- OpenGraph -->
-    <meta property="og:title" content="The Mysterious Wheelchair — Accessible Online Edition">
-    <meta property="og:description" content="Read the full accessible edition of David Binnema’s book, including all 8 chapters.">
+    <meta property="og:title" content="Το Μυστηριώδες Αναπηρικό Καροτσάκι — Ηχητικό Βιβλίο">
+    <meta property="og:description" content="Ακούστε την πλήρη προσβάσιμη έκδοση του βιβλίου, διαθέσιμη σε πολλές πλατφόρμες.">
     <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
     <meta property="og:type" content="website">
@@ -28,62 +28,62 @@
 
 <!-- Language Picker -->
 <form>
-    <label for="language-picker">language-picker:</label>
+    <label for="language-picker">Γλώσσα:</label>
 <select id="language-picker">
-  <option value="audiobook.html" selected>English</option>
+  <option value="audiobook.html">English</option>
   <option value="audiobook-nl.html">Nederlands</option>
   <option value="audiobook-fr.html">Français</option>
   <option value="audiobook-es.html">Español</option>
   <option value="audiobook-de.html">Deutsch</option>
   <option value="audiobook-jp.html">日本語</option>
-  <option value="audiobook-el.html">Ελληνικά</option>
+  <option value="audiobook-el.html" selected>Ελληνικά</option>
   <option value="audiobook-he.html">עברית</option>
 </select>
 
 <button type="button"
     onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
-   Pick
+   Επιλογή
 </button>
 </form>
 
 <!-- Site Menu -->
 <form>
-  <label for="site-menu">Links:</label>
+  <label for="site-menu">Σύνδεσμοι:</label>
 
   <select id="site-menu" name="menu">
-    <option value="index.html">Home</option>
-    <option value="cl.html">Characters</option>
-    <option value="map-en.html">Map</option>
-    <option value="audiobook.html" selected>Audiobook</option>
-    <option value="buy-paperback.html">Buy Paperback</option>
-    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
-    <option value="about.html">About</option>
+    <option value="index-el.html">Αρχική</option>
+    <option value="cl-el.html">Χαρακτήρες</option>
+    <option value="map-el.html">Χάρτης</option>
+    <option value="audiobook-el.html" selected>Ηχητικό Βιβλίο</option>
+    <option value="buy-paperback-el.html">Αγορά Έντυπου</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Κατάστημα</option>
+    <option value="about-el.html">Σχετικά</option>
     <option value="mailto:261005440+MysteriousWheelchair">Email</option>
   </select>
 
   <button type="button"
     onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
-    Go
+    Μετάβαση
   </button>
 </form>
 
 <!-- Chapter Selector -->
 <div class="jump-container">
-<label for="chapter-select">Chapter Selector</label>
+<label for="chapter-select">Επιλογή Κεφαλαίου</label>
   <select id="chapter-select">
-      <option value="#top">This Page</option>
-      <option value="ch1.html">Chapter 1</option>
-      <option value="ch2.html">Chapter 2</option>
-      <option value="ch3.html">Chapter 3</option>
-      <option value="ch4.html">Chapter 4</option>
-      <option value="ch5.html">Chapter 5</option>
-      <option value="ch6.html">Chapter 6</option>
-      <option value="ch7.html">Chapter 7</option>
-      <option value="ch8.html">Chapter 8</option>
+      <option value="#top">Αυτή η σελίδα</option>
+      <option value="ch1-el.html">Κεφάλαιο 1</option>
+      <option value="ch2-el.html">Κεφάλαιο 2</option>
+      <option value="ch3-el.html">Κεφάλαιο 3</option>
+      <option value="ch4-el.html">Κεφάλαιο 4</option>
+      <option value="ch5-el.html">Κεφάλαιο 5</option>
+      <option value="ch6-el.html">Κεφάλαιο 6</option>
+      <option value="ch7-el.html">Κεφάλαιο 7</option>
+      <option value="ch8-el.html">Κεφάλαιο 8</option>
   </select>
 
   <button type="button" onclick="location = document.getElementById('chapter-select').value;">
-    Pick
+    Επιλογή
   </button>
 </div>
 
@@ -91,8 +91,8 @@
 
 <main>
 
-<h2>Listen to the Audiobook</h2>
-<p style="text-align:center;">Narrated using AI digital voice technology</p>
+<h2>Ακούστε το Ηχητικό Βιβλίο</h2>
+<p style="text-align:center;">Αφήγηση με τεχνολογία ψηφιακής φωνής AI</p>
 
 <table align="center" cellspacing="0" cellpadding="0">
   <tr>
@@ -135,7 +135,7 @@
 <a href="https://x.com/Zuphixy">
 <img src="X_logo_2023.svg" width="24"></a>
 
-<p style="text-align:center;">©2013 David Binnema — All Rights Reserved.</p>
+<p style="text-align:center;">©2013 David Binnema — Με επιφύλαξη παντός δικαιώματος.</p>
 
 </footer>
 
