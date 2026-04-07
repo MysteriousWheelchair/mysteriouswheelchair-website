@@ -245,3 +245,8 @@ ul.links li {
 }
 
 
+table {
+    border-collapse: collapse; /* Removes cellspacing */
+}
+
+
