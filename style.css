@@ -238,5 +238,10 @@ ul.links li {
     margin: 6px 0;
 }
 
+.small-about {
+    font-size: 1.2em;   /* smaller than normal h2 */
+    font-weight: bold;  /* still looks like a heading */
+    margin-top: 0.5em;
+}
 
 
