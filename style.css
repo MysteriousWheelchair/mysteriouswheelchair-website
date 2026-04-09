@@ -261,8 +261,8 @@ table {
 }
 
 
-a {
-    background-color: #FFD500; /* bright yellow */
+li a {
+    background-color: yellow; /* bright yellow */
     color: #FFFFFF;            /* white text */
     padding: 4px 8px;          /* optional: makes it look like a button */
     text-decoration: none;     /* remove underline */
@@ -270,10 +270,10 @@ a {
 }
 
 /* Prevent ANY color changes */
-a:visited,
-a:hover,
-a:active,
-a:focus {
+li a:visited,
+li a:hover,
+li a:active,
+li a:focus {
     background-color: #FFD500;
     color: #FFFFFF;
     text-decoration: none;
