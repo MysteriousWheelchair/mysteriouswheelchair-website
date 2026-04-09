@@ -274,7 +274,10 @@ li a {
     border: 2px solid #000000;            /* keeps yellow clean */
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
 }
-
+button {
+   background-color: #FFF200 !important;
+ 
+}
 li a:visited,
 li a:hover,
 li a:active,
