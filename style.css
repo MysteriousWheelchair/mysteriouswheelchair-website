@@ -262,18 +262,25 @@ table {
 
 
 /* Freepik-style yellow button for list links */
+/* Freepik-style yellow button for list links */
 li a {
     display: inline-block;
-    background-color: #FFCC00 !important; /* bright UI yellow */
-    color: #FFFFFF !important;            /* white text */
-    padding: 8px 14px;                    /* button spacing */
-    border-radius: 8px;                   /* rounded corners */
-    font-weight: 600;                     /* bold like UI buttons */
-    text-decoration: none !important;     /* no underline */
+    background-color: #FFCC00 !important;
+    color: #FFFFFF !important;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none !important;
 }
 
-/* Lock the style so visited/hover never change */
-li a:visited,
+/* FORCE visited links to stay the same */
+li a:visited {
+    background-color: #FFCC00 !important;
+    color: #FFFFFF !important;
+    text-decoration: none !important;
+}
+
+/* FORCE hover/active/focus to stay the same */
 li a:hover,
 li a:active,
 li a:focus {
