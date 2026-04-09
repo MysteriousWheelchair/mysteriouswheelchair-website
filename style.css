@@ -265,7 +265,7 @@ table {
 /* Freepik-style yellow button for list links */
 li a {
     display: inline-block;
-    background-color: #FFCC00 !important;
+    background-color: #FFEB3B!important;
     color: #FFFFFF !important;
     padding: 8px 14px;
     border-radius: 8px;
@@ -275,7 +275,7 @@ li a {
 
 /* FORCE visited links to stay the same */
 li a:visited {
-    background-color: #FFCC00 !important;
+    background-color: #FFEB3B !important;
     color: #FFFFFF !important;
     text-decoration: none !important;
 }
@@ -284,7 +284,7 @@ li a:visited {
 li a:hover,
 li a:active,
 li a:focus {
-    background-color: #FFCC00 !important;
+    background-color: #FFEB3B !important;
     color: #FFFFFF !important;
     text-decoration: none !important;
 }
