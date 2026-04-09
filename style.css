@@ -261,3 +261,22 @@ table {
 }
 
 
+a {
+    background-color: #FFD500; /* bright yellow */
+    color: #FFFFFF;            /* white text */
+    padding: 4px 8px;          /* optional: makes it look like a button */
+    text-decoration: none;     /* remove underline */
+    border-radius: 4px;        /* optional: smooth corners */
+}
+
+/* Prevent ANY color changes */
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    background-color: #FFD500;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
