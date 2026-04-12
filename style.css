@@ -134,7 +134,7 @@ ul.links li {
   position: fixed;
   bottom: 20px;   /* distance from bottom of screen */
   right: 20px;    /* distance from right side */
-  background: white
+  background: white;
   padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
@@ -205,13 +205,6 @@ ul.links li {
     border-radius: 4px 0 0 4px;
     pointer-events: none;
 }
-
-
-
-
-
-
-///////////////
 
 
 
