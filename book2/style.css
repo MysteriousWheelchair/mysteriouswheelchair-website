@@ -1,0 +1,83 @@
+.book-block {
+   max-width: 400px;
+      margin: 10px auto;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;   /* vertically centers the text with the image */
+  gap: 20px;             /* space between image and text */
+}
+
+
+main, footer {
+width: 800px;;
+margin: 0 auto;
+background: white;
+padding-bottom: 4px;
+}
+
+h1,h2, footer {
+text-align: center;
+}
+
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #A9CCD2;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+
+.small-about {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 0.5em;
+
+}
+
+ul {
+  list-style-type: none; /* Remove bullets */
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+
+}
+
+
+
+#book-text p {
+    max-width: 700px;
+    margin: 0 auto 16px auto;
+    line-height: 1.6;
+    font-size: 20px;
+    text-indent: 2em;
+  text-align: left;      /* center inline-block children */
+}
+
+/* Drop cap */
+#book-text p:first-of-type::first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 8px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+
+.author-photo {
+  width: 150px;          /* adjust size as needed */
+  filter: blur(3px);     /* your privacy blur */
+  border-radius: 10px;   /* optional: makes it look nicer */
+}
+
+.about-text {
+  max-width: 500px;      /* keeps the text readable */
+}
