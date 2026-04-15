@@ -80,4 +80,11 @@ ul {
 
 .about-text {
   max-width: 500px;      /* keeps the text readable */
+   
+}
+
+table {
+    border-collapse: collapse; /* Removes cellspacing */
+   margin-left: auto;
+  margin-right: auto;
 }
