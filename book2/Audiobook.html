@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Read 'The Mysterious Wheelchair' by David Binnema. 
+        An accessible online novel featuring Zuphixy, including original illustrations ">    
+    <title>The Mysterious Wheelchair — Audiobook(s)</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32" type="image/x-icon">
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="favicon-180.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="The Mysterious Wheelchair — Accessible Online Edition">
+    <meta property="og:description" content="Read the full accessible edition of David Binnema’s book, including all 8 chapters.">
+    <meta property="og:image" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:url" content="https://mysteriouswheelchair.github.io/mysteriouswheelchair-website/">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+<nav>
+
+<!-- Language Picker -->
+<form>
+    <label for="language-picker">language-picker:</label>
+<select id="language-picker">
+  <option value="audiobook.html" selected>English</option>
+  <option value="audiobook-nl.html">Nederlands</option>
+  <option value="audiobook-fr.html">Français</option>
+  <option value="audiobook-es.html">Español</option>
+  <option value="audiobook-de.html">Deutsch</option>
+  <option value="audiobook-jp.html">日本語</option>
+  <option value="audiobook-el.html">Ελληνικά</option>
+  <option value="audiobook-he.html">עברית</option>
+  <option value="audiobook-ptbr.html">Português (Brasil)</option>
+
+</select>
+
+<button type="button"
+    onclick="var val = document.getElementById('language-picker').value; if(val) location = val;">
+   Pick
+</button>
+</form>
+
+<!-- Site Menu -->
+<form>
+  <label for="site-menu">Links:</label>
+
+  <select id="site-menu" name="menu">
+    <option value="toc.html">Table of Contents</option>
+    <option value="cl.html">Characters</option>
+    <option value="map-en.html">Map</option>
+    <option value="audiobook.html" selected>Audiobook</option>
+    <option value="buy-paperback.html">Buy Paperback</option>
+    <option value="https://www.teepublic.com/hoodie/88586174-the-mysterious-wheelchair">Merch Store</option>
+    <option value="about.html">About</option>
+    <option value="mailto:261005440+MysteriousWheelchair">Email</option>
+  </select>
+
+  <button type="button"
+    onclick="var val = document.getElementById('site-menu').value; if(val) location = val;">
+    Go
+  </button>
+</form>
+
+<!-- Chapter Selector -->
+<div class="jump-container">
+<label for="chapter-select">Chapter Selector</label>
+  <select id="chapter-select">
+      <option value="#top">This Page</option>
+      <option value="ch1.html">Chapter 1</option>
+      <option value="ch2.html">Chapter 2</option>
+      <option value="ch3.html">Chapter 3</option>
+      <option value="ch4.html">Chapter 4</option>
+      <option value="ch5.html">Chapter 5</option>
+      <option value="ch6.html">Chapter 6</option>
+      <option value="ch7.html">Chapter 7</option>
+      <option value="ch8.html">Chapter 8</option>
+  </select>
+
+  <button type="button" onclick="location = document.getElementById('chapter-select').value;">
+    Pick
+  </button>
+</div>
+
+</nav>
+
+<main>
+
+
+<h1>The Mysterious Wheelchair</h1>
+<table>
+  <tr>
+      <th  colspan="2">Listen to the Audiobook</th> </tr>
+
+    <tr><td colspan="2"  style="text-align: center;">
+            Narrated using AI digital voice technology    
+    
+    </td></tr>
+
+    <tr><td colspan="2"  style="text-align: center;"> <b>Note:</b> All audiobook editions are available in English only.</td></tr>
+    <tr>
+    <td>
+      <div class="book-3d">
+        <img src="book2-cover.jpg"  alt="book cover" style="max-width:90%; max-height:235px;">
+      </div>
+    </td>
+    <td>
+      <ul class="links">
+        <li><a href="https://open.spotify.com/show/6uGx4pW7cxcNeDdkOExbQq?si=513c020be4e44137">Spotify</a></li>
+        <li><a href="https://podcasters.amazon.com/podcasts/2a140b69-d839-4a6e-8d18-d2110da1368f">Amazon Music</a></li>
+        <li><a href="https://www.iheart.com/podcast/269-the-mysterious-wheelchair-325149694/">iHeartRadio</a></li>
+        <li><a href="https://castbox.fm/vh/7167759>CastBox FM</a></li>
+        <li><a href="https://link.deezer.com/s/330735q5sLn1EfHLpP3Gr">Deezer</a></li>
+        <li><a href="https://www.audible.ca/podcast/The-mysterious-wheelchair/B0GQJNJ3YF">Audible Canada</a></li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+</main>
+
+<p style="text-align:center;">©2023 David Binnema — All Rights Reserved.</p>
+
+
+</body>
+</html>
