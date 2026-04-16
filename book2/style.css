@@ -83,6 +83,10 @@ ul {
    
 }
 
+a {
+background-color: #B7E3FF;
+color: #000000;
+}
 table {
     border-collapse: collapse; /* Removes cellspacing */
    margin-left: auto;
