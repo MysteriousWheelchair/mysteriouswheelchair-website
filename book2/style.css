@@ -83,12 +83,38 @@ ul {
    
 }
 
-a {
-background-color: #B7E3FF;
-color: #000000;
-}
+
 table {
     border-collapse: collapse; /* Removes cellspacing */
    margin-left: auto;
   margin-right: auto;
 }
+
+
+li a {
+    display: inline-block;
+
+background-color: #B7E3FF;
+color: #000000;
+   padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none !important;
+    border: 2px solid #000000;            /* keeps yellow clean */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+button {
+   
+background-color: #B7E3FF;
+
+}
+li a:visited,
+li a:hover,
+li a:active,
+li a:focus {
+  
+background-color: #B7E3FF;
+color: #000000;
+    text-decoration: none !important;
+}
+
