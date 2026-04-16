@@ -18,7 +18,10 @@ How Many Mysterious Wheelchairs are there?
 <label for="chapter-select">Chapter Selector</label>
   <select id="chapter-select">
       <option value="index.html">Table of Contents</option>
-
+   	  <option value="../index.html">Home</option>
+	  <option value="../toc.html">The Mysterious Wheelchair (book 1)</option>
+	  
+      <option value="index.html">Table of Contents</option>
 	  <option value="ch1.html"> Chapter 1</option>
     <option value="ch2.html" >Chapter 2</option>
     <option value="ch3.html">Chapter 3</option>
@@ -27,7 +30,7 @@ How Many Mysterious Wheelchairs are there?
     <option value="ch6.html">Chapter 6</option>
     <option value="ch7.html">Chapter 7</option>
       <option value="about.html">About Auther</option>
-
+    <option value="Audiobook.html">Audiobook</option>
    <option value="https://www.lulu.com/shop/david-binnema/how-many-mysterious-wheelchairs-are-there/paperback/product-47w8y2.html?page=1&pageSize=4"> but paper copy </a>
 
     
@@ -36,7 +39,6 @@ How Many Mysterious Wheelchairs are there?
   <button type="button" onclick="location = document.getElementById('chapter-select').value;" >Pick </button>
 </div>
     </nav>
-
 
 
 <h1>How Many Mysterious Wheelchairs are there?</h1>
@@ -72,8 +74,31 @@ Mr Quzefuly followed more tracks in his car, but this time he was stopped by two
 
 </main>
 <footer>
+<div style="text-align:center;>
+<label for="chapter-select">Chapter Selector</label>
+  <select id="chapter-select-bottom">
+      <option value="index.html">Table of Contents</option>
+   	  <option value="../index.html">Home</option>
+	  <option value="../toc.html">The Mysterious Wheelchair (book 1)</option>
+	  
+      <option value="index.html">Table of Contents</option>
+	  <option value="ch1.html"> Chapter 1</option>
+    <option value="ch2.html" >Chapter 2</option>
+    <option value="ch3.html" selected>Chapter 3</option>
+    <option value="ch4.html">Chapter 4</option>
+    <option value="ch5.html">Chapter 5</option>
+    <option value="ch6.html">Chapter 6</option>
+    <option value="ch7.html">Chapter 7</option>
+      <option value="about.html">About Auther</option>
+    <option value="Audiobook.html">Audiobook</option>
+   <option value="https://www.lulu.com/shop/david-binnema/how-many-mysterious-wheelchairs-are-there/paperback/product-47w8y2.html?page=1&pageSize=4"> but paper copy </a>
 
-<p> <a href="ch3.html"> Next chapter</a> | <a href ="index.html">Table of Contents</a></p>
+    
+    <!-- Add all chapters here -->
+  </select>
+  <button type="button" onclick="location = document.getElementById('chapter-select-bottom').value;" >Pick </button>
+</div>
+    </nav>
 <p > ©2023 David Binnema — All Rights Reserved.</p>
 </footer>
 </body>
