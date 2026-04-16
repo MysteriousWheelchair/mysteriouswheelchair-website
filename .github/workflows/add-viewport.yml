@@ -1,0 +1,27 @@
+name: Add viewport tag to HTML files
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  fix-viewport:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Add viewport tag
+        run: |
+          for file in $(find . -name "*.html"); do
+            if ! grep -q 'meta name="viewport"' "$file"; then
+              sed -i 's|<head>|<head>\n<meta name="viewport" content="width=device-width, initial-scale=1">|' "$file"
+            fi
+          done
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Add viewport tag automatically" || echo "No changes"
+          git push
