@@ -128,11 +128,6 @@ ul.links li {
 
 
 
-@media (min-width: 900px) {
-  .chapter-character {
-    display:block;
-  }
-}
 
 .back-to-top {
   position: fixed;
@@ -335,3 +330,9 @@ li a:focus {
   clear: both;
 }
 
+  
+@media (min-width: 900px) {
+  .chapter-character {
+    display:block;
+  }
+}
