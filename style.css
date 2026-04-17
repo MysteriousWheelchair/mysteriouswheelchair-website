@@ -329,6 +329,6 @@ li a:focus {
   
 @media (min-width: 900px) {
   .chapter-character {
-    display:block;
+    display: none
   }
 }
