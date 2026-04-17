@@ -320,6 +320,9 @@ li a:focus {
   border-style: solid;
   border-color: transparent #000 transparent transparent;
 }
+.clearfix {
+  clear: both;
+}
 
 @media (min-width: 900px) {
   .speech-bubble {
