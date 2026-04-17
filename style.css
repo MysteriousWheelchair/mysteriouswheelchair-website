@@ -131,7 +131,7 @@ ul.links li {
 
 
 .back-to-top {
-  background: white;
+
   padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
@@ -143,9 +143,6 @@ ul.links li {
   display: block;
   text-align: right;
 }
-
-
-
 
 .back-to-top:hover {
   opacity: 1;
