@@ -141,6 +141,13 @@ ul.links li {
   font-size: 0.9rem;
   opacity: 0.8;
   transition: opacity 0.2s;
+
+  
+  margin-top: 10px; /* reduce space above */
+  display: block;
+  text-align: right;
+
+
 }
 
 .back-to-top:hover {
