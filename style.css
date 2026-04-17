@@ -133,8 +133,8 @@ ul.links li {
 .back-to-top {
   position: fixed;
   bottom: 20px;   /* distance from bottom of screen */
-  left: 20px;     /* distance from LEFT side */
-  background: white;
+  left: 40px;     /* distance from LEFT side */
+  
   padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
