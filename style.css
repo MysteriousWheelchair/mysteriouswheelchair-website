@@ -297,7 +297,7 @@ li a:focus {
   }
 }
 
-..speech-bubble {
+.speech-bubble {
   float: left;
   max-width: 250px;
   background: #ffffff;
