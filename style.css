@@ -286,38 +286,47 @@ li a:focus {
 .chapter-character {
   float: left;
   width: 220px;
-  margin-right: 20px;  /* space between image and bubble/text */
+  margin-right: 20px;
   margin-bottom: 10px;
   display: none;
 }
 
-
+@media (min-width: 900px) {
+  .chapter-character {
+    display: block;
+  }
+}
 
 .speech-bubble {
   float: left;
-  max-width: 800px;
+  max-width: 800px;     /* stays inside your layout */
   background: #ffffff;
   padding: 12px 18px;
   border-radius: 12px;
   border: 3px solid #000;
-  margin-left: -40px;   /* pulls bubble OVER the image */
-  margin-top: 20px;     /* adjust height */
+  margin-left: 10px;     /* bubble sits to the right of the image */
   margin-bottom: 20px;
   position: relative;
-  z-index: 10;          /* ensures bubble sits on top */
   display: none;
 }
 
-/* LEFT-SIDE pointer aiming at the character */
+@media (min-width: 900px) {
+  .speech-bubble {
+    display: block;
+  }
+}
+
 .speech-bubble::after {
   content: "";
   position: absolute;
-  left: -20px;          /* pointer sits over the image */
-  top: 20px;            /* adjust pointer height */
+  left: -15px;           /* pointer overlaps the image */
+  top: 20px;             /* adjust pointer height */
   border-width: 10px;
   border-style: solid;
   border-color: transparent #000 transparent transparent;
+  z-index: 10;
 }
+
 
 @media (min-width: 900px) {
   .speech-bubble {
