@@ -294,7 +294,7 @@ li a:focus {
   width: 220px;
   margin-right: 20px;
   margin-bottom: 10px;
-  display: none;
+  display: block;
 }
 
 
@@ -309,7 +309,7 @@ li a:focus {
   margin-left: 5px;     /* bubble sits to the right of the image */
   margin-bottom: 20px;
   position: relative;
-  display: none;
+  display: block;
 }
 
 
