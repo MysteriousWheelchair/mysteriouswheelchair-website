@@ -312,11 +312,6 @@ li a:focus {
   display: none;
 }
 
-@media (min-width: 768px) {
-  .speech-bubble {
-    display: none
-  }
-}
 
 .speech-bubble::after {
   content: "";
@@ -330,11 +325,6 @@ li a:focus {
 }
 
 
-@media (min-width: 768px) {
-  .speech-bubble {
-    display: none;
-  }
-}
 .clearfix {
   clear: both;
 }
