@@ -131,9 +131,6 @@ ul.links li {
 
 
 .back-to-top {
-  position: fixed;
-  bottom: 20px;   /* distance from bottom of screen */
-  right: 20px;    /* distance from right side */
   background: white;
   padding: 10px 15px;
   border-radius: 6px;
@@ -142,12 +139,9 @@ ul.links li {
   opacity: 0.8;
   transition: opacity 0.2s;
 
-  
-  margin-top: 10px; /* reduce space above */
+  margin-top: 20px;   /* space above the link */
   display: block;
-  text-align: right;
-
-
+  text-align: right;  /* pushes it to the right side */
 }
 
 .back-to-top:hover {
