@@ -148,6 +148,12 @@ ul.links li {
 }
 
 
+/* PHONE: hide character image, keep story bubble */
+@media (max-width: 600px) {
+  .chapter-character {
+    display: none;
+  }
+
 .back-to-top:hover {
   opacity: 1;
 }
