@@ -131,18 +131,18 @@ ul.links li {
 
 
 .back-to-top {
-  background: white;
+  position: fixed;
+  bottom: 20px;   /* distance from bottom of screen */
+  right: 20px;    /* distance from right side */
+  background: white
   padding: 10px 15px;
   border-radius: 6px;
   text-decoration: none;
   font-size: 0.9rem;
   opacity: 0.8;
   transition: opacity 0.2s;
-
-  margin-top: 20px;
-  display: block;
-  text-align: right;
 }
+
 
 
 .back-to-top:hover {
