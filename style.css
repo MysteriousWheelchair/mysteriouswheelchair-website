@@ -139,9 +139,9 @@ ul.links li {
   opacity: 0.8;
   transition: opacity 0.2s;
 
-  margin-top: 20px;   /* space above the link */
+  margin-top: 20px;
   display: block;
-  text-align: right;  /* pushes it to the right side */
+  text-align: right;
 }
 
 
