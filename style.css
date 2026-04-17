@@ -319,7 +319,7 @@ li a:focus {
 .speech-bubble::after {
   content: "";
   position: absolute;
-  left: -15px;           /* pointer overlaps the image */
+  left: -25px;           /* pointer overlaps the image */
   top: 20px;             /* adjust pointer height */
   border-width: 10px;
   border-style: solid;
