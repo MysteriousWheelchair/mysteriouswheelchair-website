@@ -285,6 +285,7 @@ li a:focus {
 
 .chapter-character {
   float: left;
+  left:10px;
   width: 220px;
   margin-right: 20px;
   margin-bottom: 10px;
