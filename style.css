@@ -291,11 +291,7 @@ li a:focus {
   display: none;
 }
 
-@media (min-width: 900px) {
-  .chapter-character {
-    display: block;
-  }
-}
+
 
 .speech-bubble {
   float: left;
