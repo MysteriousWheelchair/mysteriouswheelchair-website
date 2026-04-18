@@ -138,3 +138,57 @@ color: #000000;
   opacity: 1;
 }
 
+
+
+.chapter-character {
+  float: left;
+  padding-left: 5px; 
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+.speech-bubble {
+  float: left;
+  max-width: 800px;     /* stays inside your layout */
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 3px solid #000;
+  margin-left: 5px;     /* bubble sits to the right of the image */
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  left: -25px;           /* pointer overlaps the image */
+  top: 20px;             /* adjust pointer height */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  z-index: 10;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+  
+/* PHONE FIX — hide character image ONLY on phones */
+@media (max-width: 600px) {
+  .chapter-character {
+    display: none !important;
+  }
+
+  
+}
+
+
