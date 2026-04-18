@@ -177,6 +177,8 @@ color: #000000;
 }
 
 .header {
+text-align:center; 
+background: white;
 width: 800px;;
 margin: 0 auto;
 }
