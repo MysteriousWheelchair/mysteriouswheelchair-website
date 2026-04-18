@@ -176,6 +176,10 @@ color: #000000;
   z-index: 10;
 }
 
+.header {
+width: 800px;;
+margin: 0 auto;
+}
 
 .clearfix {
   clear: both;
