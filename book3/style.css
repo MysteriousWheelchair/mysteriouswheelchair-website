@@ -1,0 +1,353 @@
+body, html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+ * {
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+  }
+nav, footer {
+  background: #00FEFE !important;
+width: 800px;;
+margin: 0 auto;
+  text-align: center;      /* center inline-block children */
+  padding: 10px 0;
+}
+
+footer img {
+padding-left: 10px; 
+}
+nav form {
+  display: inline-block;   /* sit side by side */
+  margin: 0 20px;          /* space between the two forms */
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color:#FFB6C1; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+  padding-left: 20px;
+}
+h1,h2 {
+text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+  font-weight: bold;
+  color:#167A7A;
+  text-shadow:
+  1px 1px 0 #fff,
+    -3px -3px 0 #000;
+}
+
+main {
+width: 800px;;
+margin: 0 auto;
+background: white;
+padding-bottom: 4px;
+}
+
+.toc li {
+
+  padding: 10px 15px;
+}
+
+li {
+ list-style-type: none;
+  display: block;
+}
+
+
+
+ul.links {
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+
+}
+ul.links li {
+  padding: 10px 0;
+}
+
+.center-image {
+  text-align: center;
+}
+.jump-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* space between label and dropdown */
+  margin-top: 2px; /* space above */
+}
+
+.author-block {
+   max-width: 400px;
+      margin: 40px auto;
+      background: white;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+.book-block {
+   max-width: 400px;
+      margin: 10px auto;
+      background: white;
+      padding: 5px 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+#book-text p {
+    max-width: 700px;
+    margin: 0 auto 16px auto;
+    line-height: 1.6;
+    font-size: 20px;
+    text-indent: 2em;
+  text-align: left;      /* center inline-block children */
+}
+
+/* Drop cap */
+#book-text p:first-of-type::first-letter {
+    font-size: 3em;
+    float: left;
+    line-height: 0.8;
+    padding-right: 8px;
+    padding-top: 4px;
+    font-weight: bold;
+}
+
+.chapter-image {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 20px auto; /* auto left/right centers it */
+}
+
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;   /* distance from bottom of screen */
+  left: 100px;     /* distance from LEFT side */
+  
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+
+
+
+.back-to-top:hover {
+  opacity: 1;
+}
+
+.about-wrapper {
+  display: flex;
+  align-items: center;   /* vertically centers the text with the image */
+  gap: 20px;             /* space between image and text */
+}
+
+.author-photo {
+  width: 150px;          /* adjust size as needed */
+  filter: blur(3px);     /* your privacy blur */
+  border-radius: 10px;   /* optional: makes it look nicer */
+}
+
+.about-text {
+  max-width: 500px;      /* keeps the text readable */
+}
+
+.tagline {
+    font-style: italic;
+    color: #5a4632; /* warm brown to match your palette */
+    margin-bottom: 1em;
+    display: block;
+}
+
+
+/* 3d to img*/
+
+.book-3d {
+    display: inline-block;
+    perspective: 800px;
+    margin-left: 1.5rem;
+
+}
+
+.book-3d img {
+    display: block;
+    width: 220px;          /* adjust to your liking */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+    transform: rotateY(-18deg);
+    transform-origin: left center;
+    border-radius: 4px;
+}
+
+/* optional: add a fake spine using a ::before overlay */
+.book-3d::before {
+    content: "";
+    position: absolute;
+    width: 14px;           /* spine thickness */
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0)
+    );
+    border-radius: 4px 0 0 4px;
+    pointer-events: none;
+}
+
+
+
+.index-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px; /* bring image closer to the list */
+    margin-top: 20px;
+}
+
+.index-image {
+    width: 180px; /* adjust size as needed */
+    height: auto;
+}
+
+.chapter-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chapter-list li {
+    margin: 6px 0;
+}
+
+.small-about {
+    font-size: 1.2em;   /* smaller than normal h2 */
+    font-weight: bold;  /* still looks like a heading */
+    margin-top: 0.5em;
+}
+
+
+table {
+    border-collapse: collapse; /* Removes cellspacing */
+   margin-left: auto;
+  margin-right: auto;
+}
+
+.pagetitle {
+    all: unset;
+    display: block;
+    font-size: 1.8em; /* match your old h2 */
+    font-weight: normal;
+    margin-top: 0.5em;
+  text-align: center;
+}
+
+
+/* Freepik-style yellow button for list links */
+/* Freepik-style yellow button for list links */
+li a {
+    display: inline-block;
+background-color: #CB6500 !important; /* bright sun yellow */
+    color: #000000 !important;            /* black text for contrast */
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none !important;
+    border: 2px solid #000000;            /* keeps yellow clean */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+button {
+background-color: #FFB6C1  !important;
+ 
+}
+li a:visited,
+li a:hover,
+li a:active,
+li a:focus {
+background-color: #FFB6C1   !important;
+    color: #000000 !important;
+    text-decoration: none !important;
+}
+
+
+
+
+.chapter-character {
+  float: left;
+  padding-left: 5px; 
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+.speech-bubble {
+  float: left;
+  max-width: 800px;     /* stays inside your layout */
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: 3px solid #000;
+  margin-left: 5px;     /* bubble sits to the right of the image */
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  left: -25px;           /* pointer overlaps the image */
+  top: 20px;             /* adjust pointer height */
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #000 transparent transparent;
+  z-index: 10;
+}
+
+
+.header {
+    text-align: center;
+    background: white;
+    width: 800px;
+    margin: 0 auto;
+}
+.clearfix {
+  clear: both;
+}
+
+  
+/* PHONE FIX — hide character image ONLY on phones */
+@media (max-width: 600px) {
+  .chapter-character {
+    display: none !important;
+  }
+
+  
+}
