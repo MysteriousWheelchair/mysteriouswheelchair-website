@@ -270,7 +270,7 @@ table {
 /* Freepik-style yellow button for list links */
 li a {
     display: inline-block;
-background-color: #CB6500 !important; /* bright sun yellow */
+background-color:  #FFB6C1 !important;
     color: #000000 !important;            /* black text for contrast */
     padding: 8px 14px;
     border-radius: 8px;
